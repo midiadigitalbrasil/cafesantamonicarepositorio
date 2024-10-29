@@ -1,0 +1,80 @@
+{
+  "store.custom#institucional": {
+    "blocks": [
+      "flex-layout.row#inst-content"
+    ]
+  },
+  "flex-layout.row#inst-content": {
+    "title": "Conteúdo",
+    "props": {
+      "blockClass": [
+        "instContent"
+      ],
+      "marginTop": 8,
+      "marginBottom": 10
+    },
+    "children": [
+      "flex-layout.col#inst-menu",
+      "flex-layout.col#inst-content"
+    ]
+  },
+  "flex-layout.col#inst-menu": {
+    "props": {
+      "width": "23%",
+      "preventVerticalStretch": true
+    },
+    "children": [  
+      "flex-layout.col#inst-menu-desktop",
+      "flex-layout.col#inst-menu-mobile"
+    ]
+  },
+  "flex-layout.col#inst-content": {
+    "props": {
+      "width": "grow",
+      "preventVerticalStretch": true,
+      "rowGap": 5
+    },
+    "children": [
+      "rich-text#inst-content-title",
+      "rich-text#inst-content-text"
+    ]
+  },
+  "rich-text#inst-content-title": {
+    "title": "Título",
+    "props": {
+      "blockClass": [
+        "inst-title",
+        "institucional"
+      ],
+      "font": "t-heading-2",
+      "text": "## Título"
+    }
+  },
+  "rich-text#inst-content-text": {
+    "title": "Texto",
+    "props": {
+      "text": "# Título 1\n ## Título 2\n ### Título 3\n #### Título 4\n Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, neque atque cum unde aliquam dolorem laborum autem aut, non eligendi at velit, placeat recusandae illo debitis ab facere consequuntur vel!\n **Bold** autem aut, non eligendi at\n _Itálico_ eligendi at velit, placea Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ab, maiores perferendis unde laudantium dolorem mollitia. Dolore, in quo nulla quos inventore error non exercitationem omnis. Amet expedita laudantium repudiandae!\n ### Links\n [Link para outra página](/quem-somos) in quo nulla quos inventore error non exercitationem omnis. Amet expedita laudantium repudiandae!\n ### Imagens\n ![alt text](/arquivos/330.png 'Título da Imagem')\n ### Mais exemplos\n [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)",
+      "blockClass": [
+        "text-content",
+        "institucional"
+      ]
+    }
+  },
+
+  "flex-layout.col#inst-menu-desktop":{
+    "props": {
+      "blockClass": ["inst-menu-desktop"]
+    },
+    "children": [
+      "vtex.menu@2.x:menu#menu-inst-1"
+    ]
+  },
+  "flex-layout.col#inst-menu-mobile":{
+    "props": {
+      "blockClass": ["inst-menu-mobile"]
+    },
+    "children": [
+      "disclosure-layout-group#menu-inst-mobile"
+    ]
+  }
+}

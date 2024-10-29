@@ -1,0 +1,11 @@
+.productHighlightText {
+    background: #008C6E;
+    color: #fff;
+    padding: .25em .5em;  
+    margin-bottom: 0.25rem;
+    font-weight: 900;
+    font-size: .625rem;
+    letter-spacing: 0.09em; 
+    text-transform: uppercase;
+    border-radius: 0;
+}

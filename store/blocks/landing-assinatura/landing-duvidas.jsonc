@@ -1,0 +1,101 @@
+{
+  "flex-layout.row#landing-duvidas": {
+    "title": "Dúvidas",
+    "children": [
+      "flex-layout.col#landing-duvidas-bg",
+      "flex-layout.col#landing-duvidas"
+    ],
+    "props": {
+      "colGap": 9,
+      "fullWidth": {
+        "mobile": true,
+        "desktop": false
+      },
+      "blockClass": ["landing-duvidas"]
+    }
+  },
+  "flex-layout.col#landing-duvidas": {
+    "children": ["flex-layout.row#landing-duvidas-main"],
+    "props": {
+      "blockClass": ["landing-duvidas"]
+    }
+  },
+
+  "flex-layout.col#landing-duvidas-bg": {
+    "children": [
+      "image#landing-duvidas-bg-mobile",
+      "image#landing-duvidas-bg",
+      "image#landing-duvidas-decor"
+    ],
+    "props": {
+      "blockClass": ["landing-duvidas-bg"]
+    }
+  },
+
+  "flex-layout.row#landing-duvidas-main": {
+    "children": ["flex-layout.col#landing-duvidas-main"],
+    "props": {
+      "paddingTop": 9,
+      "blockClass": ["landing-duvidas-main"]
+    }
+  },
+
+  "flex-layout.col#landing-duvidas-main": {
+    "children": ["rich-text#landing-duvidas-title", "list-context.duvidas"]
+  },
+
+  "rich-text#landing-duvidas-title": {
+    "props": {
+      "blockClass": ["landing-duvidas-content", "landing-duvidas-title"],
+      "font": "t-body",
+      "text": "## Dúvidas? ",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-action-primary"
+    }
+  },
+  "image#landing-duvidas-bg": {
+    "props": {
+      "blockClass": ["landing-duvidas-bg"],
+      "src": "assets/duvidas-bg.jpg",
+      "alt": "Santa Monica - Café Gourmet"
+    }
+  },
+  "image#landing-duvidas-bg-mobile": {
+    "props": {
+      "blockClass": ["landing-duvidas-bg--mobile"],
+      "width": "100%",
+      "src": "assets/duvidas-bg-mobile.jpg",
+      "alt": "Santa Monica - Café Gourmet"
+    }
+  },
+  "image#landing-duvidas-decor": {
+    "props": {
+      "blockClass": ["landing-duvidas-decor"],
+      "src": "assets/duvidas-bg.png"
+    }
+  },
+
+  "list-context.duvidas": {
+    "children": ["list-context-renderer#duvidas"],
+    "props": {
+      "items": [
+        {
+          "title": "Pergunta ipsum dolor sit amet, consectetur?",
+          "text": "Resposta ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas "
+        },
+        {
+          "title": "Pergunta 2",
+          "text": "Resposta 2 "
+        }
+      ]
+    }
+  },
+  "list-context-renderer#duvidas": {
+    "props": {
+      "blockClass": "duvidasList",
+      "listElement": "div",
+      "itemElement": "div"
+    }
+  }
+}

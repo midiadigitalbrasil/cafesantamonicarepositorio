@@ -1,0 +1,44 @@
+.profileIcon {
+  width: 24px;
+  height: 24px;
+}
+.contentAlwaysWithOptions,
+.contentAlwaysWithOptions .loginOptionsContainer {
+  margin-top: 2rem;
+}
+
+.optionsList {
+  margin-top: 1rem;
+}
+
+@media (hover: hover) {
+  .container:hover
+    :global(.vtex-button) {
+      background: transparent !important;
+  }
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  font-size: 12px;
+  color: #243746;
+  font-weight: 400;
+}
+.label:hover {
+  font-weight: 500;
+}
+.label::before {
+  content: 'Olá Visitante!';
+  font-size: 10px;
+  color: #243746;
+  font-weight: 400 !important;
+  text-align: left;
+}
+@media(max-width: 64em) {
+  .label {
+    display: none;
+  }
+}

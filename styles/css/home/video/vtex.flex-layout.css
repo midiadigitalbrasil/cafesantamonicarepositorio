@@ -1,0 +1,67 @@
+.flexRowContent--video-home {
+  align-items: center;
+}
+.flexCol--video-home-info {
+  width: 70% !important;
+}
+
+.flexCol--mainCategories{
+  position: relative;
+}
+
+.flexCol--mainCategories::before{
+  content: '';
+  background-image: url(/arquivos/graos.svg?v=123);
+  width: 278px;
+  height: 204px;
+  display: inline-block;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+}
+
+.flexRow--video-home{
+  position: relative;
+}
+.flexRow--video-home::before{
+  content: '';
+  background-image: url(/arquivos/plant.svg?v=123);
+  width: 573px;
+  height: 588px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: -100px;  
+}
+
+@media (max-width:768px) {
+  .flexCol--mainCategories::before{
+    display: none;
+  }
+
+  .flexRow--video-home::before{
+      width: 320px;
+      height: 320px;        
+      bottom: -60px;
+  }
+}
+
+@media (max-width: 64em) {
+  .flexRow--video-home :global(.vtex-store-components-3-x-container){
+    padding: 0px;
+  }
+  .flexRowContent--video-home {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 96px;
+  }
+  .flexRowContent--video-home :global(.vtex-flex-layout-0-x-stretchChildrenWidth):first-child {
+    order: 1;
+  }
+  .flexCol--video-home-info {
+    width: 85% !important;
+    margin-top: 40px;
+  }
+}

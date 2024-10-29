@@ -1,0 +1,39 @@
+.orderByButton {
+  border: 2px solid #ccc;
+  padding: 14px 1px 13px 18px;
+}
+
+.filterPopupTitle {
+  font-size: 14px;
+  color: #888;
+}
+
+.orderByText {
+  font-size: 14px;
+  color: #888;
+}
+.orderByOptionItem:hover {
+  background-color: #2d5c8538;
+}
+.caretIcon {
+  width: 16px;
+  height: 16px;
+}
+
+@media(max-width: 64em) {
+  .orderByButton {
+    border: none;
+    justify-content: space-around;
+  }
+  .filterPopupArrowIcon {
+    padding: 0px;
+  }
+}
+
+@media(max-width: 48em) {
+  :global(.vtex-flex-layout-0-x-flexColChild--search-orderBy) .orderByOptionsContainer {
+    width: 102%;
+    margin-left: -1%;
+    margin-top: -2%;
+  }
+}

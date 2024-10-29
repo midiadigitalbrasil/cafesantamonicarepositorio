@@ -1,0 +1,10 @@
+.wrapper--free-shipping {
+    color: #243746;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #2d5c852c;
+    width: 100%;
+    font-size: 12px;
+}

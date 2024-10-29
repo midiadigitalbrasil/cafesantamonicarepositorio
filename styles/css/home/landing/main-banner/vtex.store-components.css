@@ -1,0 +1,42 @@
+.imageElement--landing-mainBanner {
+    max-height: none !important;
+}
+
+.imageElement--landing-main-banner-title {
+    position: absolute;
+    top: 30px;
+    max-width: 128px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+ 
+.imageElement--main-banner-bg-desktop , .imageElement--main-banner-bg-mobile {
+    width: 100%;
+}
+.imageElement--main-banner-bg-desktop {display: none;}
+@media (min-width: 40em){
+    .imageElement--main-banner-bg-desktop {
+        display: block;
+        position: absolute;
+        top: 0; left: 0;
+    }
+    .imageElement--main-banner-bg-mobile {display: none;}
+
+    .imageElement--landing-main-banner-title {
+        position: absolute;
+        left: 5%;
+        right: auto;
+        top: 0;
+        bottom: 0; 
+    }
+}
+
+ @media (min-width: 64em){
+    .imageElement--main-banner-bg-desktop {
+        position: static;
+    }
+    .imageElement--landing-main-banner-title {
+        max-width: 184px;
+    }
+} 

@@ -1,0 +1,34 @@
+{
+    "media#banner-beneficios": {
+        "title": "Banner de beneficios Desktop",
+        "props": {
+          "src": "/arquivos/banner-beneficios-cafe.jpg",
+          "blockClass": "banners-lp-polishop"
+        }
+      },
+
+      "media#banner-vantagens": {
+        "title": "Banner de beneficios Desktop",
+        "props": {
+          "src": "/arquivos/banner-diferenciais-e-vantagens-completo.jpg",
+          "blockClass": "banners-lp-polishop"
+        }
+      },
+
+      /*polishop*/
+      "media#banner-polishop-desk": {
+        "title": "Banner de Polishop Desktop",
+        "props": {
+          "src": "/arquivos/banner-main-polishop-desk.jpg",
+          "blockClass": "banners-lp-polishop-desk"
+        }
+      },
+
+      "media#banner-polishop-mobile": {
+        "title": "Banner de Polishop mobile",
+        "props": {
+          "src": "/arquivos/banner-main-polishop.jpg",
+          "blockClass": "banners-lp-polishop-mobile"
+        }
+      }
+}

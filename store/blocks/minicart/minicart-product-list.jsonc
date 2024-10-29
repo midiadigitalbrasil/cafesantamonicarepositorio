@@ -1,0 +1,15 @@
+{
+  "product-list#custom": {
+    "blocks": [
+      "product-list-content-desktop#custom",
+      "product-list-content-mobile#custom"
+    ]
+  },
+
+  "product-list-content-desktop#custom": {
+    "children": ["flex-layout.row#minicartItem"]
+  },
+  "product-list-content-mobile#custom": {
+    "children": ["flex-layout.row#minicartItem"]
+  }
+}

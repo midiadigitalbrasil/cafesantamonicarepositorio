@@ -1,0 +1,7 @@
+@media (max-width:768px) {
+    .footerLayout{
+      position: relative;
+      z-index: 9;
+      background: #fff;
+    }
+  }

@@ -1,0 +1,9 @@
+@media(max-width: 64em) {
+  .flexRow--search-totalAndSwitcher {
+    display: none;
+  }
+  .flexCol--search-orderBy {
+    margin-left: 8px;
+    border: 1px solid #999999;
+  }
+}

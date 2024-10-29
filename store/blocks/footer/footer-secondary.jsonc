@@ -1,0 +1,108 @@
+{
+  "flex-layout.row#footer-secondary": {
+    "children": [
+      "flex-layout.col#footer-secondary-1",
+      "flex-layout.col#footer-secondary-2",
+      "flex-layout.col#footer-secondary-3"
+    ],
+    "props": {
+      "blockClass": ["footer-secondary"],
+      "marginTop": 9,
+      "rowGap": {
+        "desktop": 0,
+        "mobile": 8
+      },
+      "marginBottom": 7
+    }
+  },
+  "flex-layout.col#footer-secondary-1": {
+    "children": [
+      "rich-text#footer-secondary-1",
+      "flex-layout.row#footer-pagamento"
+    ],
+    "props": {
+      "blockClass": ["footer-secondary-1"],
+      "width": "30%"
+    }
+  },
+  "rich-text#footer-secondary-1": {
+    "props": {
+      "blockClass": ["footer-secondary"],
+      "font": "t-small",
+      "textColor": "c-muted-1",
+      "text": "Pagamento",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#footer-secondary-2": {
+    "props": {
+      "blockClass": ["footer-secondary"],
+      "font": "t-small",
+      "textColor": "c-muted-1",
+      "text": "Desenvolvimento e Tecnologia",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#footer-secondary-3": {
+    "props": {
+      "blockClass": ["footer-secondary"],
+      "font": "t-small",
+      "textColor": "c-muted-1",
+      "text": "Segurança",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "flex-layout.col#footer-secondary-2": {
+    "children": [
+      "rich-text#footer-secondary-2",
+      "flex-layout.row#footer-selos"
+    ],
+    "props": {
+      "blockClass": ["footer-secondary-2"],
+      "width": "30%"
+    }
+  },
+  "flex-layout.col#footer-secondary-3": {
+    "children": [
+      "rich-text#footer-secondary-3",
+      "flex-layout.row#footer-selos-seguranca"
+    ],
+    "props": {
+      "blockClass": ["footer-secondary-3"],
+      "width": "30%"
+    }
+  },
+  "image#footer-pagamentos": {
+    "title": "Formas de Pagamento",
+    "props": {
+      "src": "assets/pagamentos.png",
+      "height": 28,
+      "alt": "Formas de Pagamento",
+      "title": "Formas de Pagamento"
+    }
+  },
+  "image#footer-pagamentos-pix": {
+    "title": "Formas de Pagamento Pix",
+    "props": {
+      "src": "assets/pix.svg",
+      "height": 28,
+      "alt": "Formas de Pagamento",
+      "title": "Formas de Pagamento"
+    }
+  },
+  "flex-layout.row#footer-pagamento": {
+    "title": "Logos Footer",
+    "children": ["image#footer-pagamentos", "image#footer-pagamentos-pix"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colGap": 5,
+      "marginTop": 5,
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center",
+      "blockClass": ["footer-selos"]
+    }
+  }
+}

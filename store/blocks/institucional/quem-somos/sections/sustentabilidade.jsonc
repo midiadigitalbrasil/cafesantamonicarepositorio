@@ -1,0 +1,45 @@
+{
+    "flex-layout.row#section-sustentabilidade": {
+        "title": "Sustentabilidade",
+        "props": {
+            "blockClass": ["quemsomos-sustentabilidade"],
+            "fullWidth": true,
+            "colSizing": "auto",
+            "colJustify": "auto"
+        },
+        "children": [
+            "image#quemsomos-banner-sustentabilidade",
+            "flex-layout.col#contentTextSustentabilidade"
+        ]
+    },
+    "flex-layout.col#contentTextSustentabilidade": {
+        "title": "Conteúdo da sustentabilidade",
+        "props": {
+            "blockClass": ["contentTextSustentabilidade"]
+        },
+        "children": [
+            "rich-text#title-sustentabilidade",
+            "rich-text#text-sustentabilidade"
+        ]
+    },
+    "image#quemsomos-banner-sustentabilidade": {
+        "props": {
+          "src": "/arquivos/quemsomos-sustentabilidade.png"
+        }
+      },      
+    "rich-text#title-sustentabilidade": {
+        "title": "titulo da seção sustentabilidade",
+        "props": {
+            "text": "SUSTENTABILIDADE",
+            "htmlId": "section-sustentabilidade",
+            "blockClass": ["quesomos-title-section", "quesomos-title-section-sustentabilidade"]
+        }
+    },
+    "rich-text#text-sustentabilidade": {
+        "title": "texto da seção sustentabilidade",
+        "props": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.<br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+            "blockClass": ["quesomos-text-section", "quesomos-text-section-sustentabilidade"]
+        }
+    }
+}

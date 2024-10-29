@@ -1,0 +1,32 @@
+{
+    "flex-layout.row#shipping-simulator": {
+        "children": [
+            "flex-layout.col#shipping-simulator"
+        ],
+        "props": {
+            "blockClass": [
+                "shipping-simulator"
+            ],
+            "rowGap": 4
+        }
+    },
+    "flex-layout.col#shipping-simulator": {
+        "children": [
+            "rich-text#shipping-simulator",
+            "shipping-simulator"
+        ],
+        "props": {
+            "blockClass": [
+                "shipping-simulator"
+            ]
+        }
+    },
+    "rich-text#shipping-simulator": {
+        "props": {
+            "blockClass": [
+                "free-shipping"
+            ],
+            "text": "Calcule prazo de entrega"
+        }
+    }
+}

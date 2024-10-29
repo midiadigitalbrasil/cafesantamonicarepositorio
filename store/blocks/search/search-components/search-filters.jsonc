@@ -1,0 +1,9 @@
+{
+  "flex-layout.col#search-filter--desktop": {
+    "children": ["filter-navigator.v3"],
+    "props": {
+      "blockClass": "filterCol--desktop",
+      "preventVerticalStretch": true
+    }
+  }
+}

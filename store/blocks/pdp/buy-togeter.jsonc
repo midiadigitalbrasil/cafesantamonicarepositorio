@@ -1,0 +1,22 @@
+{
+    "custom-buy-together": {
+      "blocks": ["product-summary.shelf"],
+      "props": {
+        "BuyButton": "add-to-cart-button"
+      }
+    },
+  
+    "list-context-renderer#buy-together": {
+      "props": {
+        "blockClass": "beneficiosList",
+        "listElement": "div",
+        "itemElement": "div"
+      }
+    },
+  
+    "list-context.product-list": {
+      "blocks": ["product-summary.shelf"],
+      "children": ["list-context-renderer#buy-together"]
+    }
+  }
+  

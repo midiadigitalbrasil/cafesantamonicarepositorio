@@ -1,0 +1,7 @@
+.slide--destaques-home {
+  padding: 0px 5px;
+}
+
+.slideChildrenContainer--destaques-home:hover {
+  filter: brightness(0.85);
+}

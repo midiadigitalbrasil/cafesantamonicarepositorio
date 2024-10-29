@@ -1,0 +1,25 @@
+.flexRow--landing-beneficios {
+  background: #a58e76 url(assets/landing-beneficios-bg-mob.jpg) no-repeat
+    center/auto 100%;
+  padding-bottom: 60%;
+}
+@media (min-width: 48em) {
+  .flexRow--landing-beneficios {
+    background: #a58e76 url(assets/landing-beneficios-bg-desktop.jpg) no-repeat
+      center/cover;
+    padding-bottom: 0;
+  }
+}
+.flexRowContent--landing-beneficios {
+  min-height: 516px;
+}
+
+@media (min-width: 48em) {
+  .flexRowContent--landing-beneficios {
+    height: 100vh;
+    min-height: 0;
+    max-height: 516px;
+    display: flex;
+    align-items: center;
+  }
+}

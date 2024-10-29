@@ -1,0 +1,17 @@
+{
+    "store.custom#landing-assinatura-polishop": {
+        "blocks": [
+            /*"flex-layout.row#landing-main-banner",*/
+            /*"flex-layout.row#landing-beneficios",*/
+            "media#banner-polishop-desk",
+            "media#banner-polishop-mobile",
+            "media#banner-beneficios",
+            "flex-layout.row#landing-como-funciona",
+            "flex-layout.row#landing-planos",
+            "flex-layout.row#landing-produtos-sugeridos",
+            /*"flex-layout.row#landing-diferenciais",*/
+            "media#banner-vantagens",
+            "flex-layout.row#landing-duvidas"
+        ]
+    }
+}

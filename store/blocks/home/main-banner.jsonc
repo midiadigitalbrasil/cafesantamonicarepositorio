@@ -1,0 +1,72 @@
+{
+  "flex-layout.row#main-banner": {
+    "title": "Banner Principal",
+    "children": [
+      "list-context.image-list#main-banner"
+    ],
+    "props": {
+      "marginTop": 0,
+      "fullWidth": true
+    }
+  },
+  "list-context.image-list#main-banner": {
+    "title": "Banners Images",
+    "children": [
+      "slider-layout#main-banner"
+    ],
+    "props": {
+      "height": 720,
+      "images": [
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/banner-principal-desktop.png",
+          "mobileImage": "https://tb4371.vteximg.com.br/arquivos/banner-principal-mobile.png",
+          "link": {
+            "title": "URL imagem",
+            "url": "/imagem"
+          }
+        },
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/banner-principal-desktop.png",
+          "mobileImage": "https://tb4371.vteximg.com.br/arquivos/banner-principal-mobile.png",
+          "link": {
+            "title": "URL imagem",
+            "url": "/imagem"
+          }
+        },
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/banner-principal-desktop.png",
+          "mobileImage": "https://tb4371.vteximg.com.br/arquivos/banner-principal-mobile.png",
+          "link": {
+            "title": "URL imagem",
+            "url": "/imagem"
+          }
+        },
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/banner-principal-desktop.png",
+          "mobileImage": "https://tb4371.vteximg.com.br/arquivos/banner-principal-mobile.png",
+          "link": {
+            "title": "URL imagem",
+            "url": "/imagem"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#main-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      },
+      "infinite": false,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "blockClass": "mainBanner"
+    }
+  }
+}

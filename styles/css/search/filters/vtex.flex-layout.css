@@ -1,0 +1,11 @@
+.flexCol--filterCol--desktop {
+  display: none;
+}
+@media (min-width: 64em) {
+  .flexCol--filterCol--desktop {
+    display: block;
+  }
+  .flexCol--filterCol--mobile {
+    display: none;
+  }
+}

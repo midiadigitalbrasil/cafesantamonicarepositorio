@@ -1,0 +1,42 @@
+.flexRow--landing-diferenciais {
+    background:  #000;
+}
+@media (min-width: 48em){
+    .flexRow--landing-diferenciais {
+        background: #000 url(assets/landing-diferenciais-bg-desktop.jpg) no-repeat 30% center; 
+    }
+}
+
+@media (min-width: 75em){
+    .flexRow--landing-diferenciais {
+        background: #000 url(assets/landing-diferenciais-bg-desktop.jpg) no-repeat  left center; 
+    }
+}
+
+
+
+.flexRowContent--landing-diferenciais { 
+    min-height: 516px;
+}
+
+@media (min-width: 48em){
+    .flexRowContent--landing-diferenciais { 
+        height: 100vh;
+        min-height: 0;
+        max-height: 516px;
+        display: flex;
+        align-items: center;
+    }
+    .flexCol--landing-diferenciais {
+        max-width: 50%;
+        margin-left: auto;
+    }
+}
+@media (min-width: 75em){
+    
+    .flexCol--landing-diferenciais {
+        max-width: 60%; 
+    }
+}
+
+ 

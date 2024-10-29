@@ -1,0 +1,18 @@
+.sellingPrice {
+    color: #BF6A1E;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.installments {
+    margin-top: 10px;
+    padding-top: 5px;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.listPriceValue {
+    margin-top: 12px;
+    display: block;
+}

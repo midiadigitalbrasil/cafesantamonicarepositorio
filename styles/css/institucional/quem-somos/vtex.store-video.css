@@ -1,0 +1,13 @@
+.videoContainer--quemsomos-fazenda-video{
+    margin-top: 48px;
+}
+
+@media (max-width: 768px) {
+    .videoContainer--quemsomos-fazenda-video{
+        margin-top: 28px;
+    }
+
+    .videoElement--quemsomos-fazenda-video{
+        max-height: 240px;
+    }
+}

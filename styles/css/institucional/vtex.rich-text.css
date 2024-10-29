@@ -1,0 +1,49 @@
+.headingLevel2--inst-title {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #373837;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}
+ 
+.heading--text-content {
+    margin-bottom: 1rem;
+}
+
+.heading--instMenuTitle {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    color: #2D5C85;
+    margin-bottom: 24px;
+    text-transform: capitalize;    
+}
+
+.paragraph--text-content, .heading--text-content{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #373837;
+}
+
+@media (min-width:769px) {
+    .container--inst-title, .container--text-content{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width:768px){
+    .heading--instMenuTitle{
+        margin-bottom: 0;
+        padding: 14px;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.28px;
+        color: #373837;
+    }
+
+    .container--inst-title, .wrapper--text-content{
+        padding: 0 25px;
+    }
+}

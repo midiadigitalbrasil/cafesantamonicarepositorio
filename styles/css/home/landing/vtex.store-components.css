@@ -1,0 +1,19 @@
+.imageElement--banners-lp-polishop,
+.imageElement--banners-lp-polishop-mobile,
+.imageElement--banners-lp-polishop-desk{
+    max-width: 100vw;
+}
+
+.imageElement--banners-lp-polishop-mobile{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .imageElement--banners-lp-polishop-mobile{
+        display: block;
+    }
+
+    .imageElement--banners-lp-polishop-desk{
+        display: none;
+    }
+}

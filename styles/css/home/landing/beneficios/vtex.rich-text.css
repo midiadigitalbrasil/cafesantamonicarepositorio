@@ -1,0 +1,17 @@
+.wrapper--landing-beneficios-content {
+    max-width: 480px;
+}
+
+.container--landing-beneficios-title {
+    justify-content: center;
+}
+@media (min-width: 48em){
+    .container--landing-beneficios-title {
+        justify-content: flex-start;
+    }
+}
+
+.listItem--landing-beneficios {
+    margin-top: 1rem;
+    list-style-position: inside;
+}

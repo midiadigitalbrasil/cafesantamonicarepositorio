@@ -1,0 +1,51 @@
+{
+    "flex-layout.row#quemsomos-fazenda-maps":{
+        "title": "Mapa",
+        "props": {
+            "blockClass": ["quemsomos-fazenda-maps"],
+            "colSizing": "auto"
+        },
+        "children": [
+            "flex-layout.col#fazenda-maps-col-1",
+            "flex-layout.col#fazenda-maps-col-2"
+          ]
+    },
+
+
+    "flex-layout.col#fazenda-maps-col-1": {
+        "props": {
+            "blockClass": ["fazenda-maps-col-1"]
+        },
+        "children": ["image#fazenda-maps"]
+    },
+    "flex-layout.col#fazenda-maps-col-2": {
+        "props": {
+            "blockClass": ["fazenda-maps-col-2"]
+        },
+        "children": [
+            "rich-text#title-fazenda-maps",
+            "rich-text#text-fazenda-maps"
+        ]
+    },
+
+    "image#fazenda-maps": {
+        "props": {
+          "src": "/arquivos/fazenda-maps.png"
+        }
+      },
+
+    "rich-text#title-fazenda-maps": {
+      "title": "A FAZENDA SANTA MONICA",
+      "props": {
+          "text": "A FAZENDA SANTA MONICA",
+          "blockClass": ["quesomos-title-section-fazenda-maps"]
+      }
+    },
+    "rich-text#text-fazenda-maps": {
+      "title": "titulo da seção fazenda",
+      "props": {
+          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Pellentesque lacinia posuere ante, et tempus dolor rutrum eget. Etiam condimentum nisi non venenatis tempor. Quisque blandit tristique odio. Praesent quis dignissim ipsum. Fusce pulvinar mauris et leo placerat, ac pellentesque massa cursus. Donec in consectetur neque. Vestibulum pellentesque dictum suscipit. Aenean id turpis viverra, placerat neque sed, semper eros. Duis nec ante quis ante imperdiet tempor eu sed augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec at varius quam.",
+          "blockClass": ["quesomos-text-section"]
+      }
+    }
+}

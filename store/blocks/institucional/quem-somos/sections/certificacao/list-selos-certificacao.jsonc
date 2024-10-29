@@ -1,0 +1,54 @@
+{
+    "list-context.image-list#list-selos-certificacao": {
+        "children": [
+            "slider-layout#list-selos-certificacao"
+        ],
+        "props": {
+            "preload": true,
+            "height": 650,
+            "images": [
+                {
+                    "image": "/arquivos/selo-cafe-brasil.png",
+                    "description": "selos café",
+                    "width": "100px"
+                },
+                {
+                    "image": "/arquivos/selo-cafe-minas.png",
+                    "description": "selos café",
+                    "width": "100px"
+                },
+                {
+                    "image": "/arquivos/selo-cafe-brasil.png",
+                    "description": "selos café",
+                    "width": "100px"
+                },
+                {
+                    "image": "/arquivos/selo-cafe-minas.png",
+                    "description": "selos café",
+                    "width": "100px"
+                },
+                {
+                    "image": "/arquivos/selo-cafe-brasil.png",
+                    "description": "selos café",
+                    "width": "100px"
+                },
+                {
+                    "image": "/arquivos/selo-cafe-minas.png",
+                    "description": "selos café",
+                    "width": "100px"
+                }
+            ]
+        }
+    },
+    "slider-layout#list-selos-certificacao": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 3
+            },
+            "showPaginationDots": "never",
+            "infinite": true
+        }
+    }
+}

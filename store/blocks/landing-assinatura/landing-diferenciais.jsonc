@@ -1,0 +1,55 @@
+{
+  "flex-layout.row#landing-diferenciais": {
+    "title": "Diferenciais & Vantagens",
+    "children": ["flex-layout.col#landing-diferenciais"],
+    "props": {
+      "paddingTop": {
+        "mobile": 0,
+        "desktop": 7
+      },
+      "paddingBottom": 7,
+      "blockClass": ["landing-diferenciais"]
+    }
+  },
+  "image#landing-diferenciais-bg-mobile": {
+    "props": {
+      "preload": true,
+      "blockClass": ["landing-diferenciais-bg-mobile"],
+      "src": "assets/landing-diferenciais-bg-mob.jpg"
+    }
+  },
+  "flex-layout.col#landing-diferenciais": {
+    "children": [
+      "image#landing-diferenciais-bg-mobile",
+      "rich-text#landing-diferenciais-title",
+      "rich-text#landing-diferenciais"
+    ],
+    "props": {
+      "blockClass": ["landing-diferenciais"]
+    }
+  },
+  "rich-text#landing-diferenciais-title": {
+    "props": {
+      "blockClass": [
+        "landing-diferenciais-content",
+        "landing-diferenciais-title"
+      ],
+      "font": "t-body",
+      "text": "## Diferenciais & vantagens",
+      "textColor": "c-on-base--inverted",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#landing-diferenciais": {
+    "props": {
+      "blockClass": [
+        "landing-diferenciais-content",
+        "landing-diferenciais-list"
+      ],
+      "font": "t-body",
+      "text": "- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor",
+      "textColor": "c-on-base--inverted"
+    }
+  }
+}

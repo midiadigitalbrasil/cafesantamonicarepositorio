@@ -1,0 +1,22 @@
+{
+  "header-layout.mobile": {
+    "children": [
+      "header-row#tipbar",
+      "header-row#main-mobile",
+      "header-row#search-bar-mobile",
+      "modal-trigger#lgpd",
+      "link#whatsapp-float",
+      "mini-cart-fixed"
+    ]
+  },
+  "header-row#main-mobile": {
+    "props": {
+      "sticky": true,
+      "blockClass": ["header-main-mobile"]
+    },
+    "children": ["logo","custom-menu", "login", "custom-minicart-mobile"]
+  }, 
+  "header-row#search-bar-mobile": {
+    "children": ["search-bar#mobile"]
+  }
+}

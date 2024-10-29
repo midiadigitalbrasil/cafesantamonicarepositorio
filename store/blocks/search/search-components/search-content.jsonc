@@ -1,0 +1,29 @@
+{
+  "flex-layout.col#search-content": {
+    "props": {
+      "width": "grow",
+      "preventVerticalStretch": true,
+      "marginLeft": 10,
+      "blockClass": ["search-content"]
+    },
+    "children": [
+      "responsive-layout.desktop#search-controls",
+      "responsive-layout.mobile#search-controls",
+      "search-content",
+      "flex-layout.row#search-fetch-more"
+    ]
+  },
+
+  "flex-layout.row#search-fetch-more": {
+    "children": ["search-fetch-more"],
+    "props": {
+      "marginTop": 8,
+      "marginBottom": 8,
+      "blockClass": ["search-fetch-more"]
+    }
+  },
+
+  "search-content": {
+    "blocks": ["gallery", "not-found"]
+  }
+}

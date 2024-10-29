@@ -1,0 +1,26 @@
+{
+  "flex-layout.row#footer-copyright": {
+    "children": ["rich-text#footer-copyright","link#toTop", "image#footer-copyright"],
+    "props": {
+      "blockClass": ["footer-copyright"],
+      "paddingTop": 4,
+      "rowGap": 7,
+      "paddingBottom": 9,
+      "preventHorizontalStretch": true
+    }
+  },
+  "rich-text#footer-copyright": {
+    "props": {
+      "blockClass": ["footer-copyright", "centerOnMobile"],
+      "textColor": "c-muted-1",
+      "text": "© 2021 CAFÉ GOURMET SANTA MONICA. Todos os direitos reservados  |  Av Henry Ford, 1059 - Parque da Mooca - São Paulo – SP, 03109-000 |  CNPJ   64.968.613/0001-08"
+    }
+  },
+
+  "image#footer-copyright": {
+    "props": {
+      "blockClass": ["footer-copyright"],
+      "src": "assets/footer-bg.png"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.imageElement--quemsomos-banner-main-mobile{
+    display: none;
+}
+
+@media (max-width:768px) {
+    .imageElement--quemsomos-banner-main-mobile{
+        display: block;
+    }
+
+    .imageElement--quemsomos-banner-main-desktop{
+        display: none;
+    }
+}

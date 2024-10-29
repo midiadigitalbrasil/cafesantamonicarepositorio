@@ -1,0 +1,60 @@
+{
+    "flex-layout.row#newsletter": {
+      "children": ["flex-layout.col#newsletter-text"],
+      "props": {
+        "marginTop": {
+          "mobile": 8,
+          "desktop": 9
+        },
+        "blockClass": "newsletter"
+      }
+    },
+    "flex-layout.col#newsletter-text": {
+      "props": {
+        "horizontalAlign": "center",
+        "blockClass": ["newsletterForm"]
+      },
+      "children": [
+        "rich-text#newsletter-title",
+        "rich-text#newsletter-headline",
+        "newsletter-form"
+      ]
+    },
+  
+    "rich-text#newsletter-title": {
+      "title": "Títutlo Newsletter",
+      "props": {
+        "text": "Newsletter",
+        "blockClass": ["newsletterTitle"],
+        "textAlignment": "CENTER"
+      }
+    },
+    "rich-text#newsletter-headline": {
+      "title": "Texto Newsletter",
+      "props": {
+        "text": "cadastre-se e receba novidades e promoções",
+        "blockClass": ["newsletterText"],
+        "textAlignment": "CENTER"
+      }
+    },
+    "newsletter-form": {
+      "children": [
+        "newsletter-input-email",
+        "newsletter-submit"
+      ]
+    },
+    "newsletter-input-email": {
+      "title": "Fomulário e-mail Newsletter",
+      "props": {
+        "placeholderText": "Cadastre seu e-mail",
+        "errorMessage": "E-mail inválido. Tente novamente."
+      }
+    },
+    "newsletter-submit": {
+      "title": "Botão Confirmar e-mail",
+      "props": {
+        "submitButtonLabel": "CADASTRAR"
+      }
+    }
+  }
+  

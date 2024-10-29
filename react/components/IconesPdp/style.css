@@ -1,0 +1,35 @@
+.icones__container__custom{
+    background-color: #e8edf2;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+    list-style: none;
+}
+
+.icones__item__custom{
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.icones__item__custom img {
+    max-width: 50px;
+}
+
+@media (max-width:768px) {
+    .icones__container__custom{
+        justify-content: initial;
+        overflow: scroll;
+        margin-bottom: 35px;
+    }
+
+    .icones__container__custom::-webkit-scrollbar {
+        display: none;
+    }
+
+    .icones__item__custom{
+        padding: 20px;
+        min-width: 30%;
+    }
+}

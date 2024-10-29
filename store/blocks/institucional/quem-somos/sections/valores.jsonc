@@ -1,0 +1,28 @@
+{
+    "flex-layout.row#section-valores": {
+        "title": "Valores",
+        "props": {
+            "colSizing": "auto",
+            "blockClass": ["section-quem-somos"]            
+        },
+        "children": [
+            "rich-text#title-valores",
+            "rich-text#text-valores"
+        ]
+    },
+    "rich-text#title-valores": {
+        "title": "titulo da seção valores",
+        "props": {
+            "text": "VALORES SANTA MONICA",
+            "htmlId": "section-valores",
+            "blockClass": ["quesomos-title-section"]
+        }
+    },
+    "rich-text#text-valores": {
+        "title": "texto da seção valores",
+        "props": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Pellentesque lacinia posuere ante, et tempus dolor rutrum eget. Etiam condimentum nisi non venenatis tempor. Quisque blandit tristique odio. Praesent quis dignissim ipsum. Fusce pulvinar mauris et leo placerat, ac pellentesque massa cursus. Donec in consectetur neque. Vestibulum pellentesque dictum suscipit. Aenean id turpis viverra, placerat neque sed, semper eros. Duis nec ante quis ante imperdiet tempor eu sed augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec at varius quam. Sed tempus ex in arcu lobortis, ac congue Leo lacinia. Vivamus eget elit ante. Lorem Ipsum Nulla facilisi. Pellentesque augue magna, ullamcorper eget orci vel, ultrices dapibus lacus. Duis efficitur ut sem vitae interdum. Ut purus risus, venenatis non feugiat et, eleifend sed augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam sit amet semper enim. Mauris leo mauris, accumsan id eros vel, pellentesque bibendum nisi. Integer rutrum purus eu mauris dapibus, vel sollicitudin risus luctus. Lorem Ipsum Praesent in velit sapien. Fusce rhoncus nisl vestibulum magna fermentum, luctus faucibus lorem luctus. Aenean sit amet posuere Leo. Phasellus enim ex, bibendum sed dolor at, lobortis placerat ante. Sed lectus lorem, posuere efficitur feugiat eget, rutrum vitae ex. Ut risus justo, congue ut ligula nec, varius feugiat nulla. Quisque ut ipsum eros. Nunc posuere, odio ut ullamcorper semper, erat odio feugiat nisi, sit amet fringilla sapien augue nec leo. Cras pellentesque mauris eget rhoncus facilisis. Vestibulum ut felis mi. Donec laoreet varius erat, luctus ornare dolor lobortis a. Quisque pulvinar turpis ac finibus pellentesque. Nam in nulla tincidunt, feugiat nisi ultrices, laoreet libero. Donec nec velit ut mi luctus dignissim. Nam ac felis vitae urna varius varius bibendum quis orci. Duis molestie dapibus ante, id posuere lorem egestas et. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum pretium ultrices aliquam. Praesent velit est, aliquet sit amet porttitor a, vulputate a massa. Vestibulum quis dui euismod, iaculis enim sit amet, faucibus est. Integer feugiat viverra suscipit. Sed pretium, arcu sit amet sodales pellentesque, diam ex vulputate ipsum, id mattis metus nunc vel velit. Vivamus tincidunt fringilla tortor, in luctus leo feugiat non. Donec tempus, ante a sollicitudin ornare, nisi ligula porta arcu, in dictum purus ante eget diam. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "blockClass": ["quesomos-text-section"]
+        }
+    }
+}

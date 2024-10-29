@@ -1,0 +1,63 @@
+{
+    "flex-layout.row#section-experimente": {
+        "title": "Conteúdo da seção experimente",
+        "props": {
+            "blockClass": ["section-quem-somos-experimente"]
+        },
+        "children": [
+            "flex-layout.col#experimente-imagem",
+            "flex-layout.col#experimente-text"
+        ]
+    },
+    "flex-layout.col#experimente-imagem":{
+        "title": "Imagem da seção experimente",
+        "props": {
+            "blockClass": ["experimente-imagem"]
+        },
+        "children": [
+            "image#quemsomos-banner-experimente-desktop",
+            "image#quemsomos-banner-experimente-mobile"
+        ]
+    },
+    "flex-layout.col#experimente-text":{
+        "title": "Texto da seção experimente",
+        "props": {
+            "blockClass": ["experimente-text"]
+        },
+        "children": [
+            "rich-text#text-experimente",
+            "link#quemsomos-link-conferir"
+        ]
+    },
+    "image#quemsomos-banner-experimente-desktop": {
+        "props": {
+            "blockClass": ["banner-experimente-desktop"],
+          "src": "/arquivos/banner-experimente.png?v=123"
+        }
+      },   
+      "image#quemsomos-banner-experimente-mobile": {
+        "props": {
+            "blockClass": ["banner-experimente-mobile"],
+            "src": "/arquivos/quemsomos-banner-experimente-mobile.png?v=123",
+            "link": {
+                "url": "#"
+            }
+        }
+      },    
+    "rich-text#text-experimente": {
+        "title": "titulo da seção experimente",
+        "props": {
+            "text": "**Experimente e comprove**  <br>A EXCELÊNCIA<br> **de nossos cafés**",
+            "htmlId": "section-sustentabilidade",
+            "blockClass": ["quesomos-title-section-experimente"]
+        }
+    },
+   "link#quemsomos-link-conferir":{
+       "title": "Link da seção experimente",
+       "props":{
+            "blockClass": "quemsomos-link-conferir",
+            "href": "/cafes",
+            "label": "CONFERIR"
+       }
+   }
+}

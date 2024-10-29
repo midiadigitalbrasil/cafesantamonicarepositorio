@@ -1,0 +1,25 @@
+.sidebarContent {
+  border-top: 1px solid #e0ddd3;
+}
+.sidebarItem {
+  border-bottom: 1px solid #e0ddd3;
+}
+.sidebarHeader,
+.sidebarItemContainer {
+  padding: 18px 24px 12px 24px;
+}
+.sidebarItemContainer {
+  background-position: calc(100% - 18px) 50%;
+  background-repeat: no-repeat;
+  background-size: auto 10px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.652' height='10' viewBox='0 0 10.652 10'%3E%3Cpath id='Path_7936' data-name='Path 7936' d='M10.3,7.533l3.787,3.757L10.3,15.047l1.233,1.243,5.041-5-5.041-5Z' transform='translate(-5.918 -6.29)' fill='%23b3b0a8'/%3E%3Cpath id='Path_7937' data-name='Path 7937' d='M6.529,6.29,5.3,7.533,9.083,11.29,5.3,15.047,6.529,16.29l5.041-5Z' transform='translate(-5.296 -6.29)' fill='%23b3b0a8'/%3E%3C/svg%3E%0A");
+}
+
+.closeIcon {
+  color: #424043;
+}
+
+.section--department {
+  justify-content: flex-start;
+  margin-left: 1.5rem;
+}

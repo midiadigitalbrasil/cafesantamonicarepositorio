@@ -1,0 +1,99 @@
+{
+  "flex-layout.row#landing-planos": {
+    "title": "Planos",
+    "children": ["flex-layout.col#landing-planos"],
+    "props": {
+      "paddingTop": 8,
+      "paddingBottom": 10,
+      "blockClass": ["landing-planos"]
+    }
+  },
+  "flex-layout.col#landing-planos": {
+    "children": [
+      "rich-text#landing-planos-title",
+      "rich-text#landing-planos-headline",
+      "flex-layout.row#landing-planos-slider"
+    ],
+    "props": {
+      "rowGap": 3,
+      "blockClass": ["landing-planos"]
+    }
+  },
+  "flex-layout.row#landing-planos-slider": {
+    "children": ["list-context.planos"],
+    "props": {
+      "marginTop": 6,
+      "blockClass": ["landing-planos-slider"]
+    }
+  },
+  "rich-text#landing-planos-title": {
+    "props": {
+      "text": "Planos",
+      "font": "t-heading-2",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-action-primary"
+    }
+  },
+  "rich-text#landing-planos-headline": {
+    "props": {
+      "text": "Planos que se adequam ao seu consumo",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-action-primary"
+    }
+  },
+  "list-context.planos": {
+    "children": ["slider-layout#planos"],
+    "props": {
+      "items": [
+        {
+          "title": "plano 1",
+          "icon": "assets/grao1.svg",
+          "text": "até 150 reais gastos:",
+          "perks": "10% de desconto",
+          "isMaisPedido": true
+        },
+        {
+          "title": "plano 2",
+          "icon": "assets/grao2.svg",
+          "text": "De R$151 a R$300 gastos:",
+          "perks": "15% de desconto"
+        },
+        {
+          "title": "plano 3",
+          "icon": "assets/grao3.svg",
+          "text": "De R$301 a R$400 gastos:",
+          "perks": "Frete Grátis \n 15% de desconto"
+        },
+        {
+          "title": "plano 4",
+          "icon": "assets/grao4.svg",
+          "text": "De R$400 a R$550 gastos:",
+          "perks": "Frete Grátis \n 15% de desconto \n gift surpresa"
+        },
+        {
+          "title": "plano 5",
+          "icon": "assets/grao5.svg",
+          "text": "Acima de R$551 gastos:",
+          "perks": "Frete Grátis \n 15% de desconto \n gift surpresa \n experiência semestral"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#planos": {
+    "props": {
+      "blockClass": "planos",
+      "infinite": false,
+      "fullWidth": false,
+      "showNavigationArrows": "always",
+      "arrowSize": 20,
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      }
+    }
+  }
+}

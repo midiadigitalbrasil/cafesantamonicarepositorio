@@ -1,0 +1,10 @@
+{
+  "link#whatsapp-float": {
+    "title": "Botão Whatsapp",
+    "props": {
+      "blockClass": ["floater-whatsapp"],
+      "target": "_blank",
+      "href": "https://wa.me/5511999999"
+    }
+  }
+}

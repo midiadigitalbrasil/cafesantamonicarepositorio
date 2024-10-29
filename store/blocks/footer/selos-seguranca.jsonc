@@ -1,0 +1,45 @@
+{
+    "flex-layout.row#footer-selos-seguranca": {
+        "title": "Logos Segurança Footer",
+        "children": [
+            "image#footer-letsencrypt",
+            "image#footer-pci"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "colGap": 5,
+            "marginTop": 5,
+            "preventHorizontalStretch": true,
+            "horizontalAlign": "center",
+            "blockClass": [
+                "footer-selos"
+            ]
+        }
+    },
+    "image#footer-letsencrypt": {
+        "title": "Logo 2B",
+        "props": {
+            "src": "assets/logo-encrypt.png",
+            "height": 50,
+            "alt": "2B Digital",
+            "title": "2B Digital",
+            "link": {
+                "url": "#",
+                "target": "_blank"
+            }
+        }
+    },
+    "image#footer-pci": {
+        "title": "Logo VTEX",
+        "props": {
+            "src": "assets/vtex-pci-200.png",
+            "alt": "VTEX",
+            "title": "VTEX",
+            "height": 43,
+            "link": {
+                "url": "https://vtex.com/br-pt/",
+                "target": "_blank"
+            }
+        }
+    }
+}

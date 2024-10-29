@@ -1,0 +1,7 @@
+@media (max-width:768px) {
+    .orderByOptionsContainer, .orderByOptionItem{
+        max-width: 100%;
+        min-width: 100%;
+        margin-left: 0% !important;
+    }
+}

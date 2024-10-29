@@ -1,0 +1,47 @@
+.itemList--suggestion {
+  display: none;
+}
+
+.biggy-autocomplete :global(.vtex-search-2-x-tileList) {
+  border: none;
+}
+@media (max-width: 64em) {
+  .biggy-autocomplete {
+    width: 100vw;
+    left: -100%;
+    top: -48px;
+  }
+  .close-btn {
+    display: none;
+  }
+}
+
+.tileListSeeMore {
+  font-size: 0px;
+  
+}
+.tileListSeeMore::before {
+  content: 'MAIS RESULTADOS';
+  font-size: 12px;
+  color: #182D4B;
+  width: fit-content;
+  margin: 40px auto;
+  border: 1px solid #182D4B;
+  height: 40px;
+  padding: 16px 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0px;
+}
+@media (hover: hover) {
+  .tileListSeeMore:hover::before {
+    background-color: #002A4E;
+    color: #FFFFFF !important;
+  }
+}
+@media(max-width: 64em) {
+  .tileListSeeMore {
+    margin-top: 50px;
+  }
+}

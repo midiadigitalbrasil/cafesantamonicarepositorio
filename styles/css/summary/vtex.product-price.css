@@ -1,0 +1,14 @@
+ 
+.sellingPriceValue--summary {
+    font-size: 1rem;
+    color: #002A4E;
+    letter-spacing: 0.05em; 
+    font-weight: 900;
+} 
+
+.savings--summary {
+    background-color: #BF6A1E;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 11px;
+}

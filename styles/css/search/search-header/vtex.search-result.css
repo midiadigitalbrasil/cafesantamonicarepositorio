@@ -1,0 +1,27 @@
+.galleryTitle--layout {
+  font-size: 34px;
+  color: #2D5C85;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.galleryLayoutOptionButton {
+  padding: 0 0.5rem;
+  gap: 8px;
+}
+
+.galleryLayoutOptionButton--grid-icon {
+  zoom: 1.2;
+  opacity: 0.5;
+  margin-top: -2px;
+}
+
+.galleryLayoutOptionButton--grid-icon:nth-child(even) {
+  zoom: 1.7;
+  padding-top: 5px;
+}
+
+.galleryLayoutOptionButton--grid-icon--selected {
+  opacity: 1;
+}

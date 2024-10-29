@@ -1,0 +1,38 @@
+.styledLink--footerMenu {
+    color: #fff;
+}
+.styledLinkContent--footerMenu {
+    font-size: .75rem;
+    margin-bottom: 0.25rem;
+    white-space: normal;
+}
+@media (max-width: 64em) {
+    .styledLinkContent--footerMenu {
+        justify-content: center;
+    }
+    .menuContainer--menuSocial {
+        justify-content: center;
+    }
+}
+
+.menuContainer--footerMenu :global(.vtex-rich-text-0-x-container) {
+    margin-bottom: .75rem;
+}
+
+.styledLinkIcon--menuSocial {
+    background: #2D5C85;
+    color: #FCE7C2;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.styledLinkContainer--menuSocial {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.menuItem--footerMenu-institucional {
+    max-width: 160px;
+}

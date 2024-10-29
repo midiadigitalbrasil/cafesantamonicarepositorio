@@ -1,0 +1,27 @@
+.summarySmallDisclaimer {
+  font-size: 0;
+}
+
+.summarySmallDisclaimer::after{
+  content: "Taxas e frete calculados na Sacola";
+  text-transform: none;
+  font-size: 0.75rem;
+  color: #fce7c2;
+  letter-spacing: .03em;
+}
+
+.summaryItemContainer {
+  padding-bottom: 0;
+  color: #fce7c2;
+  margin-top: 0.25rem;
+}
+
+.summaryItemLabel,
+.price {
+  font-size: 0.875rem;
+}
+
+.summarySmallContent :global(.vtex-checkout-summary-0-x-summaryItemContainer):last-child,
+.summarySmallDisclaimer{
+  display: none;
+}

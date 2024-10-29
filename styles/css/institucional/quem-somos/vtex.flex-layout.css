@@ -1,0 +1,402 @@
+.flexRow--quemsomosContentBanner{
+    position: relative;
+}
+
+.flexCol--contentText{
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 200px;
+    left: calc((100vw - 1145px) / 2);   
+}
+
+.flexRow--quemsomosLinks{
+    max-width: 1145px;
+    position: absolute;
+    bottom: -130px;
+}
+
+.flexRowContent--quemsomosLinks{
+    justify-content: flex-start !important;
+}
+
+.flexRow--quemsomosLinks :global(.vtex-store-link-0-x-link){
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.flexRow--quemsomosLinks :global(.vtex-store-link-0-x-link):hover{
+    font-weight: 500;
+    transition: .3s;
+}
+
+.flexCol--contentText::before{
+    content: "";
+    width: 2px;
+    height: 148px;
+    background-color: #FCE7C2;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50px;
+}
+
+/*sections*/
+.flexRow--quemsomos-section{
+    min-height: 500px;
+}
+
+.flexRowContent--section-quem-somos{
+    flex-direction: column;
+}
+
+.flexRow--section-quem-somos{
+    max-width: 1145px;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+
+/*certificacao*/
+.flexRowContent--section-certification{
+    flex-direction: row;
+}
+
+.flexColChild--certification-col-2{
+    display: flex;
+    align-items: center;
+}
+
+/*fazenda*/
+.flexRow--section-quem-somos-fazenda{
+    position: relative;
+    padding-top: 95px;
+}
+
+.flexRow--section-quem-somos-fazenda::before{
+    content: "";
+    width: 100vw;
+    min-height: 600px;
+    background-color: #243746;
+    position: absolute;
+    top: 0;
+    left: calc(-1 * (100vw - 1137px) /2);
+}
+
+.flexRow--quemsomos-fazenda-maps{
+    margin-top: 50px;
+}
+
+.flexRowContent--quemsomos-fazenda-maps{
+    flex-direction: row;
+}
+
+.flexCol--fazenda-maps-col-1{
+    min-width: 390px;
+}
+
+.flexCol--fazenda-maps-col-2{
+    padding-left: 35px;
+}
+
+.flexColChild--fazenda-maps-col-2 {
+    height: auto !important;
+}
+
+/*lista imagens fazenda*/
+.flexRow--quemsomos-lista-fazenda :global(.vtex-slider-layout-0-x-slide){
+    padding: 0 6px;
+}
+
+.flexRow--quemsomos-lista-fazenda :global(.vtex-slider-layout-0-x-sliderLayoutContainer),
+.flexRow--section-cultivo :global(.vtex-slider-layout-0-x-sliderLayoutContainer){
+    margin-top: 46px;
+}
+
+.flexRow--section-cultivo :global(.vtex-slider-layout-0-x-videoElement){
+    width: 100%;
+    min-height: 260px;
+}
+
+.flexRow--section-cultivo :global(.vtex-slider-layout-0-x-videoContainer){
+    width: 96.5%;
+}
+
+/*sustentabilidade*/
+.flexRow--quemsomos-sustentabilidade{
+    margin-top: 25px;
+}
+
+.flexRowContent--quemsomos-sustentabilidade{
+    position: relative;
+}
+
+.flexCol--contentTextSustentabilidade{
+    position: absolute;
+    top: 70px;
+    left: calc((100vw - 1145px) / 2); 
+}
+
+.flexColChild--contentTextSustentabilidade{
+    height: auto !important;
+}
+
+.flexCol--contentTextSustentabilidade{
+    max-width: 1137px;
+}
+
+/*experimente*/
+.flexRow--section-quem-somos-experimente{
+    padding: 80px 0;
+    background-color: #502E22;
+    position: relative;
+}
+
+.flexCol--experimente-text{
+    justify-content: center;
+    padding-left: 25px;
+}
+
+.flexRow--section-quem-somos-experimente :global(.vtex-store-components-3-x-imageElement){
+    max-width: 490px;
+}
+
+.flexColChild--experimente-text{
+    height: auto !important;
+}
+
+.flexColChild--experimente-imagem{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.flexCol--experimente-text::before{
+    content: "";
+    width: 25px;
+    height: 35px;
+    background-image: url(/arquivos/icone-cafe-quemsomos.png?=321);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.flexRow--section-quem-somos-experimente::before {
+    content: '';
+    background: url(/arquivos/folhas-graos.svg?v=123) no-repeat center;
+    position: absolute;
+    background-size: contain;
+    width: 250px;
+    height: 240px;
+    top: 30%;
+    left: 0%;
+    transform: rotate(337deg);
+    opacity: 0.2;
+    filter: invert(1);
+}
+
+.flexRow--section-quem-somos-experimente::after {
+    content: '';
+    background: url(/arquivos/folhas-graos.svg?v=123) no-repeat center;
+    position: absolute;
+    background-size: contain;
+    width: 250px;
+    height: 240px;
+    top: 30%;
+    right: -25px;
+    transform: rotate(20deg) scaleX(-1);;
+    opacity: 0.2;
+    filter: invert(1);
+}
+
+.flexCol--experimente-imagem :global(.vtex-store-components-3-x-imageElement--banner-experimente-mobile){
+    display: none;
+}
+
+.flexRow--section-quem-somos-introduction,
+.flexRow--quemsomos-fazenda-maps,
+.flexRowContent--section-cultivo{
+    position: relative;
+}
+
+.flexRow--section-quem-somos-introduction::before{
+    content: "";
+    background-image: url(/arquivos/icone__folhas.svg);
+    width: 306px;
+    height: 206px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: calc(-1 * (100vw - 870px) / 2);
+    top: -25px;
+}
+
+.flexRow--quemsomos-fazenda-maps::before{
+    content: "";
+    background-image: url(/arquivos/icone__graos.svg);
+    width: 175px;
+    height: 155px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: calc(-1 * (100vw - 1100px) / 2);
+    top: -110px;
+}
+
+.flexRowContent--section-cultivo::before{
+    content: "";
+    background-image: url(/arquivos/icone__saco.svg);
+    width: 158px;
+    height: 111px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    right: calc(-1 * (100vw - 1240px) / 2);
+    bottom: 300px;
+}
+
+@media (max-width:768px) {
+    .flexRow--section-quem-somos-introduction{
+        position: initial;
+    }   
+
+    .flexRow--quemsomos-fazenda-maps::before{
+        right: -55px;
+        top: 0;
+    }
+
+    .flexCol--contentText{
+        bottom: 45px;
+        left: 0;
+        padding-left: 15px;
+    }
+
+    .flexRow--section-quem-somos{
+        padding-top: 10px;
+    }
+
+    .flexRow--section-quem-somos-mobile{
+        padding-top: 110px;
+    }
+
+    .flexRow--quemsomosLinks :global(.vtex-store-link-0-x-link){
+        color: #243746;
+    }
+
+    .flexRowContent--quemsomosLinks{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .flexRowContent--quemsomosLinks :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+        margin-bottom: 15px;
+    }
+    .flexCol--contentText::before{
+        top: 45px;
+        left: 15px;
+        height: 110px;
+    }
+
+    .flexRow--section-quem-somos :global(.vtex-store-components-3-x-container ){
+        padding: 0 15px;
+    }
+
+    /*fazenda*/
+    .flexRow--section-quem-somos-fazenda::before{
+        left: 0;
+        min-height: 406px;
+    }
+
+    .flexRow--section-quem-somos-fazenda{
+        padding-top: 35px;
+    }
+
+    /*certificacao*/
+    .flexRowContent--section-certification :global(.vtex-slider-layout-0-x-sliderArrows){
+        margin: 0 -15px;
+    }
+
+    /*maps*/
+    .flexRow--quemsomos-fazenda-maps{
+        margin-top: 40px;
+        overflow: hidden;
+    }
+
+    .flexRowContent--quemsomos-fazenda-maps{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .flexCol--fazenda-maps-col-1{
+        margin-top: 25px;
+        min-width: 320px;
+    }
+
+    .flexCol--fazenda-maps-col-2{
+        padding-left: 0;
+    }
+
+    /*cultivo*/
+    .flexRow--section-cultivo :global(.vtex-slider-layout-0-x-sliderLayoutContainer){
+        margin-top: 0;
+    }
+
+    /*sustentabilidade*/
+    .flexRow--quemsomos-sustentabilidade{
+        background-image: url(/arquivos/quemsomos-sustentabilidade.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 50px 15px;
+    }
+
+    .flexRowContent--quemsomos-sustentabilidade :global(.vtex-store-components-3-x-imageElement),
+    .flexRow--newsletter{
+        display: none;
+    }
+
+    .flexCol--contentTextSustentabilidade{
+        position: initial;
+    }
+
+    /*experimente*/
+    .flexColChild--experimente-imagem,
+    .flexRow--section-quem-somos-experimente :global(.vtex-store-components-3-x-container),
+    .flexRow--section-quem-somos-experimente{
+        padding: 0;
+    }
+
+    .flexRow--section-quem-somos-experimente :global(.vtex-store-components-3-x-imageElement){
+        width: 100%;
+    }   
+
+    .flexCol--experimente-imagem :global(.vtex-store-components-3-x-imageElement--banner-experimente-desktop),
+    .flexCol--experimente-text,
+    .flexRow--section-quem-somos-experimente::after,
+    .flexRow--section-quem-somos-experimente::before{
+        display: none;
+    }
+
+    .flexCol--experimente-imagem :global(.vtex-store-components-3-x-imageElement--banner-experimente-mobile){
+        display: block;
+    }
+
+    .flexRow--section-quem-somos-introduction::before{
+        height: 206px;
+        left: -150px;        
+        top: initial;
+        bottom: -16px;
+    }
+
+    .flexRowContent--section-cultivo::before{
+        display: none;
+    }
+}

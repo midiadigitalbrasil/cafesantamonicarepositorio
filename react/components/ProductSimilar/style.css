@@ -1,0 +1,66 @@
+.variation {
+    width: 78px;
+    height: 78px;
+    border: 1px solid #fff;
+    margin-right: 20px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+.variation:hover{
+    border-color: #002A4E;
+    opacity: .9;
+    transition: .3s;
+}
+
+.custom_similars_img{    
+}
+
+.outStock{
+    background-color: #E0E0E0;
+    border: 1px solid #C9D1D0;
+}
+
+.active{
+    border-color: #3F3A60;
+    background-color: #3F3A60;
+    color: #fff;
+}
+
+.active:hover{
+    border-color: #3F3A60;
+    background-color: #3F3A60;
+    color: #fff;
+}
+
+.contentVariations{
+    margin: 10px 0 0 0;
+}
+
+.listVariations{
+    display: flex;
+    align-items: center;
+}
+
+.titleVariations{
+    width: 100%;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    color: #373837;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    padding-top: 15px;
+    border-top: 1px solid #2d5c852c;
+}
+
+@media (max-width:768px) {
+    .contentVariations{
+        padding: 0 10px;
+    }  
+}

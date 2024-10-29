@@ -1,0 +1,64 @@
+{
+  "footer": {
+    "title": "Rodapé",
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"
+    ]
+  },
+  "footer-layout.desktop": {
+    "title": "Desktop",
+    "children": [
+      "flex-layout.row#newsletter",
+      "flex-layout.row#footer",
+      "flex-layout.row#footer-secondary",
+      "flex-layout.row#footer-copyright"      
+    ]
+  },
+  "footer-layout.mobile": {
+    "title": "Mobile",
+    "children": [
+      "flex-layout.row#newsletter",
+      "flex-layout.row#footer-mobile",
+      "flex-layout.row#footer-secondary",
+      "flex-layout.row#footer-copyright"      
+    ]
+  },
+  "flex-layout.row#footer": {
+    "children": [
+      "flex-layout.col#footer-1",
+      "flex-layout.col#footer-2"
+    ],
+    "props": {
+      "blockClass": "footer-main",
+      "colSizing": "auto",
+      "horizontalAlign": "center",
+      "marginTop": 10,
+      "colGap": 8,
+      "paddingTop": 9,
+      "paddingBottom": 9
+    }
+  },
+  "flex-layout.row#footer-mobile": {
+    "children": [
+      "flex-layout.col#footer-1",
+      "flex-layout.col#footer-2-mobile"
+    ],
+    "props": {
+      "blockClass": "footer-main",
+      "colSizing": "auto",
+      "horizontalAlign": "center",
+      "rowGap": 7,
+      "paddingTop": 8,
+      "paddingBottom": 8
+    }
+  },
+
+  "link#toTop":{
+    "props":{
+      "label": "TOPO",
+      "scrollTo": "miniCartMobile",
+      "blockClass": "topoFooter"
+    }
+  }
+}

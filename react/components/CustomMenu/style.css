@@ -1,0 +1,234 @@
+.textColor--gray {
+  color: #373837;
+}
+
+.presvg{
+  padding-right: 26px;
+}
+
+.presvg svg {
+  zoom: .5;
+}
+
+@media(max-width: 48em) {
+  .presvg svg {
+    zoom: 1;
+  }
+}
+
+.textColor--orange {
+  color: #BF6A1E;
+}
+.menuIcon {
+  color: #243746;
+}
+.menuTitle {
+  color: #243746;
+  margin: 0;
+  margin-left: 6px;
+}
+.menuTitle:hover {
+  font-weight: bold;
+}
+.departamentContainer {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 0;
+}
+.departamentContainer--isOpen {
+  position: absolute;
+  visibility: visible;
+  opacity: 1;
+  top: 65px;
+  width: 100%;
+  min-width: 733px;
+  min-height: 338px;
+  background-color: #FFFFFF;
+  border-top: 4px solid #002A4E;
+  padding: 33px 0px 54px 24px;
+  transition: opacity .25s ease-in;
+}
+
+@media(max-width: 64em) {    
+  .menuMobile{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0px;
+    left: -110vw; 
+    border: none;
+    padding: 0px;
+    z-index: 1;
+    padding: 33px 65px 33px 40px;
+    transition: all .25s ease-in;
+  }
+
+  .departamentContainer--isOpen {
+    min-width: none;
+    left: 0;
+    transition: all .25s ease-in;
+  }
+}
+@media(max-width: 64em) {
+  .departamentMobile {
+    display: block;
+    margin-bottom: 46px;
+  }
+  .departamentTitleContainer {
+    text-transform: uppercase;
+    color: #002A4E;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
+.departamentTitleContainer:hover {
+  font-weight: bold;
+}
+.departamentItemContainer {
+  display: none;
+  position: absolute;
+  left: 20%;
+}
+.departamentItemContainer--isActive {
+  position: absolute;
+  left: 20%;
+  top: 33px;
+  transition: all .25s ease-in;
+  display: flex;
+  gap: 50px;
+  height: 80%;
+  padding: 0px 24px 54px 24px;
+  border-left: 1px solid #707070;
+}
+@media (max-width: 64em) {
+  .departamentItemContainer--isActive {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    transition: all .25s ease-in;
+    display: block;
+    height: 100vh;
+    width: 100vw;
+    background: #FFFFFF;
+    border: none;
+    padding: 0px;
+  }
+  .departamentHeaderMobile {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #002A4E;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 16px 0px 20px 16px;
+    border-bottom: 2px solid #FCE7C2;
+  }
+  .departamentIconHeaderMobile {
+    color: #2D5C85;
+  }
+}
+
+.evidencedDepartamentTitle {
+  cursor: pointer;
+  color: #243746;
+  /* font-family: 'gotham, sans-serif'; */
+  width: 100px;
+  padding: 0 16px;
+}
+.evidencedDepartamentTitle:hover {
+  color: #002A4E;
+  font-weight: bold;
+}
+.evidencedDepartamentItemsContainer {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+.evidencedDepartamentItemsContainer--isOpen {
+  visibility: visible;
+  opacity: 1;
+  background-color: #FFFFFF;
+  z-index: 1;
+  min-width: 415px;
+  border-top: 2px solid #2D5C85;
+  margin-top: 15px;
+  transition: all .25s ease-in;
+}
+.evidencedDepartamentText {
+  color: #373837;
+}
+.evidencedDepartamentText:hover {
+  font-weight: bold;
+}
+.evidencedDepartamentVerTodos {
+  color: #BF6A1E;
+}
+.evidencedDepartamentVerTodos:hover {
+  font-weight: bold;  
+}
+.evidencedDepartamentImage {
+  flex-shrink: 0;
+}
+
+.staticItemsTitle {
+  color: #999999;
+  padding: 0 10px;
+}
+
+@media (min-width:768px) and (max-width:1366px) {
+  .staticItemsTitle{
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 64em) {
+  .staticItemsTitle {
+    color:  #BF6A1E;
+    font-weight: bold;
+    margin-bottom: 46px;
+    padding: 0;
+  }
+}
+.staticItemsTitle:hover {
+  color:  #BF6A1E;
+  font-weight: bold;
+}
+
+@media (max-width: 64em) {
+  .hideMobile {
+    display: none;
+  }
+  .buttonCloseMobile {
+    margin-bottom: 46px;
+  }
+  .departamentTitleMobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #002A4E;
+  }
+  .seeAllMobile {
+    padding: 2.5rem 1.5rem;
+  }
+  .departamentSubItem {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .departamentSubItem--isOpen {
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+    transition: all .25s ease-in;
+  }
+}
+
+@media (min-width: 64em) {
+  .hideDesktop {
+    display: none;
+  }
+}

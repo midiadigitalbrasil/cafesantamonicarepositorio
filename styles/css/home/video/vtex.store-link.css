@@ -1,0 +1,27 @@
+.buttonLink--video-home-button {
+  font-size: 12px;
+  color: #FFFFFF;
+  background: #243746;
+  border: 1px solid #6290B8;
+  font-weight: 400;
+  padding: 15px 18px;
+  position: relative;
+}
+/* @media (hover: hover) {
+  .buttonLink--video-home-button
+    :global(.buttonLink--video-home-button::after) {
+      background: url("assets/arrow-right-button-hover.png") no-repeat right center;
+      width: 45px;
+  }
+} */
+
+.label--video-home-button {
+  padding: 0px;
+  margin-right: 40px;
+}
+.buttonLink--video-home-button::after {
+  content: '';
+  background: url("assets/arrow-right-button-hover.png") no-repeat right center;
+  width: 45px;
+  height: 14px;
+}

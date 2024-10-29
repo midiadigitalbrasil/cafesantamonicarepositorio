@@ -1,0 +1,45 @@
+{
+  "vtex.menu@2.x:menu#conta": {
+    "title": "Conta",
+    "props": {
+      "blockClass": ["footerMenu", "footerMenu-conta"],
+      "orientation": "vertical",
+      "items": [
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/account",
+            "tagTitle": "Minha Conta",
+            "text": "Minha Conta"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/account#/orders",
+            "tagTitle": "Meus pedidos",
+            "text": "Meus pedidos"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/account",
+            "tagTitle": "Meus Dados",
+            "text": "Meus Dados"
+          }
+        }
+      ]
+    },
+    "children": ["rich-text#menu-conta"]
+  },
+  "rich-text#menu-conta": {
+    "title": "Menu Conta",
+    "props": {
+      "blockClass": ["centerOnMobile"],
+      "text": "Conta",
+      "font": "t-heading-6",
+      "textColor": "c-action-secondary"
+    }
+  }
+}

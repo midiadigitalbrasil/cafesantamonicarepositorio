@@ -1,0 +1,32 @@
+{   
+    "flex-layout.row#beneficios": {
+      "children": ["list-context.beneficios"],
+      "props": {
+        "marginTop": 7,
+        "blockClass": ["beneficios"]
+      }
+    },
+    "list-context.beneficios": {
+        "children": ["list-context-renderer#beneficios"],
+        "props": {
+            "items": [
+                {
+                    "text": "### 5% DE DESCONTO \n Em pagamentos via Pix"
+                },
+                {
+                    "text": "### FRETE GRÁTIS \n em compras acima de R$ 150"
+                },
+                {
+                    "text": "### Cashback \n ganhe 10% de volta"
+                }
+            ]
+        }
+    },
+    "list-context-renderer#beneficios": {
+        "props": {
+            "blockClass": "beneficiosList",
+            "listElement": "div",
+            "itemElement": "div"
+        }
+    }
+}

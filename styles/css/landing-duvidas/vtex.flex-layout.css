@@ -1,0 +1,9 @@
+.flexRow--landing-duvidas {
+  position: relative;
+  overflow: hidden;
+}
+@media (min-width: 48em) {
+  .flexRowContent--landing-duvidas {
+    flex-direction: row-reverse;
+  }
+}

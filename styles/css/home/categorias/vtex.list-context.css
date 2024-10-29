@@ -1,0 +1,37 @@
+.list--list-categorias {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 40em) {
+  .list--list-categorias {
+    overflow: scroll;
+    justify-content: flex-start;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }  
+
+  .list--list-categorias::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.paragraph--list-categorias {
+  margin-top: 12px;
+  color: #2D5C85;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.item--list-categorias {
+  color: #002A4E;
+}
+@media (hover: hover) {
+  .item--list-categorias:hover
+    :global(.vtex-list-context-0-x-paragraph--list-categorias) {
+    color: #BF6A1E;
+  }
+}

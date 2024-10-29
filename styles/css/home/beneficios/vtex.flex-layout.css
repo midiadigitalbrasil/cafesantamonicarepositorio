@@ -1,0 +1,22 @@
+.flexRow--beneficios{
+    position: relative;
+}
+
+.flexRow--beneficios::before{
+    content: '';
+    background-image: url(/arquivos/folha-metade.svg?v=123);
+    width: 378px;
+    height: 304px;
+    display: inline-block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -127px;
+    bottom: -150px;
+}
+
+@media (max-width:768px) {
+    .flexRow--beneficios::before{
+        bottom: -250px;
+    }
+}

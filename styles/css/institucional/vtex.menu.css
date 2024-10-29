@@ -1,0 +1,29 @@
+.styledLinkContent--instMenu{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #373837;
+    white-space: initial;
+    margin-bottom: 10px;
+}
+
+.styledLinkContent--instMenu:hover{
+    font-weight: 500;
+}
+
+@media (min-width:769px) {
+    .menuContainer--instMenu{
+        width: 175px;
+        max-width: 175px;
+    }
+}
+
+@media (max-width:768px) {
+    .menuContainer--instMenu :global(.vtex-rich-text-0-x-container--instMenuTitle){
+        display: none;
+    }
+
+    .menuContainer--instMenu{
+        padding: 35px;
+    }
+}

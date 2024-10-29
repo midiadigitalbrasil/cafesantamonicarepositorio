@@ -1,0 +1,38 @@
+{
+    "flex-layout.row#landing-produtos-sugeridos": {
+        "title": "Produtos Sugeridos",
+        "children": [
+            "flex-layout.col#landing-produtos-sugeridos"
+        ],
+        "props": {
+            "paddingTop": 8,
+            "paddingBottom": {
+                "desktop": 10,
+                "mobile": 8
+            },
+            "blockClass": [
+                "landing-produtos-sugeridos"
+            ]
+        }
+    },
+    "flex-layout.col#landing-produtos-sugeridos": {
+        "children": [
+            "rich-text#landing-produtos-sugeridos-title",
+            "flex-layout.row#slider-produtos-simples-products"
+        ],
+        "props": {
+            "rowGap": 8,
+            "blockClass": [
+                "landing-produtos-sugeridos"
+            ]
+        }
+    },
+    "rich-text#landing-produtos-sugeridos-title": {
+        "props": {
+            "text": "## PRODUTOS SUGERIDOS",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "textColor": "c-action-primary"
+        }
+    }
+}

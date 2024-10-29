@@ -1,0 +1,20 @@
+{
+  "search-bar#desktop": {
+    "props": {
+      "blockClass": "search-bar-desktop",
+      "maxWidth": "200px",
+      "placeholder": "Pesquisar...",
+      "HorizontalProductSummary": "product-summary"
+    },
+    "blocks": ["autocomplete-result-list.v2#desktop"]
+  },
+  "autocomplete-result-list.v2#desktop": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "maxTopSearches": 0,
+      "maxHistory": 0,
+      "maxSuggestedProducts": 2,
+      "hideUnavailableItems": true
+    }
+  }
+}

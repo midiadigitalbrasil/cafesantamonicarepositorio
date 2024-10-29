@@ -1,0 +1,140 @@
+.prodSpec__container {
+    min-width: 25%;
+    max-width: 65%;
+    margin-bottom: 50px;
+}
+
+.prodSpec__container__master{
+    max-width: 1260px;
+    display: flex;
+}
+
+.prodSpec__table {
+    max-width: 100%;
+    width: 100%;
+}
+
+.prodSpec__table tr {
+    line-height: 34px;
+}
+
+.prodSpec__table tr:nth-child(even){
+    background-color: #FCE7C288;
+}
+
+.prodSpec__table tr td {
+    padding: 0 10px;
+}
+
+.prodSpec__tabs {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 50px;    
+}
+
+.prodSpec__tab {
+    margin: 0;
+    padding: 0 15px;
+    display: none;
+}
+
+.prodSpec__tabActive{
+    display: block !important;
+}
+
+.prodSpec__tab label {
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 8px;
+    border-bottom: 5px solid #ffffff;
+}
+
+.prodSpec__tabActive label,
+.prodSpec__tab label:hover {
+    cursor: pointer;
+    border-color: #243746;
+    font-weight: 900;
+}
+
+.prodSpec__tableCenter {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.prodSpec__mobile {
+    display: none;
+}
+
+.prodSpec__description{
+    border-color: #243746;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 8px;
+    width: fit-content;
+    border-bottom: 5px solid #243746;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 769px) {
+    .prodSpec__tab:first-child{
+        margin-left: 0;
+    }
+
+    .prodSpec__container{
+        margin: 0;
+    }
+}
+
+@media (max-width: 48em) {
+
+    .prodSpec__tab {
+        padding: 0;
+    }
+
+    .prodSpec__container {
+        width: 100%;
+        padding: 0 4px;
+    }
+
+    .prodSpec__mobile {
+        display: initial;
+    }
+
+    .prodSpec__desktop {
+        display: none;
+    }
+
+    .prodSpec__tabs {
+        flex-direction: column;
+    }
+
+    .prodSpec__tab label {
+        display: flex;
+        line-height: 50px;
+        background-color: #243746;
+        color: white;
+        padding: 0 18px;
+        margin: 1px 0;
+        position: relative;
+    }
+
+    .prodSpec__tab label::after {
+        content: '+';
+        display: block;
+        position: absolute;
+        right: 20px;
+        font-size: 30px;
+    }
+
+    .prodSpec__tabActive label::after {
+        content: '-';
+    }
+
+    .prodSpec__tab label,
+    .prodSpec__tab label:hover,
+    .prodSpec__tabActive label {
+        border: none;
+        font-weight: normal;
+    }   
+}

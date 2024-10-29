@@ -1,0 +1,6 @@
+@media (min-width: 64em) {
+  .wrapper--search-switcher-title {
+    border-right: 1px solid #3d2b1c33;
+    padding-right: 16px;
+  }
+}

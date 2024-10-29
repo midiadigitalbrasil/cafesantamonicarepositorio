@@ -1,0 +1,7 @@
+.listItem--not-found-text {
+  display: block;
+}
+.container--not-found-text,
+.listItem--not-found-text {
+  padding-top: 0.5rem;
+}

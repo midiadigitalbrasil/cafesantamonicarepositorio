@@ -1,0 +1,43 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile",
+      "theme.csm"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile",
+      "theme.csm"
+    ]
+  },
+  "logo": {
+    "props": {
+      "url": "assets/logo.svg",
+      "width": 116,
+      "href": "/"
+    }
+  },
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "iconLabel": "Login",
+      "termsAndConditions": "aceite [Link text Here](https://link-url-here.org)"
+    }
+  },
+  "category-menu": {
+    "props": {
+      "blockClass": "menuHeader",
+      "showSubcategories": true,
+      "showAllDepartments": false,
+      "menuDisposition": "right"
+    }
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  }
+}

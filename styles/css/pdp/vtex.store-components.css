@@ -1,0 +1,42 @@
+.shippingContainer :global(.vtex-button) {
+    background-color: #002A4E;
+    color: white;
+    border-color: #002A4E;
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.shippingContainer :global(.vtex-button):hover {
+    background-color: #2D5C85 !important;
+    border-color: #2D5C85 !important;
+    transition: .3s;
+}
+
+.shippingContainer :global(.vtex-address-form__postalCode) {
+    padding-bottom: 1rem;
+}
+
+.shippingContainer :global(.vtex-input-prefix__group) {
+    border-color: #002a4e;
+}
+
+.shippingTable {
+    border: none;
+}
+
+.shippingTableLabel,
+.shippingTableCell,
+.shippingTableCell {
+    color: #243746;
+    font-weight: 500;
+    text-align: center;
+}
+
+.shippingTableLabel .shippingTableRadioBtn,
+.shippingContainer :global(.vtex-input__suffix) {
+    display: none;
+}

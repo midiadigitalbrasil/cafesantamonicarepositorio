@@ -1,0 +1,24 @@
+.slide--sliderProdutos {
+  padding: 1rem 0.5rem;
+}
+
+.paginationDotsContainer--sliderProdutos {
+  bottom: 0;
+}
+
+.sliderLayoutContainer--sliderProdutos {
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 47.9em) {
+  .sliderLayoutContainer--sliderProdutos {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media (min-width: 48em) {
+  .sliderLayoutContainer--sliderProdutos {
+    padding-bottom: 0;
+  }
+}

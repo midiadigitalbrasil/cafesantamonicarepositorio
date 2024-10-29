@@ -1,0 +1,99 @@
+{  
+  "flex-layout.row#list-categorias": {
+    "title": "Lista de Categorias",
+    "children": [
+      "flex-layout.col#list-categorias-container"
+    ],
+    "props": {
+      "fullWidth": {
+        "desktop": false,
+        "mobile": true
+      },
+      "marginTop": {
+        "desktop": 9,
+        "mobile": 10
+      }
+    }
+  },
+  "flex-layout.col#list-categorias-container": {
+    "props": {
+      "rowGap": 6,
+      "blockClass": ["mainCategories"]
+    },
+    "children": [
+      "rich-text#title-list-categorias",
+      "flex-layout.row#list-categorias-content"
+    ]
+  },  
+  "rich-text#title-list-categorias": {
+    "title": "Título da Lista de Categorias",
+    "props": {
+        "text": "O QUE VOCÊ PROCURA HOJE?",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",        
+        "blockClass": [
+            "shelfTitle"
+        ]
+    }
+  },
+  "flex-layout.row#list-categorias-content": {
+    "props": {
+      "blockClass": [
+        "list-categorias-content"
+      ]
+    },
+    "children": [
+      "list-context.list-categorias"
+    ]
+  },
+  "list-context.list-categorias": {
+      "title": "Items Lista de Categorias",
+      "children": ["list-context-renderer#list-categorias"],
+      "props": {
+          "items": [
+            {
+              "iconId": "custom-categoria-graos",
+              "iconSize": 50,
+              "text": "GRÃOS",
+              "href": "/graos"
+            },
+            {
+              "iconId": "custom-categoria-lattes",
+              "iconSize": 50,
+              "text": "LATTES",
+              "href": "/lattes"
+            },
+            {
+              "iconId": "custom-categoria-bebidas",
+              "iconSize": 50,
+              "text": "BEBIDAS",
+              "href": "/bebidas"
+            },
+            {
+              "iconId": "custom-categoria-capsulas",
+              "iconSize": 50,
+              "text": "CÁPSULAS",
+              "href": "/capsulas"
+            },{
+              "iconId": "custom-categoria-moido",
+              "iconSize": 50,
+              "text": "CAFÉ MOÍDO",
+              "href": "/cafe-moido"
+            },
+            {
+              "iconId": "custom-categoria-acessorios",
+              "iconSize": 50,
+              "text": "ACESSÓRIOS",
+              "href": "/acessorios"
+            }
+      ]
+      }
+  },
+  "list-context-renderer#list-categorias": {
+      "props": {
+          "blockClass": "list-categorias",
+          "listElement": "div",
+          "itemElement": "div"
+      }
+  }
+}

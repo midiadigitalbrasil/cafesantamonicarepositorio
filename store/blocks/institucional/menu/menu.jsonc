@@ -1,0 +1,105 @@
+{
+    "vtex.menu@2.x:menu#menu-inst-1": {
+      "title": "Sobre nós",
+      "props": {
+        "blockClass": [
+          "instMenu"
+        ],
+        "orientation": "vertical",
+        "items": [
+          {
+            "type": "custom",
+            "itemProps": {
+              "href": "/quem-somos",
+              "tagTitle": "Quem Somos",
+              "text": "Quem Somos"
+            }
+          },         
+          {
+            "type": "custom",
+            "itemProps": {
+              "href": "/certificacao",
+              "tagTitle": "Certificação",
+              "text": "Certificação"
+            }
+          },  
+          {
+            "type": "custom",
+            "itemProps": {
+              "href": "/fazendas",
+              "tagTitle": "Fazendas",
+              "text": "Fazendas"
+            }
+          }, 
+          {
+            "type": "custom",
+            "itemProps": {
+              "href": "/cultivo",
+              "tagTitle": "Cultivo",
+              "text": "Cultivo"
+            }
+          }, 
+          {
+            "type": "custom",
+            "itemProps": {
+              "href": "/Sustentabilidade",
+              "tagTitle": "Sustentabilidade",
+              "text": "Sustentabilidade"
+            }
+          }, 
+          {
+            "type": "custom",
+            "itemProps": {
+              "href": "/atendimento",
+              "tagTitle": "Atendimento",
+              "text": "Atendimento"
+            }
+          },
+          {
+            "type": "custom",
+            "itemProps": {
+              "href": "/nossas-lojas",
+              "tagTitle": "Nossas Lojas",
+              "text": "Nossas Lojas"
+            }
+          },
+          {
+            "type": "custom",
+            "itemProps": {
+              "href": "/termos-e-condicoes-de-uso",
+              "tagTitle": "Termos e Condições de Uso",
+              "text": "Termos e Condições de Uso"
+            }
+          },
+          {
+            "type": "custom",
+            "itemProps": {
+              "href": "/politica-de-privacidade",
+              "tagTitle": "Política de Privacidade",
+              "text": "Política de Privacidade"
+            }
+          },
+          {
+            "type": "custom",
+            "itemProps": {
+              "href": "/politica-de-qualidade-e-seguranca-de-alimentos",
+              "tagTitle": "Política de Qualidade e segurança de Alimentos",
+              "text": "Política de Qualidade e segurança de Alimentos"
+            }
+          }
+        ]
+      },
+      "children": [
+        "rich-text#menu-inst-1-title"
+      ]
+    },
+    "rich-text#menu-inst-1-title": {
+      "title": "Menu Institucional",
+      "props": {
+        "text": "### Menu Institucional",
+        "blockClass": [
+          "instMenuTitle"
+        ]
+      }
+    }    
+  }

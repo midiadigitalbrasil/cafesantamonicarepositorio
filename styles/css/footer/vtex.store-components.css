@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+    .imageElement--footer-copyright{
+        width: 200px;
+        margin: 0 auto;
+    }
+}

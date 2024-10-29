@@ -1,0 +1,48 @@
+{
+    "flex-layout.row#landing-beneficios": {
+        "title": "Benefícios",
+        "children": [
+            "flex-layout.col#landing-beneficios"
+        ],
+        "props": {
+            "paddingTop": 7,
+            "paddingBottom": 7,
+            "blockClass": [
+                "landing-beneficios"
+            ]
+        }
+    },
+    "flex-layout.col#landing-beneficios": {
+        "children": [
+            "rich-text#landing-beneficios-title",
+            "rich-text#landing-beneficios"
+        ],
+        "props": {
+            "blockClass": [
+                "landing-beneficios"
+            ]
+        }
+    },
+    "rich-text#landing-beneficios-title": {
+        "props": {
+            "blockClass": [
+                "landing-beneficios-content",
+                "landing-beneficios-title"
+            ],
+            "font": "t-body",
+            "text": "## Benefícios",
+            "textColor": "c-on-base--inverted"
+        }
+    },
+    "rich-text#landing-beneficios": {
+        "props": {
+            "blockClass": [
+                "landing-beneficios-content",
+                "landing-list"
+            ],
+            "font": "t-body",
+            "text": "- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\n- item",
+            "textColor": "c-on-base--inverted"
+        }
+    }
+}

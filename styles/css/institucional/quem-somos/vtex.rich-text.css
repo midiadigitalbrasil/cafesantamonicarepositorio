@@ -1,0 +1,119 @@
+.paragraph--quemsomosTitle{
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+.paragraph--quesomos-text-section{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #373837;
+}
+
+.paragraph--quesomos-title-section{
+    font-size: 28px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #243746;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.container--quesomos-title-section{
+    position: relative;
+}
+
+.container--quesomos-title-section::before{
+    content: "";
+    width: calc((100vw - 1135px) /2);
+    height: 2px;
+    display: block;
+    background-color: #FCE7C2;
+    position: absolute;
+    left: calc(-1 * (100vw - 1115px) /2);
+    top: 20px;
+}
+
+/*fazenda*/
+.paragraph--quesomos-title-section-fazenda, .paragraph--quesomos-text-section-fazenda{
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.paragraph--quesomos-title-section-fazenda::after{
+    content: "DIRETO DA FAZENDA PARA SUA CASA";
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #BF6A1E;
+    text-transform: uppercase;
+    margin-left: 24px;
+}
+
+.paragraph--quesomos-title-section-fazenda-maps{
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #BF6A1E;
+    text-transform: uppercase;
+    margin-top: 25px !important;
+    margin-bottom: 10px;
+}
+
+.paragraph--quesomos-title-section-sustentabilidade, .paragraph--quesomos-text-section-sustentabilidade{
+    color: #fff;
+}
+
+.paragraph--quesomos-title-section-experimente{
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 3.12px;
+    color: #FCE7C2;
+    text-transform: initial;
+    margin-bottom: 15px;
+}
+
+.strong--quesomos-title-section-experimente{
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 2.2px;
+}
+
+@media (max-width: 768px) {
+    .paragraph--quemsomosTitle{
+        font-size: 21px;
+    }
+
+    .paragraph--quesomos-title-section{
+        font-size: 18px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+    }
+
+    .container--quesomos-title-section::before{
+        width: 20px;
+        height: 4px;
+        left: -15px;
+        top: 12px;
+    }
+
+    .paragraph--quesomos-title-section-fazenda{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .paragraph--quesomos-title-section-fazenda::after{
+        margin-left: 0;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+    }
+
+    .wrapper--quesomos-text-section-fazenda{
+        padding: 0 10px;
+    }
+}

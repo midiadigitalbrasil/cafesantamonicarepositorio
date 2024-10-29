@@ -1,0 +1,40 @@
+{
+    "flex-layout.row#quemsomosLinks":{
+        "title": "menu",
+        "props": {
+            "blockClass": ["quemsomosLinks"],
+            "colSizing": "auto"
+        },
+        "children": [
+            "link#certificacao",
+            "link#fazenda",
+            "link#cultivo",
+            "link#sustentabilidade"
+        ]
+    },
+
+    "link#certificacao": {
+        "props": {
+          "href": "#section-certificacao",
+          "label": "CERTIFICAÇÃO"
+        }
+      },
+      "link#fazenda": {
+        "props": {
+            "href": "#section-fazenda",
+          "label": "A FAZENDA"
+        }
+      },
+      "link#cultivo": {
+        "props": {
+          "href": "#section-cultivo",
+          "label": "CULTIVO"
+        }
+      },
+      "link#sustentabilidade": {
+        "props": {
+          "href": "#section-sustentabilidade",
+          "label": "SUSTENTABILIDADE"
+        }
+      }    
+}

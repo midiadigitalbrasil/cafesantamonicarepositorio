@@ -1,0 +1,54 @@
+{
+  "flex-layout.col#atendimento": {
+    "title": "Atendimento",
+    "props": {
+      "blockClass": ["footerMenu"]
+    },
+    "children": [
+      "flex-layout.row#footer-atendimento",
+      "flex-layout.row#footer-social"
+    ]
+  },
+  "flex-layout.row#footer-atendimento": {
+    "children": ["flex-layout.col#footer-atendimento"]
+  },
+  "flex-layout.col#footer-atendimento": {
+    "children": ["vtex.menu@2.x:menu#atendimento"]
+  },
+  "vtex.menu@2.x:menu#atendimento": {
+    "title": "atendimento",
+    "props": {
+      "blockClass": ["footerMenu"],
+      "orientation": "vertical",
+      "items": [
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "tel:+551138558855",
+            "tagTitle": "+ 55 (11) 3855-8855",
+            "text": "+ 55 (11) 3855-8855"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "type": "external",
+            "href": "mailto:sac@cafesantamonica.com.br",
+            "tagTitle": "sac@cafesantamonica.com.br",
+            "text": "sac@cafesantamonica.com.br"
+          }
+        }
+      ]
+    },
+    "children": ["rich-text#menu-atendimento"]
+  },
+  "rich-text#menu-atendimento": {
+    "title": "Atendimento",
+    "props": {
+      "blockClass": ["centerOnMobile"],
+      "text": "Atendimento",
+      "font": "t-heading-6",
+      "textColor": "c-action-secondary"
+    }
+  }
+}

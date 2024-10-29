@@ -1,0 +1,45 @@
+{
+    "disclosure-layout-group#menu-inst-mobile": {
+        "props": {
+          "maxVisible": "one"
+        },
+        "children": [
+          "disclosure-layout#menu-inst-1"
+        ]
+      },
+      "disclosure-layout#menu-inst-1": {
+        "children": [
+          "disclosure-trigger#menu-inst-mobile-1",
+          "disclosure-content#menu-inst-mobile-1"
+        ]
+      },     
+      "disclosure-trigger#menu-inst-mobile-1": {
+        "props": {
+          "as": "div",
+          "blockClass": [
+            "instMenu"
+          ]
+        },
+        "children": [
+          "rich-text#menu-inst-1-title",
+          "disclosure-state-indicator"
+        ]
+      },     
+      "disclosure-content#menu-inst-mobile-1": {
+        "props": {
+          "blockClass": [
+            "instMenu"
+          ]
+        },
+        "children": [
+          "vtex.menu@2.x:menu#menu-inst-1"
+        ]
+      },
+      
+      "disclosure-state-indicator": {
+        "props": {
+          "Show": "icon-plus",
+          "Hide": "icon-minus"
+        }
+      }
+}

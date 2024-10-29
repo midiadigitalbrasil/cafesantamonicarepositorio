@@ -1,0 +1,35 @@
+{        
+    "flex-layout.col#contentText":{
+          "title": "Desktop",
+          "props": {
+              "blockClass": ["contentText"],
+              "verticalAlign": "bottom"
+          },
+          "children": [
+              "rich-text#quemsomosTitle",
+              "flex-layout.row#quemsomosLinks"
+            ]
+      },
+
+      "image#quemsomos-banner-main-desktop": {
+        "title": "Banner Desktop",
+        "props": {
+          "blockClass": ["quemsomos-banner-main-desktop"],
+          "src": "/arquivos/quemsomos-banner-desk.jpg"
+        }
+      },
+      "image#quemsomos-banner-main-mobile": {
+        "title": "Banner Desktop",
+        "props": {
+          "blockClass": ["quemsomos-banner-main-mobile"],
+          "src": "/arquivos/quemsomos-banner-mobile.png"
+        }
+      },
+    "rich-text#quemsomosTitle": {
+        "title": "QUEM SOMOS",
+        "props": {
+            "text": "QUEM SOMOS",
+            "blockClass": ["quemsomosTitle"]
+        }
+    }
+}

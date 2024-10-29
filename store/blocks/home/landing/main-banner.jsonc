@@ -1,0 +1,141 @@
+{
+  "flex-layout.row#landing-main-banner": {
+    "title": "Banner Principal",
+    "children": [
+      "flex-layout.col#main-banner-bg",
+      "flex-layout.col#landing-main-banner-content"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "landing-main-banner"
+      ]
+    }
+  },
+  "flex-layout.col#main-banner-bg": {
+    "children": [
+      "image#main-banner-bg-desktop",
+      "image#main-banner-bg-mobile"
+    ],
+    "props": {
+      "blockClass": [
+        "main-banner-bg"
+      ]
+    }
+  },
+  "image#main-banner-bg-desktop": {
+    "props": {
+      "preload": true,
+      "blockClass": [
+        "main-banner-bg-desktop"
+      ],
+      "src": "https://tb4371.vtexassets.com/assets/vtex.file-manager-graphql/images/2bc7091d-a4fa-461a-820f-fab0ef858113___187244006a8ad3a1d377ee98e78ac696.jpg"
+    }
+  },
+  "image#main-banner-bg-mobile": {
+    "props": {
+      "preload": true,
+      "blockClass": [
+        "main-banner-bg-mobile"
+      ],
+      "src": "https://tb4371.vtexassets.com/assets/vtex.file-manager-graphql/images/b7da2a9d-3b0b-4f99-8ad7-39c08ac4de37___e5755afbf3f82c23c6a33df454cdf4d6.jpg"
+    }
+  },
+  "flex-layout.col#landing-main-banner-content": {
+    "children": [
+      "image#landing-main-banner-title",
+      "flex-layout.col#landing-main-banner-box"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "blockClass": [
+        "landing-main-banner-content"
+      ]
+    }
+  },
+  "flex-layout.col#landing-main-banner-bg-desktop": {
+    "children": [
+      "image#main-banner-bg-desktop"
+    ],
+    "props": {
+      "blockClass": [
+        "landing-main-banner-bg-desktop"
+      ]
+    }
+  },
+  "flex-layout.col#landing-main-banner-bg-mobile": {
+    "children": [
+      "image#main-banner-bg-mobile"
+    ],
+    "props": {
+      "blockClass": [
+        "landing-main-banner-bg-mobile"
+      ]
+    }
+  },
+  "flex-layout.col#landing-main-banner-title": {
+    "children": [
+      "image#landing-main-banner-title"
+    ],
+    "props": {
+      "blockClass": [
+        "landing-main-banner-title"
+      ]
+    }
+  },
+  "image#landing-main-banner-title": {
+    "props": {
+      "blockClass": [
+        "landing-main-banner-title"
+      ],
+      "src": "assets/main-banner-title.svg",
+      "width": 184
+    }
+  },
+  "flex-layout.col#landing-main-banner-box": {
+    "children": [
+      "rich-text#landing-main-banner-title",
+      "rich-text#landing-main-banner-content",
+      "link#landing-main-banner"
+    ],
+    "props": {
+      "rowGap": 3,
+      "blockClass": [
+        "landing-main-banner-box"
+      ]
+    }
+  },
+  "rich-text#landing-main-banner-title": {
+    "title": "Box - título",
+    "props": {
+      "blockClass": [
+        "landing-main-banner-title",
+        "centerOnMobile"
+      ],
+      "text": "## Assinatura simples e cheia de benefícios:",
+      "textColor": "c-action-primary"
+    }
+  },
+  "rich-text#landing-main-banner-content": {
+    "title": "Box - conteúdo",
+    "props": {
+      "blockClass": [
+        "landing-main-banner-content",
+        "landing-list"
+      ],
+      "text": "- Utilize seus créditos em uma experiência diária de café\n- **10% de crédito** extra todo mês\n- **Frete grátis** para pedidos com lorem"
+    }
+  },
+  "link#landing-main-banner": {
+    "props": {
+      "blockClass": [
+        "landing-main-banner-box"
+      ],
+      "displayMode": "button",
+      "href": "#planos",
+      "scrollTo": "#planos",
+      "label": "escolher plano"
+    }
+  }
+}

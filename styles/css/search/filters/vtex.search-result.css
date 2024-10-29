@@ -1,0 +1,143 @@
+/* .filtersWrapperMobile {
+  justify-content: flex-start;
+}
+
+.filterBreadcrumbsText.c-muted-2::before {
+  content: '';
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14.321' height='14.281' viewBox='0 0 14.321 14.281'%3E%3Cpath data-name='Union 5' d='M6.787 14.135.147 7.494a.5.5 0 0 1 0-.707l6.64-6.64a.5.5 0 0 1 .707.707l-5.8 5.8H13.82a.5.5 0 1 1 0 1H1.72l5.774 5.774a.5.5 0 1 1-.707.707Z'/%3E%3C/svg%3E")
+    no-repeat center/contain;
+  margin-right: 1rem;
+} */
+
+.filters--layout {
+  width: 260px;
+}
+.filter__container--title {
+  display: none;
+}
+.filter__container {
+  border: 1px solid #E0E0E0;
+  padding: 16px 24px 6px 24px;
+}
+.filter {
+  padding: 0px;
+}
+.filter__container--selectedFilters {
+  border: none;
+  padding: 0px;
+}
+.filterTitle  {
+  color: #002A4E;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 18px;
+}
+.filterIcon {
+  color: #002A4E;
+}
+.filterItem {
+  font-size: 12px;
+  color: #373837;
+  font-family: "lato";
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.selectedFilterItem :global(.vtex-checkbox__container ) {
+  display: none;
+}
+.selectedFilterItem  {
+  display: flex;
+  align-items: center;
+  border: 1px solid #002A4E;  
+  width: fit-content;
+  padding: 8px 16px;
+}
+.selectedFilterItem::after {
+  content: 'X';
+  margin-left: 8px;
+  color: #999999;
+  font-weight: bold;
+}
+.selectedFilterItem:hover {
+  background-color: #002A4E;
+  cursor: pointer;
+}
+@media (hover: hover) {
+  .selectedFilterItem:hover
+    :global(.vtex-checkbox__label) {
+      color: #FFFFFF;
+  }
+  .selectedFilterItem:hover::after {
+    color: #6290B8;
+  }
+}
+.filter__container--selectedFilters :global(.vtex-search-result-3-x-filterTemplateOverflow) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.filter__container--priceRange :global(.vtex-slider__base-internal) {
+  background-color: #243746;
+}
+.filter__container--priceRange :global(.vtex-slider__selector) {
+  background-color: #243746;
+}
+.filter__container--priceRange :global(.vtex-slider__values-container) {
+  justify-content: center;
+}
+
+@media(max-width: 64em) {
+  .filters--layout {
+    background-color: #6290B8;
+    margin-right: 8px;
+  }
+  .filterPopupButton {
+    gap: 10px;
+  }
+  .filters--layout :global(.vtex-search-result-3-x-filterPopupTitle) {
+    order: 1;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .filters--layout :global(.vtex-search-result-3-x-filterIcon) {
+    color: #FFFFFF;
+    width: 20.33px;
+    height: 21.53px;
+  }
+}
+
+@media(max-width: 64em) {
+  .filterAccordionBreadcrumbs {
+    background-color: #002A4E;
+    padding-left: 2rem;
+  }
+  .filterBreadcrumbsText {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FCE7C2;
+    text-transform: uppercase;
+  }
+  .filterBreadcrumbsItem :global(.vtex-search-result-3-x-caretIcon) {
+    color: #FFFFFF;
+    margin-left: 5px;;
+  }
+  .filterBreadcrumbsItemName {
+    font-size: 16px;
+    font-weight: bold;
+    color: #FCE7C2;
+    text-transform: uppercase;
+  }
+  .filterApplyButtonWrapper :global(.vtex-button) {
+    color: #182D4B;
+    border: 1px solid #002A4E;
+  }
+}
+
+.caretIcon {
+  zoom: 0.8;
+}

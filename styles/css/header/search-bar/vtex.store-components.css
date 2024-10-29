@@ -1,0 +1,23 @@
+.autoCompleteOuterContainer--search-bar-desktop :global(.vtex-input-prefix__group) {
+  border: none;
+  border-bottom: 1px solid #999999;
+}
+.autoCompleteOuterContainer--search-bar-desktop :global(.vtex-input__suffix):first-child {
+  display: none !important;
+}
+
+@media(max-width: 64em) {
+  .autoCompleteOuterContainer--search-bar-mobile :global(.vtex-input-prefix__group) {
+    border-bottom: 1px solid #999999;
+    border: none;
+  }
+  .searchBarContainer {
+    padding: 0px;
+  }
+  .searchBarInnerContainer--search-bar-mobile {
+    position: relative;
+  }
+  .portalContainer--search-bar-mobile {
+    position: relative !important;
+  }
+}

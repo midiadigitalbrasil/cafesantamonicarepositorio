@@ -1,0 +1,21 @@
+{
+  "search-bar#mobile": {
+    "props": {
+      "blockClass": "search-bar-mobile",
+      "maxWidth": "100%",
+      "placeholder": "Pesquisar...",
+      "emptyPlaceholder": "Nenhum resultado encontrado.",
+      "HorizontalProductSummary": "product-summary"
+    },
+    "blocks": ["autocomplete-result-list.v2#mobile"]
+  },
+  "autocomplete-result-list.v2#mobile": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "maxTopSearches": 0,
+      "maxHistory": 0,
+      "maxSuggestedProducts": 2,
+      "hideUnavailableItems": true
+    }
+  }
+}

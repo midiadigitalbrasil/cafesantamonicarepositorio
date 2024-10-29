@@ -1,0 +1,14 @@
+{
+  "store.custom#landing-assinatura": {
+    "blocks": [
+      "flex-layout.row#main-banner",
+      /*"flex-layout.row#landing-beneficios",*/
+      "media#banner-beneficios",
+      "flex-layout.row#landing-planos",
+      "flex-layout.row#landing-vitrine-sugeridos",
+      /*"flex-layout.row#landing-diferenciais",*/
+      "media#banner-vantagens",
+      "flex-layout.row#landing-duvidas"
+    ]
+  }
+}

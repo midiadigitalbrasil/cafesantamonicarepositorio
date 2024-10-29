@@ -1,0 +1,13 @@
+{
+  "search-not-found-layout": {
+    "children": ["flex-layout.row#empty-search"]
+  },
+
+  "flex-layout.row#empty-search": {
+    "children": ["not-found"],
+    "props": {
+      "marginTop": 8,
+      "blockClass": ["empty-search"]
+    }
+  }
+}

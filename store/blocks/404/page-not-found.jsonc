@@ -1,0 +1,57 @@
+{
+  "store.not-found#search": {
+    "blocks": ["flex-layout.row#page-not-found"]
+  },
+  "flex-layout.row#page-not-found": {
+    "children": ["flex-layout.col#page-not-found"],
+    "props": {
+      "marginTop": 8,
+      "marginBottom": 8,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#page-not-found": {
+    "props": {
+      "rowGap": 5
+    },
+    "children": [
+      "rich-text#page-not-found-title",
+      "rich-text#page-not-found-text",
+      "flex-layout.row#page-not-found-link"
+    ]
+  },
+  "rich-text#page-not-found-title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Página não encontrada!",
+      "font": "t-heading-1"
+    }
+  },
+  "rich-text#page-not-found-text": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "A página que você procura não existe ou não está disponível.\n\n\n **Causas possíveis:**\n\n - O conteúdo não está mais no ar;\n - A página mudou de lugar;\n - O servidor está fora do ar;\n - Você digitou o endereço errado.",
+      "font": "body",
+      "blockClass": "not-found-text"
+    }
+  },
+
+  "flex-layout.row#page-not-found-link": {
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "marginTop": 4,
+      "preserveLayoutOnMobile": true
+    },
+    "children": ["link.product#not-found"]
+  },
+  "link.product#not-found": {
+    "props": {
+      "href": "/",
+      "label": "Ir para a home",
+      "displayMode": "button"
+    }
+  }
+}

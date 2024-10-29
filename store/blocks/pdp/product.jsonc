@@ -1,0 +1,298 @@
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "condition-layout.product#availability",
+      "icones-pdp",
+      "custom-product-specifications",
+      "custom-buy-together",
+      "shelf.relatedProducts"
+    ]
+  },
+  "shelf.relatedProducts": {
+    "title": "Vitrine",
+    "props": {
+      "blockClass": [
+        "shelf-pdp",
+        "has-dots"
+      ],
+      "recommendation": "view",
+      "productList": {
+        "maxItems": 8,
+        "minItemsPerPage": 2,
+        "itemsPerPage": 3,
+        "gap": "ph0",
+        "titleText": "VOCÊ TAMBÉM PODE GOSTAR",
+        "arrows": false
+      }
+    },
+    "blocks": [
+      "product-summary.shelf"
+    ]
+  },
+  "flex-layout.row#specifications-title": {
+    "props": {
+      "blockClass": [
+        "small-wrapper"
+      ]
+    },
+    "children": [
+      "rich-text#specifications"
+    ]
+  },
+  "rich-text#specifications": {
+    "props": {
+      "text": "##### Product Specifications"
+    }
+  },
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "blockClass": "breadcrumbContainer",
+      "preventHorizontalStretch": true,
+      "paddingTop": 2,
+      "paddingBottom": 2
+    },
+    "children": [
+      "breadcrumb"
+    ]
+  },
+  "breadcrumb": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+  "flex-layout.row#description": {
+    "props": {
+      "blockClass": [
+        "small-wrapper"
+      ],
+      "marginBottom": 7
+    },
+    "children": [
+      "product-description"
+    ]
+  },
+  "condition-layout.product#availability": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "isProductAvailable"
+        }
+      ],
+      "Then": "flex-layout.row#product-main",
+      "Else": "flex-layout.row#product-availability"
+    }
+  },
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": {
+        "desktop": 4,
+        "mobile": 0
+      },
+      "marginBottom": 7,
+      "paddingTop": {
+        "desktop": 0,
+        "mobile": 0
+      },
+      "paddingBottom": 7,
+      "blockClass": [
+        "small-wrapper",
+        "main__pdp"
+      ]
+    },
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col"
+    ]
+  },
+  "stack-layout": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.row#product-image",
+      "product-bookmark",
+      "product-specification-badges"
+    ]
+  },
+  "product-specification-badges": {
+    "props": {
+      "specificationGroupName": "Group",
+      "specificationName": "On Sale",
+      "visibleWhen": "True",
+      "displayValue": "SPECIFICATION_NAME"
+    }
+  },
+  "flex-layout.col#stack": {
+    "children": [
+      "stack-layout"
+    ],
+    "props": {
+      "width": "60%",
+      "rowGap": 0
+    }
+  },
+  "flex-layout.row#product-image": {
+    "children": [
+      "product-images"
+    ]
+  },
+  "product-images": {
+    "props": {
+      "maxHeight": "none",
+      "aspectRatio": {
+        "desktop": "auto",
+        "phone": "auto"
+      },
+      "displayThumbnailsArrows": true,
+      "hiddenImages": [
+        "cor"
+      ]
+    }
+  },
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "product-price-savings#pdp",
+      "flex-layout.col#name-col",
+      "flex-layout.row#pdp-list-price-savings",
+      "flex-layout.row#pdp-selling-price",
+      "flex-layout.row#quantity-action",
+      "sku-selector",
+      "flex-layout.row#assembly__pdp",
+      "flex-layout.row#shipping-simulator",
+      "product-similar",
+      "product-gifts",
+      "availability-subscriber",
+      "selos-pdp"
+    ]
+  },
+  "flex-layout.row#assembly__pdp": {
+    "props": {
+      "blockClass": [
+        "assembly__pdp"
+      ]
+    },
+    "children": [
+      "product-assembly-options"
+    ]
+  },
+  "flex-layout.row#quantity-action": {
+    "props": {
+      "blockClass": "quantity-action",
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "product-quantity#pdp",
+      "flex-layout.row#buy-button"
+    ]
+  },
+  "product-quantity#pdp": {
+    "props": {
+      "size": "regular"
+    }
+  },
+  "flex-layout.col#name-col": {
+    "props": {
+      "blockClass": "name-col",
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-identifier.product"
+    ]
+  },
+  "flex-layout.row#product-name": {
+    "props": {
+      "marginBottom": 3,
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto"
+    },
+    "children": [
+      "vtex.store-components:product-name"
+    ]
+  },
+  "sku-selector": {
+    "props": {
+      "blockClass": "pdp-sku-selector",
+      "variationsSpacing": 3,
+      "showValueNameForImageVariation": true,
+      "thumbnailImage": [
+        "cor"
+      ]
+    }
+  },
+  "flex-layout.row#buy-button": {
+    "props": {
+      "blockClass": "pdp-buy-button",
+      "marginTop": 4,
+      "marginBottom": 7
+    },
+    "children": [
+      "add-to-cart-button"
+    ]
+  },
+  "flex-layout.row#product-availability": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "blockClass": [
+        "small-wrapper"
+      ]
+    },
+    "children": [
+      "flex-layout.col#stack",
+      "flex-layout.col#right-col-availability"
+    ]
+  },
+  "flex-layout.col#right-col-availability": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "info-availability"
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-identifier.product",
+      "sku-selector",
+      "flex-layout.row#availability"
+    ]
+  },
+  "flex-layout.row#availability": {
+    "props": {
+      "blockClass": "message-availability"
+    },
+    "children": [
+      "availability-subscriber"
+    ]
+  },
+  "share#default": {
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": false,
+        "Pinterest": true
+      }
+    }
+  },
+  "product-price-savings#pdp": {
+    "props": {
+      "markers": [
+        "highlight"
+      ],
+      "blockClass": "percentage-pdp",
+      "message": "-{savingsPercentage}"
+    }
+  }
+}

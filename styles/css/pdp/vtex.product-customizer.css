@@ -1,0 +1,19 @@
+.productAssemblyGroupName{
+    font-size: 0;
+}
+
+.productAssemblyGroupName::before{
+    content: "Selecione a frequência da assinatura";
+    letter-spacing: 0.28px;
+    color: #373837;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: initial;
+}
+
+.inputValueOptionBox{
+    background-color: #fff;
+    border: 1px solid #e3e4e6;
+    cursor: default !important
+}
+

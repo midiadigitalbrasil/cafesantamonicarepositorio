@@ -1,0 +1,57 @@
+{
+    "flex-layout.row#quemsomos-lista-fazenda":{
+        "title": "Slider de imagens da seção fazenda",
+        "props": {
+            "blockClass": ["quemsomos-lista-fazenda"]
+        },
+        "children": ["list-context.image-list#list-fazenda"]
+    },
+
+    "list-context.image-list#list-fazenda": {
+        "children": [
+            "slider-layout#list-fazenda"
+        ],
+        "props": {
+            "blockClass": ["list-fazenda"],
+            "preload": true,
+            "height": 650,
+            "images": [
+                {
+                    "image": "/arquivos/list-item-2.png",
+                    "description": "fazenda",
+                    "width": "378px"
+                },
+                {
+                    "image": "/arquivos/list-item-2.png",
+                    "description": "fazenda",
+                    "width": "378px"
+                },
+                {
+                    "image": "/arquivos/list-item-2.png",
+                    "description": "fazenda",
+                    "width": "378px"
+                },
+                {
+                    "image": "/arquivos/list-item-2.png",
+                    "description": "fazenda",
+                    "width": "378px"
+                }               
+            ]
+        }
+    },
+    "slider-layout#list-fazenda": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 3,
+                "tablet": 1,
+                "phone": 1
+            },
+            "showPaginationDots": "never",
+            "showNavigationArrows": "desktopOnly",
+            "infinite": true,
+            "autoplay": {
+                "timeout": 3000
+            }
+        }
+    }
+}

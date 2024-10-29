@@ -1,0 +1,89 @@
+{
+    "flex-layout.row#section-cultivo":{
+        "title": "Certificação",
+        "props": {
+            "colSizing": "auto",
+            "colGap": 0,
+            "blockClass": ["section-quem-somos", "section-cultivo"]            
+        },
+        "children": [
+            "rich-text#title-cultivo",
+            "lista-cultivos#teste",
+            "list-context.media-list#list-fazenda-videos"
+        ]
+    },
+    "rich-text#title-cultivo": {
+        "title": "titulo da seção cultivo",
+        "props": {
+            "text": "CULTIVO",
+            "blockClass": ["quesomos-title-section"],
+            "htmlId": "section-cultivo"
+        }
+    } ,
+    "lista-cultivos#teste": {
+        "props": {
+          "itemsCultivos": [
+            {
+                "image": "/arquivos/item-cultivo.png?v=321",
+                "title": "A FAZENDA SANTA MONICA",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+            },
+            {
+                "image": "/arquivos/item-cultivo.png?v=321",
+                "title": "PLANTIO",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+            },
+            {
+                "image": "/arquivos/item-cultivo.png?v=321",
+                "title": "CRESCIMENTO",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+            },
+            {
+                "image": "/arquivos/item-cultivo.png?v=321",
+                "title": "FERTIRRIGAÇÃO",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+            },
+            {
+                "image": "/arquivos/item-cultivo.png?v=321",
+                "title": "A FAZENDA SANTA MONICA",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+            },
+            {
+                "image": "/arquivos/item-cultivo.png?v=321",
+                "title": "PLANTIO",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+            },
+            {
+                "image": "/arquivos/item-cultivo.png?v=321",
+                "title": "CRESCIMENTO",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+            },
+            {
+                "image": "/arquivos/item-cultivo.png?v=321",
+                "title": "A FAZENDA SANTA MONICA",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+            },
+            {
+                "image": "/arquivos/item-cultivo.png?v=321",
+                "title": "PLANTIO",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+            },
+            {
+                "image": "/arquivos/item-cultivo.png?v=321",
+                "title": "CRESCIMENTO",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+            },
+            {
+                "image": "/arquivos/item-cultivo.png?v=321",
+                "title": "PLANTIO",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+            },
+            {
+                "image": "/arquivos/item-cultivo.png?v=321",
+                "title": "CRESCIMENTO",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+            }
+          ]
+        }
+    }        
+}

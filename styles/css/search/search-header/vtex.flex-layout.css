@@ -1,0 +1,19 @@
+.flexRowContent--search-controls-desktop {
+  justify-content: space-between;
+}
+
+.flexRowContent--search-title {
+  text-align: center;
+}
+
+@media (min-width:769px) {
+  .flexRowContent--search-categorias{
+    margin-bottom: 35px;
+  }
+}
+
+@media(max-width: 64em) {
+  .flexRowContent--search-categorias {
+    margin-bottom: 3rem;
+  }
+}

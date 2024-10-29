@@ -1,0 +1,32 @@
+{
+  "flex-layout.col#footer-1": {
+    "children": ["image#logotipo", "rich-text#footer-sobre"],
+    "props": {
+      "blockClass": ["menuFooter-c1"],
+      "rowGap": 6,
+      "width": "37%",
+      "horizontalAlign": {
+        "mobile": "center",
+        "desktop": "left"
+      }
+    }
+  },
+  "image#logotipo": {
+    "props": {
+      "src": "assets/logotipo.svg",
+      "width": 215,
+      "alt": "Santa Monica - Café Gourmet",
+      "link": {
+        "url": "/"
+      }
+    }
+  },
+  "rich-text#footer-sobre": {
+    "props": {
+      "text": "O Café Gourmet Santa Monica preza pela excelência. Para garantir a qualidade de cada grão, todo seu café é cultivado na própria Fazenda Santa Monica, na nobre região do sul de Minas Gerais com altitude de mil metros acima do nível do mar e sem blends.",
+      "textColor": "c-on-base--inverted",
+      "font": "t-small",
+      "blockClass": ["centerOnMobile"]
+    }
+  }
+}

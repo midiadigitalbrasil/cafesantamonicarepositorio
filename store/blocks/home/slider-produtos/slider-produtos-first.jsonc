@@ -1,0 +1,71 @@
+{
+    "flex-layout.row#slider-produtos-first": {
+        "title": "Primeiro Slider Produtos",
+        "props": {
+            "blockClass": "slider-produtos-first",
+            "fullWidth": {
+                "desktop": false,
+                "mobile": true
+            },
+            "marginTop": {
+                "desktop": 9,
+                "mobile": 8
+            }
+        },
+        "children": [
+            "flex-layout.col#slider-produtos-first"
+        ]
+    },
+    "flex-layout.col#slider-produtos-first": {
+        "props": {
+            "rowGap": 6
+        },
+        "children": [
+            "rich-text#title-slider-produtos-first",
+            "flex-layout.row#products-first-slider"
+        ]
+    },
+    "rich-text#title-slider-produtos-first": {
+    "title": "Título do Slider",
+    "props": {
+        "text": "PARA APROVEITAR O INVERNO",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "blockClass": [
+            "shelfTitle"
+        ]
+    }
+    },
+    "flex-layout.row#products-first-slider": {
+        "children": [
+            "list-context.product-list#slider-produtos-first"
+        ]
+    },
+    
+    "list-context.product-list#slider-produtos-first": {
+        "blocks": [
+            "product-summary.shelf"
+        ],
+        "children": [
+            "slider-layout#slider-produtos-first"
+        ],
+        "props": {
+            "orderBy": "OrderByReleaseDateDESC"
+        }
+    },
+    "slider-layout#slider-produtos-first": {
+        "props": {
+            "blockClass": "slider-produtos",
+            "itemsPerPage": {
+                "desktop": 4,
+                "tablet": 2,
+                "phone": 2
+            },
+            "showPaginationDots": "mobileOnly",
+            "showNavigationArrows": "desktopOnly",
+            "infinite": false,
+            "fullWidth": false, /* false => padding lateral para seta : true => sem padding lateral para setas  */
+            "arrowSize": 20
+        }
+    }
+}

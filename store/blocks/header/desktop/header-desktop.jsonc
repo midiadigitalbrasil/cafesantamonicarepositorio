@@ -1,0 +1,38 @@
+{
+  "header-layout.desktop": {
+    "children": [
+      "header-row#tipbar",
+      "header-row#main-desktop",
+      "modal-trigger#lgpd",
+      "link#whatsapp-float"
+    ]
+  },
+  "header-row#main-desktop": {
+    "props": {
+      "sticky": true,
+      "blockClass": ["main-desktop"]
+    },
+    "children": ["logo", "custom-menu", "flex-layout.row#header-controls"]
+  },
+  "flex-layout.row#logo": {
+    "children": ["logo"],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": ["logo"]
+    }
+  },
+  "flex-layout.col#header-controls": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["flex-layout.row#header-controls"]
+  },
+  "flex-layout.row#header-controls": {
+    "props": {
+      "colGap": "4",
+      "colSizing": "auto",
+      "blockClass": ["header-controls", "header-controls--desktop"]
+    },
+    "children": ["search-bar#desktop", "login", "minicart.v2"]
+  }
+}

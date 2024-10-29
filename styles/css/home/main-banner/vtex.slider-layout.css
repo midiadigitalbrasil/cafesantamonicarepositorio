@@ -1,0 +1,29 @@
+ 
+.sliderArrows--mainBanner {
+  width: 64px;
+  height: 40px;
+  background-color: transparent !important;
+  margin: 0;
+  color: #fff;
+
+}
+.sliderArrows--mainBanner:hover {
+  background-color: transparent !important;
+  color: #fff;
+}
+
+.paginationDotsContainer--mainBanner {
+  position: absolute;
+  bottom: 5%;
+}
+
+.paginationDot--mainBanner {
+  background: #FCE7C2;
+}
+
+.imageElement--mainBanner {
+  max-height: none !important;
+}
+.imageElementLink--mainBanner {
+  width: 100%;
+}

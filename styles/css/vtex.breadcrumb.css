@@ -1,0 +1,51 @@
+.homeIcon,
+.caretIcon,
+.termArrow {
+  display: none;
+}
+.homeLink::before {
+  content: 'Home';
+}
+.container {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-top: 20px;
+}
+.link,
+.term {
+  padding: 0 0 0 1em;
+  line-height: 1em;
+}
+.homeLink {
+  border-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+.arrow {
+  padding: 0;
+}
+
+@media (max-width: 39.99em) {
+  .container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .arrow, .homeLink  {
+    margin-bottom: 10px;
+  }
+
+  .link, .term  {
+    font-size: 10px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    color: #002A4E;
+    text-transform: uppercase;
+  }
+}
+
+.arrow:last-child .link {
+  margin-right: 0;
+}

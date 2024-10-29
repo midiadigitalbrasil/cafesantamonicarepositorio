@@ -1,0 +1,66 @@
+{
+  "teste": {
+    "component": "Greeting"
+  },
+  "theme.csm": {
+    "component": "Theme"
+  },
+  "list-context.beneficios": {
+    "component": "BeneficiosList",
+    "composition": "children",
+    "allowed": "*"
+  },
+  "list-context.list-categorias": {
+    "component": "CategoriasList",
+    "composition": "children",
+    "allowed": "*"
+  },
+  "list-context.duvidas": {
+    "component": "DuvidasList",
+    "composition": "children",
+    "allowed": "*"
+  },
+  "list-context.planos": {
+    "component": "PlanosList",
+    "composition": "children",
+    "allowed": "*"
+  },
+  "custom-product-summary-quantity": {
+    "component": "ProductSummaryQuantity"
+  },
+  "custom-product-summary-prevent-click": {
+    "component": "ProductSummaryPreventClick"
+  },
+  "custom-menu": {
+    "component": "CustomMenu"
+  },
+  "custom-product-specifications": {
+    "component": "ProductSpecifications"
+  },
+  "custom-buy-together": {
+    "component": "BuyTogether",
+    "composition": "blocks",
+    "required": ["product-summary.shelf"]
+  },
+  "custom-minicart-mobile": {
+    "component": "CartMobile"
+  },
+  "mini-cart-fixed": {
+    "component": "MiniCartFixed"
+  },
+  "selos-pdp": {
+    "component": "SelosPdp"
+  },
+  "icones-pdp": {
+    "component": "IconesPdp"
+  },
+  "product-similar": {
+    "component": "ProductSimilar"
+  },
+  "lista-cultivos": {
+    "component": "ListCultivos"
+  },
+  "shipping-free-custom": {
+    "component": "ShippingFree"
+  }
+}

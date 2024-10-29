@@ -1,0 +1,26 @@
+{
+  "custom-menu": {
+    "props": {
+      "staticItems": [
+        /*{
+          "name": "ASSINATURA",
+          "href": "/login"
+        },
+        {
+          "name": "CLIENTE CORPORATIVO",
+          "href": "/cliente-corporativo"
+        }*/
+      ],
+      "evidencedDepartamentItems": [
+        {
+          "name": "Acessórios",
+          "image": "https://tb4371.vteximg.com.br/arquivos/banner-dep-destaque-latte.png"
+        },
+        {
+          "name": "Cafés",
+          "image": "https://tb4371.vteximg.com.br/arquivos/banner-dep-destaque-cafes.png"
+        }
+      ]
+    }
+  }
+}

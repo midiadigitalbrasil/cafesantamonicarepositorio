@@ -1,0 +1,28 @@
+{
+  "flex-layout.row#pdp-selling-price": {
+    "props": {
+      "blockClass": "pdp-selling-price",
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 2
+    },
+    "children": [
+      "product-selling-price",
+      "product-installments"
+    ]
+  },
+
+  "flex-layout.row#pdp-list-price-savings": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 2,
+      "blockClass": ["oxii"]
+    },
+    "children": [
+      "product-list-price"     
+    ]
+  } 
+}

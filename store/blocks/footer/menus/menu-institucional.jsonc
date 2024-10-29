@@ -1,0 +1,114 @@
+{
+  "flex-layout.col#menu-footer-institucional": {
+    "children": ["rich-text#menu-institucional", "vtex.menu@2.x:menu#institucional"],
+    "props": {
+      "blockClass": ["menu-footer-institucional"]
+    }
+  },
+  "vtex.menu@2.x:menu#institucional": {
+    "title": "Institucional",
+    "props": {
+      "blockClass": ["footerMenu", "footerMenu-institucional"],
+      "orientation": "vertical",
+      "items": [
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/quem-somos",
+            "tagTitle": "Quem Somos",
+            "text": "Quem Somos"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/assessoria",
+            "tagTitle": "Assessoria",
+            "text": "Assessoria"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/certificacao",
+            "tagTitle": "Certificação",
+            "text": "Certificação"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/cultivo",
+            "tagTitle": "Cultivo",
+            "text": "Cultivo"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/fazendas",
+            "tagTitle": "Fazendas",
+            "text": "Fazendas"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/sustentabilidade",
+            "tagTitle": "Sustentabilidade",
+            "text": "Sustentabilidade"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/atendimento",
+            "tagTitle": "Atendimento",
+            "text": "Atendimento"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/termos-e-condicoes",
+            "tagTitle": "Termos e Condições de Uso",
+            "text": "Termos e Condições de Uso"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/politica-de-privacidade",
+            "tagTitle": "Política de Privacidade",
+            "text": "Política de Privacidade"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/politica-de-qualidade",
+            "tagTitle": "Política de Qualidade e Segurança de Alimentos",
+            "text": "Política de Qualidade e Segurança de Alimentos"
+          }
+        },
+        {
+          "type": "custom",
+          "itemProps": {
+            "href": "/blog",
+            "tagTitle": "Blog",
+            "text": "Blog"
+          }
+        }
+      ]
+    }    
+  },
+  "rich-text#menu-institucional": {
+    "title": "Institucional",
+    "props": {
+      "blockClass": ["centerOnMobile"],
+      "text": "Institucional",
+      "font": "t-heading-6",
+      "textColor": "c-action-secondary"
+    }
+  }
+}

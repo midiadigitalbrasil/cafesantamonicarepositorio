@@ -1,0 +1,13 @@
+.productName {
+  pointer-events: none;
+  min-height: 2.4rem;
+  display: block;
+}
+.productPrice {
+  color: #002a4e;
+  text-align: center;
+}
+
+.deleteIcon {
+  color: #ab3535;
+}

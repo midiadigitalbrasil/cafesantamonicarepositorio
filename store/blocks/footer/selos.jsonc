@@ -1,0 +1,45 @@
+{
+    "flex-layout.row#footer-selos": {
+        "title": "Logos Footer",
+        "children": [
+            "image#footer-2b",
+            "image#footer-vtex"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "colGap": 5,
+            "marginTop": 5,
+            "preventHorizontalStretch": true,
+            "horizontalAlign": "center",
+            "blockClass": [
+                "footer-selos"
+            ]
+        }
+    },
+    "image#footer-2b": {
+        "title": "Logo 2B",
+        "props": {
+            "src": "assets/2bdigital_logo.svg",
+            "height": 28,
+            "alt": "2B Digital",
+            "title": "2B Digital",
+            "link": {
+                "url": "https://www.agencia2bdigital.com.br/",
+                "target": "_blank"
+            }
+        }
+    },
+    "image#footer-vtex": {
+        "title": "Logo VTEX",
+        "props": {
+            "src": "assets/logo-vtex.svg",
+            "alt": "VTEX",
+            "title": "VTEX",
+            "height": 28,
+            "link": {
+                "url": "https://vtex.com/br-pt/",
+                "target": "_blank"
+            }
+        }
+    }
+}

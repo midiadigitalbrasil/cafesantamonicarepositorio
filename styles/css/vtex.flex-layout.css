@@ -1,0 +1,42 @@
+.flexRowContent--alignMiddle {
+  align-items: center;
+}
+
+.flexRow--pdp-selling-price,
+.flexCol--name-col {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.flexRow--pdp-buy-button :global(.vtex-button) {
+  background-color: #002A4E;
+  color: white;
+  border-color: #002A4E;
+}
+
+.flexRow--quantity-action .stretchChildrenWidth {
+  width: initial !important;
+}
+
+
+.flexRow--quantity-action :global(.vtex-button__label):hover {
+  background-color: #243746aa;
+  color: white;
+}
+
+.flexRow--slider-produtos-second {
+  margin-top: 100px;
+}
+
+.flexRow--slider-produtos-second :global(.vtex-slider-layout-0-x-sliderTrack),
+.flexRow--slider-produtos-first :global(.vtex-slider-layout-0-x-sliderTrack) {
+  gap: 14px;
+}
+
+.flexRow--list-clientes :global(.vtex-slider-layout-0-x-imageElement) {
+  max-width: 140px;
+}
+
+.flexRow--list-clientes{
+  margin-bottom: 40px;
+}

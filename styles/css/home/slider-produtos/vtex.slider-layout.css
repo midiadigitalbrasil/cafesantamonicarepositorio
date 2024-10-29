@@ -1,0 +1,18 @@
+@media (max-width:768px) {
+    .sliderLayoutContainer--slider-produtos{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    .sliderTrack--slider-produtos{
+        gap: 0 !important;
+    }
+    
+    .slide--slider-produtos--visible{
+        padding: 15px !important;
+    }
+
+    .sliderArrows--planos {
+        margin: 0 -10px;
+    }
+}

@@ -1,0 +1,22 @@
+{
+  // "search-bar": {
+  //   "props": {
+  //     "autocompleteFullWidth": true,
+  //     "compactMode": false,
+  //     "emptyPlaceholder": "Nenhum resultado encontrado.",
+  //     "placeholder": "O QUE VOCÊ PROCURA?",
+  //     "containerMode": "container"
+  //   },
+  //   "blocks": ["autocomplete-result-list.v2"]
+    
+  // },
+  // "autocomplete-result-list.v2": {
+  //   "blocks": ["product-summary.shelf"],
+  //   "props": {
+  //     "maxTopSearches": 0,
+  //     "maxHistory": 0,
+  //     "maxSuggestedProducts": 2,
+  //     "hideUnavailableItems": true
+  //   }
+  // }
+}

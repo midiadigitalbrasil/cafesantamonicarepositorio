@@ -1,0 +1,102 @@
+// {
+//   "store.custom#collection": {
+//     "blocks": [
+//       "flex-layout.row#collectionHeader",
+//       "search-result-layout.customQuery#collecion"
+//     ]
+//   },
+//   "search-result-layout.customQuery#collecion": {
+//     "props": {
+//       "querySchema": {
+//         "orderByField": "OrderByReleaseDateDESC",
+//         "hideUnavailableItems": true,
+//         "maxItemsPerPage": 8,
+//         "queryField": "",
+//         "mapField": ""
+//       }
+//     },
+//     "blocks": [
+//       "search-result-layout.desktop#collection",
+//       "search-result-layout.mobile#collection"
+//     ]
+//   },
+//   "search-result-layout.desktop#collection": {
+//     "title": "Desktop",
+//     "children": ["flex-layout.row#result"],
+//     "props": {
+//       "pagination": "show-more",
+//       "preventRouteChange": false,
+//       "defaultGalleryLayout": "grid"
+//     }
+//   },
+//   "search-result-layout.mobile#collection": {
+//     "title": "Mobile",
+//     "children": ["flex-layout.row#contentmobile", "flex-layout.row#fetchmore"],
+//     "props": {
+//       "pagination": "show-more",
+//       "preventRouteChange": false,
+//       "defaultGalleryLayout": "grid"
+//     }
+//   },
+//   "flex-layout.row#collectionHeader": {
+//     "props": {
+//       "blockClass": "searchTopContainer",
+//       "fullWidth": false,
+//       "horizontalAlign": "center",
+//       "rowGap": 6,
+//       "preventHorizontalStretch": false,
+//       "paddingTop": 6,
+//       "paddingBottom": 2
+//     },
+//     "children": ["rich-text#collectionHeader"]
+//   },
+//   "rich-text#collectionHeader": {
+//     "title": "Título da Coleção",
+//     "props": {
+//       "text": "## Coleção",
+//       "blockClass": ["searchTitle"],
+//       "font": "t-heading-1"
+//     }
+//   }
+// }
+
+
+{
+  "store.custom#collection": {
+    "blocks": [
+      "flex-layout.row#collectionHeader",
+      "search-result-layout.customQuery#collecion"
+    ]
+  },
+  "search-result-layout.customQuery#collecion": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 12,
+        "queryField": "150",
+        "mapField": "productClusterIds"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-not-found-layout"
+    ]
+  },
+  "flex-layout.row#collectionHeader": {
+    "title": "Título da Coleção",
+    "props": {
+      "blockClass": "searchTopContainer",
+      "fullWidth": false,
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#collectionHeader"]
+  },
+  "rich-text#collectionHeader": {
+    "title": "Título",
+    "props": {
+      "text": "Coleção",
+      "blockClass": ["shelfTitle", "collectionTitle"]
+    }
+  }
+}

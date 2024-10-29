@@ -1,0 +1,22 @@
+.flexCol--inst-menu-mobile{
+    display: none;
+}
+
+.flexCol--inst-menu-desktop{    
+    border-left: 5px solid #FCE7C2;
+    padding: 25px 35px;
+}
+
+@media (max-width:768px) {
+    .flexCol--inst-menu-mobile{
+        width: 88%;
+        margin-left: 6%;
+        display: block;
+        border: 1px solid #999999;
+        margin-bottom: 25px;
+    }
+
+    .flexCol--inst-menu-desktop{
+        display: none;
+    }
+}

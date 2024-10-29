@@ -1,0 +1,29 @@
+{
+  "header-row#tipbar": {
+    "title": "Barra Superior",
+    "children": ["flex-layout.row#tipbar"],
+    "props": {
+      "fullWidth": true,
+      "sticky": true,
+      "blockClass": ["tipbar"]
+    }
+  },
+  "flex-layout.row#tipbar": {
+    "title": "Barra Superior",
+    "children": ["rich-text#tipbar"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["tipbar"]
+    }
+  },
+  "rich-text#tipbar": {
+    "props": {
+      "blockClass": ["tipbar"],
+      "text": "**FRETE GRÁTIS** em compras acima de R$299",
+      "textAlignment": "CENTER",
+      "textColor": "c-on-base--inverted",
+      "textPosition": "CENTER"
+      // "font": "t-mini"
+    }
+  }
+}

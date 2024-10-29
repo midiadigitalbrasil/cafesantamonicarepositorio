@@ -1,0 +1,31 @@
+
+.bannersCategoria__item {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+.bannersCategoria__title {
+  font-size: .625rem;
+  background: #fff;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bannersCategoria__item:hover .bannersCategoria__title  {
+  font-weight: 700;
+}
+
+@media (min-width:40em){
+  .bannersCategoria__item {
+    height: 285px;
+  }
+  .bannersCategoria__title {
+    font-size: .875rem;
+   
+  }
+}
+@media (min-width: 64em){
+  .bannersCategoria__item {
+    height: 285px;  
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "flex-layout.col#search-switcher": {
+    "props": {
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "blockClass": "searchSwitcher"
+    },
+    "children": ["flex-layout.row#search-switcher"]
+  },
+  "flex-layout.row#search-switcher": {
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": "searchSwitcher",
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": {
+        "mobile": "center",
+        "tablet": "left"
+      }
+    },
+    "children": ["rich-text#switcher", "gallery-layout-switcher"]
+  },
+  "rich-text#switcher": {
+    "props": {
+      "text": "Visualizar",
+      "blockClass": ["search-switcher-title"]
+    }
+  },
+
+  "gallery-layout-switcher": {
+    "children": [
+      "gallery-layout-option#grid",
+      "gallery-layout-option#grid-small"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "gallery-layout-option#grid": {
+    "props": {
+      "name": "grid",
+      "blockClass": ["grid-icon", "grid"]
+    },
+    "children": ["icon-single-grid"]
+  },
+  "rich-text#option-grid": {
+    "props": {
+      "text": "Grid",
+      "blockClass": "layout-option"
+    }
+  }
+}

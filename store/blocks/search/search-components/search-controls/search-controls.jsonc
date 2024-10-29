@@ -1,0 +1,16 @@
+{
+  "responsive-layout.desktop#search-controls": {
+    "children": ["flex-layout.row#search-controls-desktop"]
+  },
+  "responsive-layout.mobile#search-controls": {
+    "children": ["flex-layout.row#search-controls-mobile"]
+  },
+
+  "flex-layout.col#search-orderBy": {
+    "children": ["order-by.v2"],
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": ["search-orderBy"]
+    }
+  }
+}

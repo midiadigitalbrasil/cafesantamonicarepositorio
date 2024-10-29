@@ -1,0 +1,66 @@
+.emailInputContainer :global(.vtex-input-prefix__group) {
+  border: none;
+}
+.emailInputContainer :global(.vtex-styleguide-9-x-input) {
+  background: transparent;
+}
+.formSubmitContainer :global(.vtex-button) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background: transparent;
+  color: #502E22;
+  font-size: 12px;
+  font-weight: 500;
+  height: 40px;
+}
+.formSubmitContainer :global(.vtex-button):hover {
+  font-weight: 600;
+}
+.formSubmitContainer :global(.vtex-button__label) {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.formSubmitContainer :global(.vtex-button)::after {
+  content: "";
+  background: url(assets/arrow-right-newsletter.png) no-repeat center;
+  height: 50px;
+  width: 50px;
+}
+
+@media (min-width: 64em) {
+  .newsletterForm {
+    margin-bottom: 47px;
+    border-bottom: 1px solid #FCE7C2;
+  }
+  .emailInputContainer {
+    min-width: 420px;
+  }
+  .emailInputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: #FCE7C2;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 64em) {
+  .newsletterForm {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
+  }
+  .emailInputContainer {
+    min-width: 310px;
+    border-bottom: 1px solid #FCE7C2;
+    margin-bottom: 40px;
+  }
+  .emailInputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: #FCE7C2;
+    font-size: 14px;
+    text-align: center;
+  }
+  .formSubmitContainer :global(.vtex-button) {
+    margin-bottom: 40px;
+  }
+}

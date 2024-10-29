@@ -1,0 +1,87 @@
+{
+  "flex-layout.row#footer-social": {
+    "children": ["flex-layout.col#footer-social"],
+    "props": {
+      "blockClass": ["footer-social"]
+    }
+  },
+  "flex-layout.col#footer-social": {
+    "children": ["vtex.menu@2.x:menu#social"],
+    "props": {
+      "blockClass": ["footer-social"]
+    }
+  },
+  "vtex.menu@2.x:menu#social": {
+    "title": "Redes Social",
+    "props": {
+      "blockClass": ["menuSocial"],
+      "orientation": "horizontal",
+      "items": [
+        {
+          "id": "menu-social-facebook",
+          "type": "custom",
+          "itemProps": {
+            "href": "https://www.facebook.com/cafegourmetsantamonica",
+            "type": "external",
+            "noFollow": false,
+            "tagTitle": "Facebook",
+            "text": ""
+          },
+          "iconProps": {
+            "id": "custom-facebook",
+            "size": 20,
+            "viewBox": "0 0 30 30"
+          }
+        },
+        {
+          "id": "menu-social-instagram",
+          "type": "custom",
+          "itemProps": {
+            "href": "https://www.instagram.com/cafesantamonica/",
+            "type": "external",
+            "noFollow": false,
+            "tagTitle": "Facebook",
+            "text": ""
+          },
+          "iconProps": {
+            "id": "custom-instagram",
+            "size": 20,
+            "viewBox": "0 0 27.9 27.9"
+          }
+        },
+        {
+          "id": "menu-social-linkedin",
+          "type": "custom",
+          "itemProps": {
+            "href": "https://www.linkedin.com/company/cafe-santa-monica",
+            "type": "external",
+            "noFollow": false,
+            "tagTitle": "Linkedin",
+            "text": ""
+          },
+          "iconProps": {
+            "id": "custom-linkedin",
+            "size": 20,
+            "viewBox": "0 0 16 16"
+          }
+        },
+        {
+          "id": "menu-social-youtube",
+          "type": "custom",
+          "itemProps": {
+            "href": "https://www.youtube.com/c/CafeSantaMonicaGourmet",
+            "type": "external",
+            "noFollow": false,
+            "tagTitle": "Youtube",
+            "text": ""
+          },
+          "iconProps": {
+            "id": "custom-youtube",
+            "size": 20,
+            "viewBox": "0 0 16 11.25"
+          }
+        }
+      ]
+    }
+  }
+}

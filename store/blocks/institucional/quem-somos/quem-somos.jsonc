@@ -1,0 +1,29 @@
+{    
+  "store.custom#institucional-quem-somos": {
+    "blocks": [
+        "flex-layout.row#quemsomosContentBanner",
+        "flex-layout.row#section-quem-somos",
+        /*"flex-layout.row#section-valores",*/
+        "flex-layout.row#section-certificacao",
+        "flex-layout.row#section-fazenda",
+        "flex-layout.row#section-cultivo",
+        "flex-layout.row#section-sustentabilidade",
+        "flex-layout.row#clientes",
+        "flex-layout.row#section-experimente"
+    ]
+  },
+
+  "flex-layout.row#quemsomosContentBanner":{
+    "title": "Conteúdo",
+    "props": {
+        "fullWidth": true,
+        "colSizing": "auto",
+        "blockClass": ["quemsomosContentBanner"]
+    },
+    "children": [
+        "image#quemsomos-banner-main-desktop",
+        "image#quemsomos-banner-main-mobile",
+        "flex-layout.col#contentText"
+    ]
+  } 
+}

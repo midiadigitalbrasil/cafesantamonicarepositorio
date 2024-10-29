@@ -1,0 +1,59 @@
+{
+  "flex-layout.row#destaques-home": {
+    "title": "Destaques Home",
+    "children": [
+      "list-context.image-list#destaques-home"
+    ],
+    "props": {
+      "marginTop": 8,
+      "blockClass": ["destaques-home"]
+    }
+  },
+  "list-context.image-list#destaques-home": {
+    "children": ["slider-layout#destaques-home"],    
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/banner-destaques-sabores-marcantes.png",
+          "description": "Sabores Marcantes",
+          "link": {
+            "title": "Link Destaque",
+            "url": "https://cafesantamonica.com.br/blog/",
+            "newTab": true
+          }
+        },
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/banner-destaques-presentes-especiais.png",
+          "description": "Presentes Especiais",
+          "link": {
+            "title": "Link Destaque",
+            "url": "https://cafesantamonica.com.br/blog/",
+            "newTab": true
+          }
+        },
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/banner-destaques-drip-coffee.png",
+          "description": "Drip Coffee",
+          "link": {
+            "title": "Link Destaque",
+            "url": "https://cafesantamonica.com.br/blog/",
+            "newTab": true
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#destaques-home": {
+    "props": {
+      "blockClass": ["destaques-home"],
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "showNavigationArrows": "never",
+      "infinite": false
+    }
+  }
+}

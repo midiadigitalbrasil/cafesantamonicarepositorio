@@ -1,0 +1,94 @@
+{
+  "add-to-cart-button": {
+    "props": {
+      "addToCartFeedback": "customEvent",
+      "customPixelEventId": "add-to-cart-button",
+      "text": "Adicionar à Sacola"
+    }
+  },
+  "minicart.v2": {
+    "props": {
+      "customPixelEventId": "add-to-cart-button"
+    },
+    "children": ["minicart-base-content"]
+  },
+  "minicart-base-content": {
+    "blocks": ["minicart-empty-state"],
+    "children": [
+      "minicart-product-list#custom",
+      "flex-layout.row#minicart-barra",
+      "flex-layout.row#minicart-footer",
+      "shipping-free-custom"
+    ]
+  },
+  "minicart-product-list#custom": {
+    "blocks": ["product-list#custom"]
+  },
+
+  "minicart-empty-state": {
+    "children": ["flex-layout.row#empty-state"]
+  },
+  "flex-layout.row#empty-state": {
+    "children": ["flex-layout.col#empty-state"]
+  },
+  "flex-layout.col#empty-state": {
+    "children": [
+      "icon-cart#minicart-empty-state",
+      "rich-text#minicart-default-empty-state"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "rowGap": 5
+    }
+  },
+
+  "rich-text#minicart-default-empty-state": {
+    "props": {
+      "text": "Sua sacola está vazia."
+    }
+  },
+
+  "flex-layout.row#minicart-barra":{
+    "children": [
+      // "flex-layout.col#minicart-barra",
+      "rich-text#minicart-barra"
+    ],
+    "props": {
+          "blockClass": [
+              "minicart-barra"
+          ]
+        }
+  },
+
+  // "flex-layout.col#minicart-barra":{
+  //   "children": [
+  //     "rich-text#minicart-barra"
+  //   ],
+  //   "props": {
+  //     "blockClass": [
+  //         "minicart-barra"
+  //     ]
+  //   }
+  // },
+
+  "rich-text#minicart-barra":{
+    "props": {
+      "text": "\n**FRETE GRÁTIS** para São Paulo e Grande São Paulo. Acima de 150,00 reais.",
+      "blockClass": [
+                "minicart-barra-texto"
+            ]
+    }
+  },
+
+  "shipping-free-custom":{
+    "title": "Valor minímo do Frete Grátis",
+    "props": {
+      "valueMin":[
+        {
+          "value": 15000
+        }
+      ]
+    }
+  }
+}

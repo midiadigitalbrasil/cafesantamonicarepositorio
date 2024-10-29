@@ -1,0 +1,49 @@
+{
+    "flex-layout.row#section-fazenda": {
+        "title": "A fazenda",
+        "props": {
+            "blockClass": ["section-quem-somos", "section-quem-somos-fazenda"],
+            "colSizing": "auto"
+        },
+        "children": [
+            "rich-text#title-fazenda",
+            "rich-text#text-fazenda",
+            "video#quemsomos-fazenda",
+            "flex-layout.row#quemsomos-fazenda-maps",
+            "flex-layout.row#quemsomos-lista-fazenda"
+        ]
+    },
+
+    "rich-text#title-fazenda": {
+        "title": "titulo da seção fazenda",
+        "props": {
+            "text": "A FAZENDA",
+            "htmlId": "section-fazenda",
+            "blockClass": [
+                "quesomos-title-section", 
+                "quesomos-title-section-fazenda"
+            ]
+        }
+    },
+    "rich-text#text-fazenda": {
+        "title": "titulo da seção fazenda",
+        "props": {
+            "text": "A Fazenda Santa Monica tem uma localização privilegiada, na região de Machado, Sul de Minas Gerais. O clima e uma altitude média de 1100 m, geram o ambiente ideal para cultivo de Cafés Especiais.",
+            "blockClass": [
+                "quesomos-text-section", 
+                "quesomos-text-section-fazenda"
+            ]
+        }
+    },
+    "video#quemsomos-fazenda": {
+        "props": {
+          "width": "100%",
+          "height": "480px",
+          "loop": false,
+          "autoPlay": true,
+          "muted": false,
+          "src": "https://www.youtube.com/watch?v=wygFqZXMIco",
+          "blockClass": "quemsomos-fazenda-video"
+        }
+      }     
+}

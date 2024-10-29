@@ -1,0 +1,25 @@
+{
+  "flex-layout.row#search-controls-mobile": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "flex-layout.row#search-totalAndSwitcher",
+      "flex-layout.row#search-filterAndOrderBy"
+    ]
+  },
+  "flex-layout.row#search-totalAndSwitcher": {
+    "children": ["total-products.v2", "flex-layout.col#search-switcher"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass": ["search-totalAndSwitcher"]
+    }
+  },
+  "flex-layout.row#search-filterAndOrderBy": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventVerticalStretch": true
+    },
+    "children": ["filter-navigator.v3", "flex-layout.col#search-orderBy"]
+  }  
+}

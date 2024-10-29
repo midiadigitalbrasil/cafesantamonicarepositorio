@@ -1,0 +1,11 @@
+@media(max-width: 64em) {
+  .galleryItem {
+    flex-basis: 50% !important;
+  }
+}
+@media(max-width: 64em) {
+  .buttonShowMore :global(.vtex-button){
+    width: 100%;
+    padding: 12px 0px;
+  }
+}

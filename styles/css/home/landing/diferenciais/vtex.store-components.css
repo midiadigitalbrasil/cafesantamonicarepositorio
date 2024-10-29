@@ -1,0 +1,6 @@
+
+@media (min-width: 48em){
+    .imageElement--landing-diferenciais-bg-mobile {
+        display: none;
+    }
+}

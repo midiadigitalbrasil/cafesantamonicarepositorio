@@ -1,0 +1,105 @@
+
+.list--beneficiosList { 
+    white-space: nowrap;
+    text-align: center;
+    margin-bottom: 1rem; 
+}
+
+.item--beneficiosList {
+    position: relative;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    white-space: normal;
+    padding:1.5rem 1rem; 
+    background: #FCE7C2;
+    justify-content: center;
+}
+
+.item--beneficiosList:first-child .container--beneficiosList::before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    display: block;
+    background-image: url(/arquivos/pitbar-icon-tag.png?v=01);
+    margin-right: 15px
+}
+
+.item--beneficiosList:nth-child(even) .container--beneficiosList::before  {
+    content: '';
+    width: 32px;
+    height: 24px;
+    display: block;
+    background-image: url(/arquivos/pitbar-icon-truck.png?v=01);
+    margin-right: 15px
+}
+
+.item--beneficiosList:last-child .container--beneficiosList::before  {
+    content: '';
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url(/arquivos/refresh-icon.svg);
+    margin-right: 15px;
+    background-repeat: no-repeat;
+}
+
+.item--beneficiosList .container--beneficiosList {
+    display: flex;
+    align-items: center;
+}
+
+
+@media(max-width: 64em) {
+    .list--beneficiosList {
+        display: flex;
+    }
+
+    .item--beneficiosList {
+        min-width: 70vw;
+        min-height: 120px;
+    }
+}
+
+.item--beneficiosList::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display:block;
+    width: 1px;
+    background: currentColor;
+    height: calc(100% - 2rem);
+}
+
+.item--beneficiosList:last-child::after {
+    display: none;
+}
+
+@media (min-width:40em){
+    .list--beneficiosList {
+        white-space: normal;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 970px; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.headingLevel3--beneficiosList {
+    text-transform: uppercase; 
+    font-weight: bold;
+    font-size: .75rem;
+    letter-spacing: 0.1em; 
+    text-align: center;
+}
+
+.paragraph--beneficiosList {
+    text-align: center;
+    font-size: 0.68rem;
+    margin-top: .25rem;
+}

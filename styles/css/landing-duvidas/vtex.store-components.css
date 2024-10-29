@@ -1,0 +1,29 @@
+.imageElement--landing-duvidas-decor {
+  position: absolute;
+
+  opacity: 0.25;
+}
+
+@media (max-width: 47.9em) {
+  .imageElement--landing-duvidas-decor {
+    bottom: -9rem;
+    right: -50px;
+    height: 180px;
+    transform: rotateY(-180deg);
+  }
+  .imageElement--landing-duvidas-bg {
+    display: none;
+  }
+}
+
+@media (min-width: 48em) {
+  .imageElement--landing-duvidas-decor {
+    top: 0;
+    left: 0;
+    width: 250px;
+    transform: translateX(-29%) translateY(-40%);
+  }
+  .imageElement--landing-duvidas-bg--mobile {
+    display: none;
+  }
+}

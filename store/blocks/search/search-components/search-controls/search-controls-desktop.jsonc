@@ -1,0 +1,23 @@
+{
+  "flex-layout.row#search-controls-desktop": {
+    "props": {
+      "preventVerticalStretch": true,
+      "marginBottom": 6
+    },
+    "children": [
+      "flex-layout.row#search-orderByAndSwitcher"
+    ]
+  },
+  "flex-layout.row#search-orderByAndSwitcher": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "blockClass": ["search-controls-desktop"]
+    },
+    "children": [
+      "flex-layout.col#search-switcher",
+      "flex-layout.col#search-orderBy"
+    ]
+  }
+}

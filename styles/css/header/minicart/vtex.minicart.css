@@ -1,0 +1,10 @@
+.openIconContainer :global(.vtex-button) {
+  border: none;
+}
+@media (hover: hover) {
+  .openIconContainer:hover
+    :global(.vtex-button) {
+      background-color: white;
+      border: none;
+    }
+}

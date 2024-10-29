@@ -1,0 +1,52 @@
+.nameContainer {
+  justify-content: flex-start;
+}
+
+.containerNormal {
+  position: relative;
+}
+
+.productBrand {
+  max-width: 200px;
+  font-weight: bold;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  line-height: 1.25;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameContainer {
+  padding: 0;
+}
+
+.productNameContainer {
+  text-align: left;
+}
+
+.imageWrapper{
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width:768px) {
+  .imageWrapper{
+    min-height: 177px;
+  }
+}
+
+@media (hover: hover) {
+  .containerNormal:hover
+    :global(.vtex-flex-layout-0-x-flexRow--product-summary-actions) {
+    opacity: 1;
+  }
+  .containerNormal:hover
+    :global(.vtex-product-price-1-x-currencyContainer--summary) {
+    color: #BF6A1E;
+  }
+}
+.information {
+  align-items: center;
+}

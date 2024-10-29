@@ -1,0 +1,44 @@
+{
+  "modal-trigger#lgpd": {
+    "children": ["modal-layout#lgpd"],
+    "props": {
+      "trigger": "load-session",
+      "blockClass": ["lgpd"]
+    }
+  },
+  "modal-layout#lgpd": {
+    "children": ["modal-content#lgpd"],
+    "props": {
+      "blockClass": ["lgpd"],
+      "backdrop": "none"
+    }
+  },
+  "modal-content#lgpd": {
+    "props": {
+      "blockClass": ["lgpd"]
+    },
+    "children": ["flex-layout.row#lgpd"]
+  },
+  "flex-layout.row#lgpd": {
+    "props": {
+      "colSizing": "auto",
+      "colGap": 6,
+      "rowGap": 6,
+      "blockClass": ["lgpd", "alignMiddle"]
+    },
+    "children": ["rich-text#lgpd", "modal-actions.close#lgpd"]
+  },
+  "rich-text#lgpd": {
+    "props": {
+      "blockClass": ["lgpd"],
+      "textColor": "c-on-base--inverted",
+      "text": "Este site utiliza cookies para melhorar sua experiência. Ao continuar navegando, você concorda com a nossa **[Política de Privacidade](/politica-de-privacidade)**."
+    }
+  },
+  "modal-actions.close#lgpd": {
+    "props": {
+      "blockClass": ["lgpd"],
+      "label": "Concordar e Continuar"
+    }
+  }
+}

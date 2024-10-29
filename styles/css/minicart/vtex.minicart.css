@@ -1,0 +1,80 @@
+.cartIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.drawer {
+  z-index: 1301;
+}
+
+.minicartQuantityBadgeDefault {
+  border-radius: 50%;
+  background-color: #2d5c85;
+}
+
+.openIconContainer {
+  padding: 0;
+}
+
+.closeIconContainer {
+  position: absolute;
+  right: 5%;
+  top: 20px;
+}
+
+.closeIconButton {
+  padding: 0;
+}
+
+.closeIcon {
+  display: block;
+  height: 20px;
+}
+
+.minicartTitle {
+  border-bottom: 1px solid #f2f0f7;
+  width: 90%;
+  margin: auto;
+  padding: 1.5rem 0 1.5rem 0.25rem;
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: 0.03em;
+  color: #002a4e;
+}
+
+.minicartProductListContainer :global(.vtex-product-list-0-x-productName) {
+  font-weight: normal;
+  font-size: 0.75rem;
+}
+
+.minicartProductListContainer
+  :global(.vtex-product-list-0-x-productVariationsItem) {
+  font-size: 0.75rem;
+  color: #000;
+}
+.minicartProductListContainer :global(.vtex-product-list-0-x-productPrice) {
+  font-size: 0.875rem;
+}
+.minicartCheckoutButton {
+  margin-bottom: 1rem;
+}
+.minicartCheckoutButton :global(.vtex-button) {
+  height: 40px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid;
+}
+
+.childrenContainer,
+.drawerContent {
+  height: 100%;
+}
+
+.minicartSideBarContentWrapper {
+  min-height: 100%;
+}
+
+.minicartWrapperContainer {
+  padding-right: 25px;
+}

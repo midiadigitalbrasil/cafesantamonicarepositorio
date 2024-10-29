@@ -1,0 +1,69 @@
+{
+    "flex-layout.row#landing-como-funciona": {
+        "title": "Como Funciona",
+        "children": [
+            "flex-layout.col#landing-como-funciona"
+        ],
+        "props": {
+            "paddingTop": 7,
+            "paddingBottom": {
+                "desktop": 9,
+                "mobile": 7
+            },
+            "blockClass": [
+                "landing-como-funciona"
+            ]
+        }
+    },
+    "flex-layout.col#landing-como-funciona": {
+        "children": [
+            "rich-text#landing-como-funciona-title",
+            "flex-layout.row#landing-como-funciona-items"
+        ],
+        "props": {
+            "blockClass": [
+                "landing-como-funciona"
+            ]
+        }
+    },
+    "rich-text#landing-como-funciona-title": {
+        "props": {
+            "text": "## Como Funciona",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "textColor": "c-action-primary"
+        }
+    },
+    "flex-layout.row#landing-como-funciona-items": {
+        "children": [
+            "flex-layout.col#landing-como-funciona-item-1",
+            "flex-layout.col#landing-como-funciona-item-1",
+            "flex-layout.col#landing-como-funciona-item-1",
+            "flex-layout.col#landing-como-funciona-item-1"
+        ],
+        "props": {
+            "marginTop": 7,
+            "rowGap": 5,
+            "colGap": 5,
+            "blockClass": [
+                "landing-como-funciona-items"
+            ]
+        }
+    },
+    "flex-layout.col#landing-como-funciona-item-1": {
+        "props": {
+            "horizontalAlign": "center"
+        },
+        "children": [
+            "rich-text#landing-como-funciona-item-1"
+        ]
+    },
+    "rich-text#landing-como-funciona-item-1": {
+        "props": {
+            "textPosition": "CENTER",
+            "textAlignment": "CENTER",
+            "textColor": "c-action-primary",
+            "text": "### ESCOLHA SEU PLANO\n Escolha o plano que mais combina com você de acordo com seu consumo de café"
+        }
+    }
+}

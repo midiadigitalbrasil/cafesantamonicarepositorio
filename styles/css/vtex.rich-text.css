@@ -1,0 +1,28 @@
+@media (max-width: 39.99em) {
+  .container--centerOnMobile {
+    text-align: center;
+    justify-content: center;
+  }
+}
+.headingLevel1,
+.headingLevel2,
+.headingLevel3 {
+  line-height: 1.35;
+}
+
+.paragraph {
+  margin-top: 1rem;
+}
+.paragraph:first-child {
+  margin-top: 0;
+}
+
+.container--tipbar{
+  font-size: 12px;
+}
+
+.paragraph--minicart-barra-texto{
+  font-size: 11px;
+  color: #002A4E;
+  letter-spacing: -0.7px;
+}

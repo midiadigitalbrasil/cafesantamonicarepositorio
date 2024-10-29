@@ -1,0 +1,37 @@
+.modal {
+}
+.paper--lgpd {
+  width: 100vw;
+  margin: 0;
+  pointer-events: all;
+}
+.container--lgpd {
+  align-items: flex-end;
+  
+}
+.contentContainer--lgpd {
+  background: #243746;
+  padding: 2rem 1em;
+}
+.closeButton {
+  border-color: #fce7c2;
+  color: #fce7c2;
+  white-space: nowrap;
+  background: transparent;
+}
+
+.closeButton:hover {
+  background: #fce7c2;
+}
+
+.hiddenContainer{
+  overflow: inherit !important;
+}
+
+.vtex-modal-layout-0-x-modal--lgpd{
+  pointer-events: none;
+}
+
+.modal--lgpd{
+  pointer-events: none;
+}

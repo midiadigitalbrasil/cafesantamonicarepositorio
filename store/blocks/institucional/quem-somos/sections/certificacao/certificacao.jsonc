@@ -1,0 +1,49 @@
+{
+    "flex-layout.row#section-certificacao": {
+        "title": "Certificação",
+        "props": {
+            "colSizing": "auto",
+            "colGap": 0,
+            "blockClass": ["section-quem-somos", "section-certification"]            
+        },
+        "children": [
+            "flex-layout.col#certification-col-1",
+            "flex-layout.col#certification-col-2"
+        ]
+    },
+
+
+    "flex-layout.col#certification-col-1": {
+        "title": "Conteúdo da certificação",
+        "props": {
+            "blockClass": ["certification-col-1"]
+        },
+        "children": [
+            "rich-text#title-certificacao",
+            "rich-text#text-certificacao"
+        ]
+    },
+    "flex-layout.col#certification-col-2": {
+        "title": "selos de certificações",
+        "props": {
+            "blockClass": ["certification-col-2"]
+        },
+        "children": ["list-context.image-list#list-selos-certificacao"]
+    },
+
+    "rich-text#title-certificacao": {
+        "title": "titulo da seção certificação",
+        "props": {
+            "text": "Certificação",
+            "blockClass": ["quesomos-title-section"],
+            "htmlId": "section-certificacao"
+        }
+    },
+    "rich-text#text-certificacao": {
+        "title": "texto da seção certificação",
+        "props": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+            "blockClass": ["quesomos-text-section"]
+        }
+    }
+}

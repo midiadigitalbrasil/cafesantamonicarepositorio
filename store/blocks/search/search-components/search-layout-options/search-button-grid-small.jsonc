@@ -1,0 +1,15 @@
+{
+  "gallery-layout-option#grid-small": {
+    "props": {
+      "blockClass": ["grid-icon", "grid-small"],
+      "name": "grid-small"
+    },
+    "children": ["icon-grid"]
+  },
+  "rich-text#option-grid-small": {
+    "props": {
+      "text": "Small",
+      "blockClass": "layout-option"
+    }
+  }
+}

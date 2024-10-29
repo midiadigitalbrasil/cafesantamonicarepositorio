@@ -1,0 +1,35 @@
+.flexRow--minicart-footer {
+  box-shadow: none;
+  border-top: 1px solid;
+  background: #002a4e;
+  color: #fce7c2;
+  display: none;
+}
+
+.flexRow--minicartItem:last-child .flexRowContent--minicartItem {
+  border-bottom: 0;
+}
+
+.flexRowContent--minicartItem {
+  border-bottom: 1px solid #f2f0f7;
+}
+
+.flexRowContent--minicartItem-bottom {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexCol--minicartItem-content {
+  justify-content: space-around;
+}
+
+
+.flexRow--minicart-barra{
+  position: absolute;
+  bottom: 154px;
+  background-color: #FCE7C2;
+  padding: 13px 20px;
+  width: 100%;
+}
+
+

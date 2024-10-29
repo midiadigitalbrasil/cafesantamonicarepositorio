@@ -1,0 +1,78 @@
+{
+  "flex-layout.row#landing-vitrine-sugeridos": {
+    "title": "Produtos Sugeridos",
+    "children": ["flex-layout.col#vitrine-sugeridos"],
+    "props": {
+      "marginBottom": 9,
+      "blockClass": ["vitrine-sugeridos"]
+    }
+  },
+  "flex-layout.col#vitrine-sugeridos": {
+    "children": [
+      "rich-text#vitrine-sugeridos",
+      "flex-layout.row#slider-produtos-simples-products",
+      "flex-layout.row#vitrine-sugeridos-ver-todos"
+    ],
+    "props": {
+      "blockClass": ["vitrine-sugeridos"],
+      "rowGap": 6
+    }
+  },
+  "rich-text#vitrine-sugeridos": {
+    "title": "Título",
+    "props": {
+      "text": "## PRODUTOS SUGERIDOS",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["shelfTitle"]
+    }
+  },
+
+  "flex-layout.row#slider-produtos-simples-products": {
+    "children": ["list-context.product-list#slider-produtos-simples"]
+  },
+  "flex-layout.row#vitrine-sugeridos-ver-todos": {
+    "children": ["link#vitrine-sugeridos-ver-todos"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "center",
+      "marginTop": {
+        "mobile": 5,
+        "tablet": 0,
+        "desktop": 0
+      },
+      "blockClass": ["name"]
+    }
+  },
+  "link#vitrine-sugeridos-ver-todos": {
+    "title": "Botão Ver Todos",
+    "props": {
+      "href": "/ver-todos",
+      "label": "Ver todos",
+      "displayMode": "button"
+    }
+  },
+  "list-context.product-list#slider-produtos-simples": {
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#slider-produtos-simples"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC"
+    }
+  },
+  "slider-layout#slider-produtos-simples": {
+    "props": {
+      "blockClass": "sliderProdutos",
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "showPaginationDots": "mobileOnly",
+      "showNavigationArrows": "desktopOnly",
+      "infinite": false,
+      "fullWidth": false,
+      "arrowSize": 20
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "flex-layout.row#clientes": {
+    "title": "Lista de Clientes",
+    "children": [
+      "flex-layout.col#clientes"
+    ],
+    "props": {
+      "marginTop": {
+        "desktop": 8,
+        "mobile": 10
+      }
+    }
+  },
+  "flex-layout.col#clientes": {
+    "props": {
+      "rowGap": 6
+    },
+    "children": [
+      "rich-text#title-clientes",
+      "flex-layout.row#list-clientes"
+    ]
+  },
+  "rich-text#title-clientes": {
+    "title": "Título da Lita de Clientes",
+    "props": {
+      "text": "ALGUNS DE NOSSOS CLIENTES",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": [
+        "shelfTitle"
+      ]
+    }
+  },
+  "flex-layout.row#list-clientes": {
+    "props": {
+      "blockClass": [
+        "list-clientes"
+      ]
+    },
+    "children": [
+      "list-context.image-list#list-clientes"
+    ]
+  },
+  "list-context.image-list#list-clientes": {
+    "children": ["slider-layout#list-clientes"],
+    "props": {
+      "preload": true,
+      "images": [
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/carrefour-logo.png",
+          "description": "Carrefour"
+        },
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/Uber-logo.png",
+          "description": "Uber"
+        },
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/grupo-hinode-logo.png",
+          "description": "Grupo Hinode"
+        },
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/ifood-logo.png",
+          "description": "Ifood"
+        },
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/avibras-logo.png",
+          "description": "Avibras"
+        },
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/vivo-logo.png",
+          "description": "Vivo"
+        },
+        {
+          "image": "https://tb4371.vteximg.com.br/arquivos/walmart-logo.png",
+          "description": "Walmart"
+        }
+      ]
+    }
+  },
+  "slider-layout#list-clientes": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 2,
+        "phone": 2
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "mobileOnly",
+      "infinite": false
+    }
+  }
+
+}

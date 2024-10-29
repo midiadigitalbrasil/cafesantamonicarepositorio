@@ -1,0 +1,42 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
+
+.paginationDotsContainer {
+  bottom: -2rem;
+}
+
+.sliderTrackContainer {
+  max-width: 100%;
+}
+
+.sliderArrows {
+  width: 64px;
+  height: 36px;
+  background-color: transparent !important;
+  margin: 0 -50px;
+  color: #2d5c85;
+  padding: 0 12px;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+.sliderArrows:hover {
+  color: #000;
+}
+.sliderRightArrow {
+  justify-content: flex-start;
+}
+.sliderLeftArrow {
+  justify-content: flex-end;
+}
+
+.paginationDot {
+  border-radius: 10px;
+  width: 10px !important;
+  height: 4px !important;
+  background: #002a4e;
+  transition: width 0.25s;
+}
+.paginationDot--isActive {
+  width: 40px !important;
+}

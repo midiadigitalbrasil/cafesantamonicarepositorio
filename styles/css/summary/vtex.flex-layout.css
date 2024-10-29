@@ -1,0 +1,45 @@
+.flexRow--summary-prevent-click {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: indianred;
+}
+
+@media (hover: hover) {
+  .flexRow--product-summary-actions {
+    transition: opacity 0.25s;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 47.9em) {
+  .flexRow--product-summary-actions
+    :global(.vtex-add-to-cart-button-0-x-buttonText) {
+    font-size: 0.6rem;
+  }
+}
+
+.flexRow--product-summary-actions {
+  position: relative;
+}
+.flexRowContent--product-summary-actions::before {
+  content: 'QUANTIDADE';
+  font-size: 6px;
+  font-weight: 400;
+  position: absolute;
+  z-index: 2;
+  top: 9px;
+  background: #FFFFFF;
+  left: 10px;
+  padding: 0px 5px;
+}
+
+@media (max-width: 40em) {
+  .flexRowContent--product-summary-actions::before {
+    top: 12px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

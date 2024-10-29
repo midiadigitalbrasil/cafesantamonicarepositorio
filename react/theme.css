@@ -1,0 +1,271 @@
+@import url('./assets/css/base/reset.css');
+@import url('./assets/css/components/CustomMenu.css');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.vtex-flex-layout-0-x-flexColChild--newsletterForm form {
+  display: flex;
+  align-items: flex-end;
+}
+
+/* header */
+@media (min-width:768px) {
+  .vtex-login-2-x-container .vtex-button .vtex-button__label{
+    padding-right: 0;
+  }
+}
+
+/*categoria*/
+.vtex-search-result-3-x-filter:not(.vtex-search-result-3-x-filterIsOpen) .vtex-search-result-3-x-filterIcon svg,
+.vtex-search-result-3-x-sidebar .vtex-search-result-3-x-accordionFilterContent .vtex-search-result-3-x-accordionFilterItemIcon svg{
+  display: none;
+}
+
+.vtex-search-result-3-x-filter:not(.vtex-search-result-3-x-filterIsOpen) .vtex-search-result-3-x-filterIcon::before,
+.vtex-search-result-3-x-sidebar .vtex-search-result-3-x-accordionFilterContent .vtex-search-result-3-x-accordionFilterItemIcon::before{
+  content: "";
+  background-image: url('/arquivos/arrow-dow-2b.svg?v=324');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 10px;
+  height: 10px;
+  filter: contrast(2.5);
+}
+
+.vtex-list-context-0-x-list--categorias-search--desktop .vtex-list-context-0-x-item--categorias-search--desktop:nth-child(5),
+.vtex-list-context-0-x-list--categorias-search--desktop .vtex-list-context-0-x-item--categorias-search--desktop:nth-child(6),
+.vtex-list-context-0-x-list--categorias-search--desktop .vtex-list-context-0-x-item--categorias-search--desktop:nth-child(7),
+.vtex-list-context-0-x-list--categorias-search--desktop .vtex-list-context-0-x-item--categorias-search--desktop:nth-child(8),
+.vtex-list-context-0-x-list--categorias-search--desktop .vtex-list-context-0-x-item--categorias-search--desktop:nth-child(9){
+    display: none;
+}
+
+/*assembly*/
+.render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp .vtex-flex-layout-0-x-flexRowContent--assembly__pdp 
+> .vtex-flex-layout-0-x-stretchChildrenWidth{
+  flex-direction: column;
+}
+
+.render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp .vtex-flex-layout-0-x-flexRowContent--assembly__pdp 
+> .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-button{
+  width: 245px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: #6290B8;
+  border-color: transparent;
+  transition: .3s;
+}
+
+.render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp .vtex-flex-layout-0-x-flexRowContent--assembly__pdp 
+> .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-button:hover{
+  background-color: #2D5C85;
+  transition: .3s;
+}
+
+.render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp .vtex-flex-layout-0-x-flexRowContent--assembly__pdp 
+> .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-button .vtex-button__label{
+  font-size: 0;
+  padding: 0;
+}
+
+.render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp .vtex-flex-layout-0-x-flexRowContent--assembly__pdp 
+> .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-button .vtex-button__label::before{
+  content: "COMPRAR E ASSINAR NO CLUBE";
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  position: absolute;
+}
+
+.vtex-product-customizer-2-x-inputValueOptionBox > div:not(.vtex-product-customizer-2-x-frameAround) {
+  border: 0;
+}
+
+.vtex-product-customizer-2-x-inputValueOptionBox > div:not(.vtex-product-customizer-2-x-frameAround) > .c-on-base{
+  font-weight: 700;
+}
+
+@media (min-width:769px) {
+  /*pdp*/
+  .render-route-store-product .prodSpec__container__master{
+    max-width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp > .vtex-store-components-3-x-container > .vtex-flex-layout-0-x-flexRowContent > .vtex-flex-layout-0-x-stretchChildrenWidth:last-child{
+    max-width: 30%;
+  }
+
+  .render-route-store-product .swiper-container-vertical.swiper-container-thumbs > .swiper-wrapper{
+    justify-content: center;
+  }
+
+  .render-route-store-product .vtex-store-components-3-x-carouselGaleryThumbs .swiper-slide{
+    width: 67px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .render-route-store-product .vtex-store-components-3-x-productImagesThumbActive{
+    border-bottom: 5px solid #002A4E;
+  }
+
+  .render-route-store-product .vtex-store-components-3-x-carouselGaleryCursor{
+    max-width: 60%;
+    margin-right: 15%;
+  }
+
+  .render-route-store-product .vtex-store-components-3-x-carouselGaleryCursor .vtex-store-components-3-x-swiperCaret,
+  .render-route-store-product .vtex-store-components-3-x-carouselGaleryCursor .vtex-store-components-3-x-swiper-pagination{
+    display: none;
+  }
+}
+
+.vtex-search-result-3-x-buttonShowMore button{
+  width: 410px;
+  height: 40px;
+  transition: .3s;
+}
+
+.vtex-search-result-3-x-buttonShowMore button .vtex-button__label{
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+/*pdp*/
+.render-route-store-product .vtex-flex-layout-0-x-flexRowContent--pdp-buy-button button .vtex-button__label{
+  background-color: transparent !important;
+  transition: .3s;
+}
+
+.render-route-store-product .vtex-flex-layout-0-x-flexRow--pdp-buy-button .vtex-button{
+  min-width: 299px;
+}
+
+.vtex-flex-layout-0-x-flexRow--quantity-action .vtex-button__label:hover,
+.vtex-flex-layout-0-x-flexRow--pdp-buy-button .vtex-button:hover{
+  background-color: #2D5C85 !important;
+  border-color: #2D5C85 !important;
+  transition: .3s;
+}
+
+@media (max-width: 63.99em) {
+  .render-route-store-product [class*='quantitySelectorContainer']{
+    margin-bottom: 10px;
+  }
+
+  .render-route-store-product .vtex-flex-layout-0-x-flexRow--newsletter {
+      margin-top: 70px;
+  }
+
+  [class*="render-route-store-search"] [class*='quantitySelectorContainer']{
+    margin-bottom: 10px;
+  }
+
+  .vtex-store-components-3-x-portalWrapper .flex {
+    top: 3rem !important;
+  }
+}
+
+.vtex-search-result-3-x-filter__container .vtex-search-result-3-x-caretIcon {
+  width: 12px;
+  height: 12px;
+}
+
+.vtex-slider-layout-0-x-sliderArrows[disabled] {
+  cursor: default;
+  color: #999999;
+  background-color: transparent !important;
+  pointer-events: none;
+}
+
+.gray {
+  color: currentColor;
+}
+.gray svg,
+.vtex-store-header-2-x-headerRow button svg {
+  color: #243746;
+  transition: color 0.25s ease-out;
+}
+
+.vtex-account [data-testid='menu-option-0'] {
+  display: none;
+}
+.vtex-account [data-testid='menu-option-1'] {
+  display: none;
+}
+.vtex-account [data-testid='menu-option-2'] {
+  display: none;
+}
+
+
+
+.vtex-search-result-3-x-filterBreadcrumbsText {
+  display: flex;
+  align-items: center;
+}
+.vtex-search-result-3-x-filterBreadcrumbsText.c-muted-2::before {
+  content: '';
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14.321' height='14.281' viewBox='0 0 14.321 14.281'%3E%3Cpath fill='%23FCE7C2' data-name='Union 5' d='M6.787 14.135.147 7.494a.5.5 0 0 1 0-.707l6.64-6.64a.5.5 0 0 1 .707.707l-5.8 5.8H13.82a.5.5 0 1 1 0 1H1.72l5.774 5.774a.5.5 0 1 1-.707.707Z'/%3E%3C/svg%3E") no-repeat center/contain;
+  margin-right: 1rem;
+}
+.vtex-flex-layout-0-x-flexRowContent--product-summary-actions > .pr4 {
+  padding-right: 0px;
+}
+
+/*certificacao*/
+.render-route-vtex-store-2-x-store-custom-quem-somos .vtex-store-header-2-x-headerStickyRow{
+  position: initial;
+}
+
+.vtex-flex-layout-0-x-flexRowContent--section-certification > .vtex-flex-layout-0-x-stretchChildrenWidth:first-child{
+  width: 25% !important;
+  margin-right: 10%;
+}
+
+.vtex-flex-layout-0-x-flexRowContent--section-certification > .vtex-flex-layout-0-x-stretchChildrenWidth:last-child{
+  width: 65% !important;
+}
+
+/*quem somos geral*/
+
+.render-route-vtex-store-2-x-store-custom-quem-somos .vtex-flex-layout-0-x-flexRowContent--newsletter {
+  display: none;
+}
+
+.render-route-vtex-store-2-x-store-custom-quem-somos .tb4371-cafe-sta-monica-0-x-mini_cart_fixed_container{
+  display: none;
+}
+
+@media (max-width:768px) {
+  .vtex-store-components-3-x-searchBarContainer input, 
+  body > div.render-container > div > div.vtex-store__template.bg-base > div > div:nth-child(3) > div > div,
+  .vtex-store-components-3-x-autoCompleteOuterContainer.vtex-store-components-3-x-autoCompleteOuterContainer--search-bar-mobile > div > label > div > span{
+    background-color: #f3f3f3;
+  }
+
+  /*lp quem somos*/
+  .vtex-flex-layout-0-x-flexRowContent--section-certification > .vtex-flex-layout-0-x-stretchChildrenWidth:first-child {
+    width: 100% !important;
+    margin-right: 0%;
+  }
+
+  .vtex-flex-layout-0-x-flexRowContent--section-certification > .vtex-flex-layout-0-x-stretchChildrenWidth:last-child{
+    width: 100% !important;
+    margin-top: 25px;
+  }
+}

@@ -1,0 +1,8 @@
+@media (max-width: 40em) {
+  .logoImage {
+    height: 50px;
+  }
+  .closeIcon--search-bar-mobile {
+    height: 12px;
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "flex-layout.row#video-home": {
+    "title": "Destaque com Vídeo",
+    "props": {
+      "marginTop": 10,
+      "blockClass": [
+        "video-home"
+      ]
+    },
+    "children": [
+      "flex-layout.col#video-home-info",
+      "flex-layout.row#video-home-video"
+    ]
+  },
+  "flex-layout.col#video-home-info": {
+    "props": {
+      "blockClass": [
+        "video-home-info"
+      ]
+    },
+    "children": [
+      "rich-text#title-video-home-info",
+      "rich-text#content-video-home-info",
+      "link#button-video-home-info"
+    ]
+  },
+  "rich-text#title-video-home-info": {
+    "title": "Título do destaque com Vídeo",
+    "props": {
+      "text": "# SELEÇÃO ESPECIAL",
+      "textAlignment": "LEFT",
+      "blockClass": [
+        "shelfTitle",
+        "video-home-title"
+      ]
+    }
+  },
+  "rich-text#content-video-home-info": {
+    "title": "Texto do destaque com Vídeo",
+    "props": {
+      "text": "O Café Gourmet Santa Monica preza pela excelência. Para garantir a qualidade de cada grão, todo seu café é cultivado na própria Fazenda Santa Monica, na nobre região do sul de Minas Gerais com altitude de mil metros acima do nível do mar e sem blends.",
+      "textAlignment": "LEFT",
+      "blockClass": [
+        "video-home-content"
+      ]
+    }
+  },
+  "link#button-video-home-info": {
+    "props": {
+      "label": "VER MAIS",
+      "href": "/selecao-especial",
+      "displayMode": "button",
+      "blockClass": [
+        "video-home-button"
+      ]
+    }
+  },
+  "flex-layout.row#video-home-video": {
+    "children": [
+      "video#video-home-video"
+    ]
+  },
+  "video#video-home-video": {
+    "props": {
+      "src": "https://www.youtube.com/watch?v=gpeF_mgkXtc",
+      "name": "Vídeo Destaque Café Santa Mônica",
+      "poster": "https://tb4371.vteximg.com.br/arquivos/banner-video-home.png",
+      "controlsType": "none",
+      "width": "100%",
+      "height": "380px",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "playsInline": false,
+      "PlayIcon": "icon-play",
+      "PauseIcon": "icon-pause",
+      "blockClass": [
+        "video-home"
+      ]
+    }
+  }
+}

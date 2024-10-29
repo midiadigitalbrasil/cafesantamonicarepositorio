@@ -1,0 +1,14 @@
+.planoItem :global(.vtex-slider-layout-0-x-paragraph) {
+  text-align: center;
+}
+.planoItem :global(.vtex-slider-layout-0-x-container) {
+  justify-content: center;
+}
+.planoItemIcon {
+  width: 118px;
+  height: 118px;
+  background-color: #bf6a1e;
+  background-position: center;
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+}
