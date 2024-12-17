@@ -3,7 +3,6 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "icones-pdp",
       "custom-product-specifications",
       "custom-buy-together",
       "shelf.relatedProducts"
@@ -163,7 +162,7 @@
       "flex-layout.row#pdp-list-price-savings",
       "flex-layout.row#pdp-selling-price",
       "flex-layout.row#quantity-action",
-      "sku-selector",
+      "subscription-box",
       "flex-layout.row#assembly__pdp",
       "flex-layout.row#shipping-simulator",
       "product-similar",

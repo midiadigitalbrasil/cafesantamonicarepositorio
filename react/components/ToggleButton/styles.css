@@ -1,0 +1,18 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.subscription-text {
+  font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+  color: #d47619; /* Cor laranja semelhante à da imagem */
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+/* Estilo em verde quando selecionado */
+.subscription-text.selected {
+  color: #4caf50; /* Cor verde para o estado selecionado */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}

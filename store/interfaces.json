@@ -48,12 +48,6 @@
   "mini-cart-fixed": {
     "component": "MiniCartFixed"
   },
-  "selos-pdp": {
-    "component": "SelosPdp"
-  },
-  "icones-pdp": {
-    "component": "IconesPdp"
-  },
   "product-similar": {
     "component": "ProductSimilar"
   },
@@ -62,5 +56,23 @@
   },
   "shipping-free-custom": {
     "component": "ShippingFree"
-  }
+  },
+  
+    "subscriber-price": {
+      "component": "SubscriberPrice"
+    },
+
+    "selos-pdp": {
+      "component": "SelosPdp"
+    },
+
+    "toogle-button": {
+  "component": "ToggleButton"
+},
+"subscription-box": {
+  "component": "SubscriptionBox"
 }
+}
+
+  
+

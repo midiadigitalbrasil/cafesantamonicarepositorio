@@ -1,0 +1,37 @@
+15:45:19.648 - [34mdebug[39m: Toolbelt version: 4.2.0  
+15:45:19.656 - [34mdebug[39m: node v20.16.0 - win32 10.0.19045  
+15:45:19.657 - [34mdebug[39m:  [ [32m'link'[39m, [32m'--verbose'[39m ]  
+15:45:20.278 - [34mdebug[39m: Import VTEX OK  
+15:45:23.485 - [32minfo[39m: Running yarn in react  
+[2K[1G[1myarn install v1.22.10[22m[m
+[2K[1G[2m[1/4][22m Resolving packages...
+[2K[1G[2m[2/4][22m Fetching packages...
+[2K[1G[94minfo[39m Visit [1mhttps://yarnpkg.com/en/docs/cli/install[22m for documentation about this command.
+15:45:27.313 - [31merror[39m: Failed to run yarn in react  
+15:45:27.319 - [31merror[39m: Unhandled exception  
+15:45:27.320 - [31merror[39m: Please report the issue in https://github.com/vtex/toolbelt/issues  
+15:45:27.322 - [31merror[39m: Raw error: Command failed: "C:\Program Files (x86)\vtex\client\node_modules\yarn\bin\yarn" --non-interactive --ignore-engines Error: Command failed: "C:\Program Files (x86)\vtex\client\node_modules\yarn\bin\yarn" --non-interactive --ignore-engines
+[90m    at genericNodeError (node:internal/errors:984:15)[39m
+[90m    at wrappedFn (node:internal/errors:538:14)[39m
+[90m    at checkExecSyncError (node:child_process:890:11)[39m
+[90m    at Object.execSync (node:child_process:962:15)[39m
+    at ChildProcess.execSync (C:\Program Files (x86)\vtex\client\node_modules\[4mchild-process-es6-promise[24m\index.js:232:40)
+    at exports.runYarn (C:\Program Files (x86)\vtex\client\lib\modules\utils.js:22:33)
+    at exports.runYarnIfPathExists (C:\Program Files (x86)\vtex\client\lib\modules\utils.js:30:21)
+    at _map (C:\Program Files (x86)\vtex\client\node_modules\[4mramda[24m\src\internal\_map.js:6:19)
+    at map (C:\Program Files (x86)\vtex\client\node_modules\[4mramda[24m\src\map.js:64:14)
+    at C:\Program Files (x86)\vtex\client\node_modules\[4mramda[24m\src\internal\_dispatchable.js:41:15
+    at Object.f2 [as map] (C:\Program Files (x86)\vtex\client\node_modules\[4mramda[24m\src\internal\_curry2.js:29:14)
+    at Object.appLink (C:\Program Files (x86)\vtex\client\lib\modules\apps\link.js:221:13)
+    at async Link.run (C:\Program Files (x86)\vtex\client\lib\commands\link.js:11:9)
+    at async Link._run (C:\Program Files (x86)\vtex\client\lib\api\oclif\CustomCommand.js:27:28)
+    at async ctx.config.runCommand (C:\Program Files (x86)\vtex\client\node_modules\[4m@tiagonapoli[24m\oclif-plugin-spaced-commands\lib\hooks\init.js:89:9)
+    at async Main.run (C:\Program Files (x86)\vtex\client\node_modules\[4m@oclif[24m\command\lib\main.js:27:9) {
+  status: [33m1[39m,
+  signal: [1mnull[22m,
+  output: [ [1mnull[22m, [1mnull[22m, [1mnull[22m ],
+  pid: [33m7108[39m,
+  stdout: [1mnull[22m,
+  stderr: [1mnull[22m
+}  
+15:45:27.328 - [31merror[39m: ErrorID: b88403ca051612bfc45e3ce5b629981c  

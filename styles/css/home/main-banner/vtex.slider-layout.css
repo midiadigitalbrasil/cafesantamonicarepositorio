@@ -1,29 +1,54 @@
- 
-.sliderArrows--mainBanner {
-  width: 64px;
+/* Estilos para as setas de navegação no banner atualizado */
+.mainBannerUpdated .sliderArrows--mainBanner {
+  width: 40px; /* Reduzido para um tamanho menor */
   height: 40px;
   background-color: transparent !important;
+  color: #fff;
   margin: 0;
-  color: #fff;
-
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  border-radius: 50%; /* Aparência arredondada */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.sliderArrows--mainBanner:hover {
-  background-color: transparent !important;
+
+.mainBannerUpdated .sliderArrows--mainBanner.slider-navigation--arrow--left {
+  left: 15px; /* Posiciona a seta esquerda mais para dentro */
+}
+
+.mainBannerUpdated .sliderArrows--mainBanner.slider-navigation--arrow--right {
+  right: 15px; /* Posiciona a seta direita mais para dentro */
+}
+
+.mainBannerUpdated .sliderArrows--mainBanner:hover {
+  background-color: rgba(0, 0, 0, 0.2) !important; /* Fundo semi-transparente no hover */
   color: #fff;
 }
 
-.paginationDotsContainer--mainBanner {
+/* Estilos para os pontos de paginação */
+.mainBannerUpdated .paginationDotsContainer--mainBanner {
   position: absolute;
   bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.paginationDot--mainBanner {
+.mainBannerUpdated .paginationDot--mainBanner {
   background: #FCE7C2;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  border-radius: 50%;
 }
 
-.imageElement--mainBanner {
+/* Estilos para as imagens do banner */
+.mainBannerUpdated .imageElement--mainBanner {
   max-height: none !important;
 }
-.imageElementLink--mainBanner {
+
+.mainBannerUpdated .imageElementLink--mainBanner {
   width: 100%;
 }

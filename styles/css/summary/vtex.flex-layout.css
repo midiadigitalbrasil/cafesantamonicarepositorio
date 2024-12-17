@@ -7,12 +7,13 @@
   background: indianred;
 }
 
-@media (hover: hover) {
-  .flexRow--product-summary-actions {
-    transition: opacity 0.25s;
-    opacity: 0;
-  }
+.flexRow--product-summary-actions {
+  opacity: 1 !important; /* Garante que o elemento esteja sempre visível */
+  transition: none;      /* Remove a transição */
+  
 }
+
+
 
 @media (max-width: 47.9em) {
   .flexRow--product-summary-actions
@@ -21,12 +22,15 @@
   }
 }
 
+/* LAYOUT COMPLETO DO SLIDER  BOTÃO COMPRAR*/
+
+
 .flexRow--product-summary-actions {
   position: relative;
 }
 .flexRowContent--product-summary-actions::before {
   content: 'QUANTIDADE';
-  font-size: 6px;
+  font-size: 7px;
   font-weight: 400;
   position: absolute;
   z-index: 2;

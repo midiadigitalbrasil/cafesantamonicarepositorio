@@ -1,19 +1,12 @@
-.productAssemblyGroupName{
-    font-size: 0;
-}
-
-.productAssemblyGroupName::before{
-    content: "Selecione a frequência da assinatura";
-    letter-spacing: 0.28px;
-    color: #373837;
-    font-size: 14px;
-    font-weight: 400;
-    text-transform: initial;
-}
-
-.inputValueOptionBox{
-    background-color: #fff;
-    border: 1px solid #e3e4e6;
-    cursor: default !important
+/* Deixa invisíveis todos os elementos, exceto o botão de "Remover" */
+.productAssemblyGroupName,
+.inputValueOptionBox,
+.vtex-product-customizer-2-x-optionsInputValueLabelContainer,
+.vtex-product-customizer-2-x-optionsInputValueOptionBoxContainer {
+  opacity: 0; /* Torna os elementos invisíveis */
+  pointer-events: none; /* Impede interações com esses elementos */
+  height: 0; /* Remove o espaço ocupado */
+  margin: 0;
+  padding: 0;
 }
 

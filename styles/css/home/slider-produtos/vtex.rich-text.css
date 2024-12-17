@@ -1,7 +1,21 @@
 .paragraph--shelfTitle {
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 2em; /* Ajuste para o tamanho visual de um H1 */
+  font-weight: 700; /* Normalmente, H1 é mais negrito */
   color: #373837;
-  font-family: 'Gotham';
+  font-family: 'Gotham', sans-serif;
   letter-spacing: 1.5px;
+  line-height: 1.2; /* Ajuste para espaçamento semelhante a H1 */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.paragraph--shelfTitle-teste {
+  font-size: 1.5em; /* Ajuste para o tamanho visual de um H1 */
+  font-weight: 700; /* Normalmente, H1 é mais negrito */
+  color: #373837;
+  font-family: 'Gotham', sans-serif;
+  letter-spacing: 1.5px;
+  line-height: 1.2; /* Ajuste para espaçamento semelhante a H1 */
+  margin-top: 0;
+  margin-bottom: 0.5em;
 }

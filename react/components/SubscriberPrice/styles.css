@@ -1,0 +1,82 @@
+/* Contêiner para o preço do assinante */
+.subscriber-price-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo para o preço original */
+.original-price .price {
+  text-decoration: line-through;
+  color: gray;
+  font-weight: 600;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+
+
+/* Estilo específico para o preço de assinante */
+.subscriber-price .price {
+  color: #FFFFFF !important; /* Cor branca para contraste com o fundo */
+  background-color: #AB3535 !important; /* Fundo vermelho destacado */
+  font-weight: bold !important;
+  font-size: 14px !important;
+  padding: 4px 8px; /* Espaço interno para melhorar a legibilidade */
+  border-radius: 4px; /* Bordas arredondadas para um design moderno */
+  display: inline-block;
+}
+
+
+.subscriber-price-button {
+  background-color: #002A4E !important; /* Azul fixo */
+  color: #FFFFFF !important; /* Texto branco */
+  border: 1px solid #002A4E !important; /* Borda azul */
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%; /* Para preencher o contêiner */
+}
+
+.subscriber-price-button:hover {
+  background-color: #002A4E !important; /* Manter o fundo azul no hover */
+  color: #FFFFFF !important; /* Manter o texto branco no hover */
+  border: 1px solid #002A4E !important; /* Manter a borda azul no hover */
+}
+
+
+/* Estilo para a label */
+.label {
+  margin-right: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+
+.price-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os filhos horizontalmente */
+}
+
+.price-column .product-summary-price,
+.price-column .subscriber-price {
+  text-align: center; /* Centraliza o texto dentro dos componentes */
+}
+
+.price-column .product-summary-price {
+  margin-bottom: 5px; /* Espaçamento entre o preço original e o preço do assinante */
+}
+
+.price-column .subscriber-price {
+  margin-top: 5px;
+}
+
+.product-summary-price * {
+  display: block;
+}
+
+.subscriber-price * {
+  display: block;
+}

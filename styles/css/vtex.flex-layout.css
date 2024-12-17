@@ -6,18 +6,35 @@
 .flexCol--name-col {
   padding-bottom: 12px;
   border-bottom: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flexRow--pdp-selling-price .original-price {
+  font-size: 16px;
+  color: #333; /* Cor do preço original */
+  text-decoration: line-through; /* Riscado para indicar o preço antigo */
+  margin-right: 8px;
+}
+
+.flexRow--pdp-selling-price .subscriber-price {
+  font-size: 18px;
+  color: #ff5722; /* Cor de destaque para o preço de assinante */
+  font-weight: bold;
+  margin-top: 4px;
 }
 
 .flexRow--pdp-buy-button :global(.vtex-button) {
   background-color: #002A4E;
   color: white;
   border-color: #002A4E;
+  
 }
 
 .flexRow--quantity-action .stretchChildrenWidth {
   width: initial !important;
 }
-
 
 .flexRow--quantity-action :global(.vtex-button__label):hover {
   background-color: #243746aa;
@@ -33,10 +50,12 @@
   gap: 14px;
 }
 
+
+
 .flexRow--list-clientes :global(.vtex-slider-layout-0-x-imageElement) {
   max-width: 140px;
 }
 
-.flexRow--list-clientes{
+.flexRow--list-clientes {
   margin-bottom: 40px;
 }

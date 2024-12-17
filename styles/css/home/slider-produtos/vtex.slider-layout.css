@@ -1,18 +1,60 @@
-@media (max-width:768px) {
-    .sliderLayoutContainer--slider-produtos{
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
-    
-    .sliderTrack--slider-produtos{
-        gap: 0 !important;
-    }
-    
-    .slide--slider-produtos--visible{
-        padding: 15px !important;
+/* Estilos gerais do slider */
+.sliderLayoutContainer--slider-produtos {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.sliderArrows--slider-produtos {
+    font-size: 30px;
+    color: #000;
+    z-index: 10;
+}
+
+.sliderArrows--slider-produtos.left {
+    left: 10px;
+}
+
+.sliderArrows--slider-produtos.right {
+    right: 10px;
+}
+
+/* Estilos para mobile */
+@media (max-width: 768px) {
+    /* Esconde o slider no mobile */
+    .custom-slider {
+        display: none;
     }
 
-    .sliderArrows--planos {
-        margin: 0 -10px;
+    /* Exibe os produtos em grid de duas colunas */
+    .product-list-mobile {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    /* Alinhamento do preço e botão de compra */
+    .product-list-mobile .product-summary {
+        text-align: center;
+    }
+
+    .product-list-mobile .product-summary-price,
+    .product-list-mobile .subscriber-price {
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    .product-list-mobile .quantity-action,
+    .product-list-mobile .add-to-cart-button {
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .product-list-mobile .product-summary {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
     }
 }

@@ -1,13 +1,14 @@
 {
   "vendor": "tb4371",
   "name": "cafe-sta-monica",
-  "version": "0.0.42",
+  "version": "0.0.44",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
     "docs": "0.x",
     "react": "3.x",
     "assets": "0.x",
+    "messages": "1.x",
     "checkout-ui-custom": "0.x"
   },
   "scripts": {
@@ -77,7 +78,8 @@
     "vtex.session-client": "1.x",
     "vtex.product-list-context": "0.x",
     "vtex.format-currency": "0.x",
-    "vtex.store-media": "0.x"
+    "vtex.store-media": "0.x",
+    "vtex.store-theme": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

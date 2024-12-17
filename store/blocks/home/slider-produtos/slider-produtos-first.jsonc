@@ -1,71 +1,141 @@
 {
-    "flex-layout.row#slider-produtos-first": {
-        "title": "Primeiro Slider Produtos",
-        "props": {
-            "blockClass": "slider-produtos-first",
-            "fullWidth": {
-                "desktop": false,
-                "mobile": true
-            },
-            "marginTop": {
-                "desktop": 9,
-                "mobile": 8
-            }
-        },
-        "children": [
-            "flex-layout.col#slider-produtos-first"
-        ]
+  "flex-layout.row#slider-produtos-first-test": {
+    "title": "Primeiro Slider Produtos",
+    "props": {
+      "blockClass": "slider-produtos-first",
+      "fullWidth": {
+        "desktop": false,
+        "mobile": true
+      },
+      "marginTop": {
+        "desktop": 9,
+        "mobile": 8
+      }
     },
-    "flex-layout.col#slider-produtos-first": {
-        "props": {
-            "rowGap": 6
-        },
-        "children": [
-            "rich-text#title-slider-produtos-first",
-            "flex-layout.row#products-first-slider"
-        ]
+    "children": [
+      "flex-layout.col#slider-produtos-first"
+    ]
+  },
+  "flex-layout.col#slider-produtos-first": {
+    "props": {
+      "rowGap": 0
     },
-    "rich-text#title-slider-produtos-first": {
+    "children": [
+      "rich-text#title-slider-produtos-first-teste",
+      "flex-layout.row#products-desktop-slider",
+      "flex-layout.row#products-list-mobile"
+    ]
+  },
+  "rich-text#title-slider-produtos-first-teste": {
     "title": "Título do Slider",
     "props": {
-        "text": "PARA APROVEITAR O INVERNO",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER",
-        "blockClass": [
-            "shelfTitle"
-        ]
+      "text": "Favoritos Santa Monica",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": [
+        "shelfTitle"
+      ]
     }
-    },
-    "flex-layout.row#products-first-slider": {
-        "children": [
-            "list-context.product-list#slider-produtos-first"
-        ]
-    },
-    
-    "list-context.product-list#slider-produtos-first": {
-        "blocks": [
-            "product-summary.shelf"
-        ],
-        "children": [
-            "slider-layout#slider-produtos-first"
-        ],
-        "props": {
-            "orderBy": "OrderByReleaseDateDESC"
-        }
-    },
-    "slider-layout#slider-produtos-first": {
-        "props": {
-            "blockClass": "slider-produtos",
-            "itemsPerPage": {
-                "desktop": 4,
-                "tablet": 2,
-                "phone": 2
-            },
-            "showPaginationDots": "mobileOnly",
-            "showNavigationArrows": "desktopOnly",
-            "infinite": false,
-            "fullWidth": false, /* false => padding lateral para seta : true => sem padding lateral para setas  */
-            "arrowSize": 20
-        }
+  },
+  "flex-layout.row#products-desktop-slider": {
+    "children": [
+      "list-context.product-list#slider-produtos-first"
+    ],
+    "props": {
+      "blockClass": "custom-slider",
+      "visibility": {
+        "desktop": true,
+        "mobile": false
+      }
     }
+  },
+  "flex-layout.row#products-list-mobile": {
+    "children": [
+      "list-context.product-list#list-produtos-mobile"
+    ],
+    "props": {
+      "blockClass": "product-list-mobile",
+      "visibility": {
+        "desktop": false,
+        "mobile": true
+      }
+    }
+  },
+  "list-context.product-list#slider-produtos-first": {
+    "blocks": [
+      "product-summary.shelf#custom"
+    ],
+    "children": [
+      "slider-layout#slider-produtos-first"
+    ],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC"
+    }
+  },
+  "list-context.product-list#list-produtos-mobile": {
+    "blocks": [
+      "product-summary.shelf#custom"
+    ],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "itemsPerRow": {
+        "desktop": 1,
+        "mobile": 2
+      }
+    }
+  },
+  "slider-layout#slider-produtos-first": {
+    "props": {
+      "blockClass": "custom-slider",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 2,
+        "phone": 2
+      },
+      "showPaginationDots": "mobileOnly",
+      "showNavigationArrows": "always",
+      "infinite": false,
+      "fullWidth": false,
+      "arrowSize": 30
+    }
+  },
+  "product-summary.shelf#custom": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "flex-layout.col#price-column",
+      "flex-layout.row#quantity-action"
+    ],
+    "props": {
+      "blockClass": "product-summary",
+      "layout": {
+        "mobile": "vertical"
+      }
+    }
+  },
+  "flex-layout.col#price-column": {
+    "children": [
+      "product-summary-price",
+      "subscriber-price"
+    ],
+    "props": {
+      "blockClass": "price-column",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.row#quantity-action": {
+    "children": [
+      "add-to-cart-button"
+    ],
+    "props": {
+      "blockClass": "quantity-action",
+      "horizontalAlign": "center"
+    }
+  },
+  "subscriber-price": {
+    "props": {
+      "blockClass": "subscriber-price",
+      "horizontalAlign": "center"
+    }
+  }
 }

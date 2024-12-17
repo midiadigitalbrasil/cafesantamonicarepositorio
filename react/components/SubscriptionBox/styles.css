@@ -1,0 +1,35 @@
+.subscription-box {
+  background-color: #f7f9fa; /* Fundo neutro */
+  border: 1px solid #d1d5db; /* Borda suave */
+  border-radius: 8px; /* Bordas arredondadas */
+  padding: 16px; /* Espaçamento interno */
+  margin-top: 16px; /* Espaçamento acima do box */
+  text-align: center; /* Centraliza o texto */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.subscription-text {
+  color: #3c3c3c; /* Cor do texto em tom escuro */
+  font-family: 'Roboto', sans-serif; /* Tipografia consistente */
+  font-size: 0.875rem; /* Tamanho ajustado */
+  margin: 8px 0; /* Espaçamento entre as linhas */
+  line-height: 1.5; /* Melhor espaçamento entre linhas */
+}
+
+.subscription-button {
+  background-color: #003580; /* Azul escuro */
+  color: #ffffff; /* Texto branco */
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.subscription-button:hover {
+  background-color: #0056b3; /* Azul mais claro ao passar o mouse */
+}

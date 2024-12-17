@@ -13,16 +13,19 @@
   letter-spacing: 0.05em;
   line-height: 1.25;  
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 .nameContainer {
   padding: 0;
+  
 }
 
 .productNameContainer {
   text-align: left;
+  margin-bottom: 0.2rem; /* Reduz o espaço abaixo do nome do produto */
+  padding-bottom: 0;     /* Remove qualquer padding inferior */
 }
 
 .imageWrapper{

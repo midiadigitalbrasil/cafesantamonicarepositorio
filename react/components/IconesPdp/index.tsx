@@ -5,32 +5,21 @@ import style from './style.css'
 
 const IconesPdp: StorefrontFC = () => {
   if (canUseDOM) {
-    const { product } = useProduct()    
+    const { product } = useProduct()
+
+    // Verifica se há grupos para evitar erros
+    if (!product || !product.specificationGroups) return null
 
     const groups = product.specificationGroups.filter(
       (group: any) => group.name === 'Icons'
-    ) 
-
-    console.log('groups',groups);
-    
-
-    if (!groups) return
-
-    return(
-      groups.map((group: any, index: number) => (
-              <ul key={index} className={`${style.icones__container__custom}`}>
-                {group.specifications.map((spec: any, index: number) => (
-                  <li key={index} className={`${style.icones__item__custom}`}>
-                    <img src={`/arquivos/icones-${spec.name.replace(/\s/g, '-').toLocaleLowerCase()}.png?v=321`} alt={spec.name} />    
-                  </li>
-                ))}
-              </ul>
-          ))
     )
+
+    // Se o grupo "Icons" existir, mas você não quer exibir nada, simplesmente retorna null
+    if (groups && groups.length > 0) return null
   }
 
   return (
-    <div className={`${style.icones__item__custom} center ph3 ph5-m ph2-xl mw9 `}>
+    <div className={`${style.icones__item__custom} center ph3 ph5-m ph2-xl mw9`}>
       carregando informações...
     </div>
   )

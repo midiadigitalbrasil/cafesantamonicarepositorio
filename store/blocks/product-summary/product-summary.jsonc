@@ -5,7 +5,9 @@
       "product-summary-name",
       "product-summary-space",
       "flex-layout.row#selling-price",
+      "subscriber-price",
       "flex-layout.row#product-summary-actions"
+      
     ]
   },
   "stack-layout#prodsum": {

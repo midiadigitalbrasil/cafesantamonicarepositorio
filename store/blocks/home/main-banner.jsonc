@@ -1,58 +1,50 @@
 {
-  "flex-layout.row#main-banner": {
-    "title": "Banner Principal",
+  "flex-layout.row#main-banner-updated": {
+    "title": "Banner Principal Atualizado",
     "children": [
-      "list-context.image-list#main-banner"
+      "list-context.image-list#main-banner-updated"
     ],
     "props": {
       "marginTop": 0,
       "fullWidth": true
     }
   },
-  "list-context.image-list#main-banner": {
-    "title": "Banners Images",
+  "list-context.image-list#main-banner-updated": {
+    "title": "Banners Imagens Atualizado",
     "children": [
-      "slider-layout#main-banner"
+      "slider-layout#main-banner-updated"
     ],
     "props": {
-      "height": 720,
+      "height": 450,
       "images": [
         {
-          "image": "https://tb4371.vteximg.com.br/arquivos/banner-principal-desktop.png",
-          "mobileImage": "https://tb4371.vteximg.com.br/arquivos/banner-principal-mobile.png",
+          "image": "https://tb4371.vtexassets.com/assets/vtex.file-manager-graphql/images/05019060-6dbe-46f0-ab5e-6b0d7cf228f1___07bcb8ed0fa1b0adc4b968db7770cbe6.png",
+          "mobileImage": "https://tb4371.vtexassets.com/assets/vtex.file-manager-graphql/images/19476a7b-02a9-4b9e-a30a-97433fa6559f___24fe4181ad00b022fb51477de4244119.png",
           "link": {
-            "title": "URL imagem",
-            "url": "/imagem"
+            "title": "Banner 1",
+            "url": "https://www.cafesantamonica.com.br/torra?_q=torra&map=ft"
           }
         },
         {
-          "image": "https://tb4371.vteximg.com.br/arquivos/banner-principal-desktop.png",
-          "mobileImage": "https://tb4371.vteximg.com.br/arquivos/banner-principal-mobile.png",
+          "image": "https://tb4371.vtexassets.com/assets/vtex.file-manager-graphql/images/755448d3-9cdc-4484-9683-520f35c530cc___8d001cc892db605f9327cc31eed048ac.jpg",
+          "mobileImage": "https://tb4371.vtexassets.com/assets/vtex.file-manager-graphql/images/fccf7d6f-6b69-419c-8aee-e8bd0020266c___c4f9398a5fc26877f17f4d9c91aa7e0d.jpg",
           "link": {
-            "title": "URL imagem",
-            "url": "/imagem"
+            "title": "Banner 2",
+            "url": "https://www.cafesantamonica.com.br/141?map=productClusterIds&order=OrderByBestDiscountDESC"
           }
         },
         {
-          "image": "https://tb4371.vteximg.com.br/arquivos/banner-principal-desktop.png",
-          "mobileImage": "https://tb4371.vteximg.com.br/arquivos/banner-principal-mobile.png",
+          "image": "https://tb4371.vtexassets.com/assets/vtex.file-manager-graphql/images/81c4c617-f0ee-47bb-974e-87cc87a9803e___d42aff64a9fcd49d0aa90354b3ee27ff.jpg",
+          "mobileImage": "https://tb4371.vtexassets.com/assets/vtex.file-manager-graphql/images/94650414-df57-48c4-a078-65307b04cb1f___f518415e4f985156bb76918e0f59a7a4.jpg",
           "link": {
-            "title": "URL imagem",
-            "url": "/imagem"
-          }
-        },
-        {
-          "image": "https://tb4371.vteximg.com.br/arquivos/banner-principal-desktop.png",
-          "mobileImage": "https://tb4371.vteximg.com.br/arquivos/banner-principal-mobile.png",
-          "link": {
-            "title": "URL imagem",
-            "url": "/imagem"
+            "title": "Banner 3",
+            "url": "https://www.cafesantamonica.com.br/assinatura"
           }
         }
       ]
     }
   },
-  "slider-layout#main-banner": {
+  "slider-layout#main-banner-updated": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -66,7 +58,7 @@
       "infinite": false,
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "mobileOnly",
-      "blockClass": "mainBanner"
+      "blockClass": "mainBannerUpdated"
     }
   }
 }

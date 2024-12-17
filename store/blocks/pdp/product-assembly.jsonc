@@ -52,20 +52,14 @@
     },
     "children": [
       "assembly-option-item-name",
-      "assembly-option-item-price",
-      "assembly-option-item-children-description",
-      "assembly-option-item-customize#first-level"
+      "assembly-option-item-price"
     ]
   },
   "assembly-option-item-customize#first-level": {
-    "props": {
-      "buttonProps": {
-        "collapse": "left"
-      }
-    },
     "children": [
       "flex-layout.row#item-customize",
       "assembly-option-input-values"
+      
     ]
   },
   "flex-layout.row#item-customize": {
@@ -102,11 +96,6 @@
     ]
   },
   "assembly-option-item-customize#sec-level": {
-    "props": {
-      "buttonProps": {
-        "collapse": "left"
-      }
-    },
     "children": [
       "assembly-option-item-image",
       "assembly-option-item-name",

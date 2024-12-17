@@ -10,21 +10,34 @@ html {
   align-items: flex-end;
 }
 
-/* header */
+
+/* Outra abordagem, aplicando diretamente ao bloco de preço */
+.vtex-product-summary-2-x-priceContainer .vtex-product-summary-2-x-sellingPrice {
+    color: #002A4E !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    margin-top: 5px !important;
+}
+
+.vtex-product-price-1-x-sellingPrice {
+  color: #002A4E !important;
+}
+
+/* Header */
 @media (min-width:768px) {
-  .vtex-login-2-x-container .vtex-button .vtex-button__label{
+  .vtex-login-2-x-container .vtex-button .vtex-button__label {
     padding-right: 0;
   }
 }
 
-/*categoria*/
+/* Categoria */
 .vtex-search-result-3-x-filter:not(.vtex-search-result-3-x-filterIsOpen) .vtex-search-result-3-x-filterIcon svg,
-.vtex-search-result-3-x-sidebar .vtex-search-result-3-x-accordionFilterContent .vtex-search-result-3-x-accordionFilterItemIcon svg{
+.vtex-search-result-3-x-sidebar .vtex-search-result-3-x-accordionFilterContent .vtex-search-result-3-x-accordionFilterItemIcon svg {
   display: none;
 }
 
 .vtex-search-result-3-x-filter:not(.vtex-search-result-3-x-filterIsOpen) .vtex-search-result-3-x-filterIcon::before,
-.vtex-search-result-3-x-sidebar .vtex-search-result-3-x-accordionFilterContent .vtex-search-result-3-x-accordionFilterItemIcon::before{
+.vtex-search-result-3-x-sidebar .vtex-search-result-3-x-accordionFilterContent .vtex-search-result-3-x-accordionFilterItemIcon::before {
   content: "";
   background-image: url('/arquivos/arrow-dow-2b.svg?v=324');
   background-size: contain;
@@ -39,18 +52,23 @@ html {
 .vtex-list-context-0-x-list--categorias-search--desktop .vtex-list-context-0-x-item--categorias-search--desktop:nth-child(6),
 .vtex-list-context-0-x-list--categorias-search--desktop .vtex-list-context-0-x-item--categorias-search--desktop:nth-child(7),
 .vtex-list-context-0-x-list--categorias-search--desktop .vtex-list-context-0-x-item--categorias-search--desktop:nth-child(8),
-.vtex-list-context-0-x-list--categorias-search--desktop .vtex-list-context-0-x-item--categorias-search--desktop:nth-child(9){
+.vtex-list-context-0-x-list--categorias-search--desktop .vtex-list-context-0-x-item--categorias-search--desktop:nth-child(9) {
     display: none;
 }
 
-/*assembly*/
+/* Assembly */
 .render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp .vtex-flex-layout-0-x-flexRowContent--assembly__pdp 
-> .vtex-flex-layout-0-x-stretchChildrenWidth{
+> .vtex-flex-layout-0-x-stretchChildrenWidth {
   flex-direction: column;
 }
+/*
+.render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp .vtex-flex-layout-0-x-flexRowContent--assembly__pdp > .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-button {
+  display: none !important;
+}
 
+*/
 .render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp .vtex-flex-layout-0-x-flexRowContent--assembly__pdp 
-> .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-button{
+> .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-button {
   width: 245px;
   height: 40px;
   display: flex;
@@ -62,19 +80,19 @@ html {
 }
 
 .render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp .vtex-flex-layout-0-x-flexRowContent--assembly__pdp 
-> .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-button:hover{
+> .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-button:hover {
   background-color: #2D5C85;
   transition: .3s;
 }
 
 .render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp .vtex-flex-layout-0-x-flexRowContent--assembly__pdp 
-> .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-button .vtex-button__label{
+> .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-button .vtex-button__label {
   font-size: 0;
   padding: 0;
 }
 
 .render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp .vtex-flex-layout-0-x-flexRowContent--assembly__pdp 
-> .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-button .vtex-button__label::before{
+> .vtex-flex-layout-0-x-stretchChildrenWidth > .vtex-button .vtex-button__label::before {
   content: "COMPRAR E ASSINAR NO CLUBE";
   letter-spacing: 1px;
   color: #FFFFFF;
@@ -88,88 +106,94 @@ html {
   border: 0;
 }
 
-.vtex-product-customizer-2-x-inputValueOptionBox > div:not(.vtex-product-customizer-2-x-frameAround) > .c-on-base{
+.vtex-product-customizer-2-x-inputValueOptionBox > div:not(.vtex-product-customizer-2-x-frameAround) > .c-on-base {
   font-weight: 700;
 }
 
+
+
 @media (min-width:769px) {
-  /*pdp*/
-  .render-route-store-product .prodSpec__container__master{
+  .render-route-store-product .prodSpec__container__master {
     max-width: 1260px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
   }
 
-  .render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp > .vtex-store-components-3-x-container > .vtex-flex-layout-0-x-flexRowContent > .vtex-flex-layout-0-x-stretchChildrenWidth:last-child{
+  .render-route-store-product .vtex-flex-layout-0-x-flexRow--main__pdp > .vtex-store-components-3-x-container > .vtex-flex-layout-0-x-flexRowContent > .vtex-flex-layout-0-x-stretchChildrenWidth:last-child {
     max-width: 30%;
   }
 
-  .render-route-store-product .swiper-container-vertical.swiper-container-thumbs > .swiper-wrapper{
+  .render-route-store-product .swiper-container-vertical.swiper-container-thumbs > .swiper-wrapper {
     justify-content: center;
   }
 
-  .render-route-store-product .vtex-store-components-3-x-carouselGaleryThumbs .swiper-slide{
+  .render-route-store-product .vtex-store-components-3-x-carouselGaleryThumbs .swiper-slide {
     width: 67px;
     margin: 0 auto;
     margin-bottom: 15px;
   }
 
-  .render-route-store-product .vtex-store-components-3-x-productImagesThumbActive{
+  .render-route-store-product .vtex-store-components-3-x-productImagesThumbActive {
     border-bottom: 5px solid #002A4E;
   }
 
-  .render-route-store-product .vtex-store-components-3-x-carouselGaleryCursor{
+  .render-route-store-product .vtex-store-components-3-x-carouselGaleryCursor {
     max-width: 60%;
     margin-right: 15%;
   }
 
   .render-route-store-product .vtex-store-components-3-x-carouselGaleryCursor .vtex-store-components-3-x-swiperCaret,
-  .render-route-store-product .vtex-store-components-3-x-carouselGaleryCursor .vtex-store-components-3-x-swiper-pagination{
+  .render-route-store-product .vtex-store-components-3-x-carouselGaleryCursor .vtex-store-components-3-x-swiper-pagination {
     display: none;
   }
 }
 
-.vtex-search-result-3-x-buttonShowMore button{
+.vtex-search-result-3-x-buttonShowMore button {
   width: 410px;
   height: 40px;
   transition: .3s;
 }
 
-.vtex-search-result-3-x-buttonShowMore button .vtex-button__label{
+.vtex-search-result-3-x-buttonShowMore button .vtex-button__label {
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
 
-/*pdp*/
-.render-route-store-product .vtex-flex-layout-0-x-flexRowContent--pdp-buy-button button .vtex-button__label{
+.render-route-store-product .vtex-flex-layout-0-x-flexRowContent--pdp-buy-button button .vtex-button__label {
   background-color: transparent !important;
   transition: .3s;
 }
 
-.render-route-store-product .vtex-flex-layout-0-x-flexRow--pdp-buy-button .vtex-button{
+.render-route-store-product .vtex-flex-layout-0-x-flexRow--pdp-buy-button .vtex-button {
   min-width: 299px;
 }
 
-.vtex-flex-layout-0-x-flexRow--quantity-action .vtex-button__label:hover,
-.vtex-flex-layout-0-x-flexRow--pdp-buy-button .vtex-button:hover{
-  background-color: #2D5C85 !important;
-  border-color: #2D5C85 !important;
-  transition: .3s;
+.flexRow--slider-produtos-first :global(.vtex-slider-layout-0-x-sliderTrack) {
+  gap: 14px !important;
+  
 }
 
+
+
+.sliderLayoutContainer--sliderProdutos {
+  padding: 2rem 1rem !important;
+}
+
+
+
 @media (max-width: 63.99em) {
-  .render-route-store-product [class*='quantitySelectorContainer']{
+  .render-route-store-product [class*='quantitySelectorContainer'] {
     margin-bottom: 10px;
   }
 
   .render-route-store-product .vtex-flex-layout-0-x-flexRow--newsletter {
-      margin-top: 70px;
+    margin-top: 70px;
   }
 
-  [class*="render-route-store-search"] [class*='quantitySelectorContainer']{
+  [class*="render-route-store-search"] [class*='quantitySelectorContainer'] {
     margin-bottom: 10px;
   }
 
@@ -199,17 +223,11 @@ html {
   transition: color 0.25s ease-out;
 }
 
-.vtex-account [data-testid='menu-option-0'] {
-  display: none;
-}
-.vtex-account [data-testid='menu-option-1'] {
-  display: none;
-}
+.vtex-account [data-testid='menu-option-0'],
+.vtex-account [data-testid='menu-option-1'],
 .vtex-account [data-testid='menu-option-2'] {
   display: none;
 }
-
-
 
 .vtex-search-result-3-x-filterBreadcrumbsText {
   display: flex;
@@ -223,49 +241,277 @@ html {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14.321' height='14.281' viewBox='0 0 14.321 14.281'%3E%3Cpath fill='%23FCE7C2' data-name='Union 5' d='M6.787 14.135.147 7.494a.5.5 0 0 1 0-.707l6.64-6.64a.5.5 0 0 1 .707.707l-5.8 5.8H13.82a.5.5 0 1 1 0 1H1.72l5.774 5.774a.5.5 0 1 1-.707.707Z'/%3E%3C/svg%3E") no-repeat center/contain;
   margin-right: 1rem;
 }
+
 .vtex-flex-layout-0-x-flexRowContent--product-summary-actions > .pr4 {
   padding-right: 0px;
 }
 
-/*certificacao*/
-.render-route-vtex-store-2-x-store-custom-quem-somos .vtex-store-header-2-x-headerStickyRow{
+.render-route-vtex-store-2-x-store-custom-quem-somos .vtex-store-header-2-x-headerStickyRow {
   position: initial;
 }
 
-.vtex-flex-layout-0-x-flexRowContent--section-certification > .vtex-flex-layout-0-x-stretchChildrenWidth:first-child{
+.vtex-flex-layout-0-x-flexRowContent--section-certification > .vtex-flex-layout-0-x-stretchChildrenWidth:first-child {
   width: 25% !important;
   margin-right: 10%;
 }
 
-.vtex-flex-layout-0-x-flexRowContent--section-certification > .vtex-flex-layout-0-x-stretchChildrenWidth:last-child{
+.vtex-flex-layout-0-x-flexRowContent--section-certification > .vtex-flex-layout-0-x-stretchChildrenWidth:last-child {
   width: 65% !important;
 }
 
-/*quem somos geral*/
-
-.render-route-vtex-store-2-x-store-custom-quem-somos .vtex-flex-layout-0-x-flexRowContent--newsletter {
-  display: none;
-}
-
-.render-route-vtex-store-2-x-store-custom-quem-somos .tb4371-cafe-sta-monica-0-x-mini_cart_fixed_container{
+.render-route-vtex-store-2-x-store-custom-quem-somos .vtex-flex-layout-0-x-flexRowContent--newsletter,
+.render-route-vtex-store-2-x-store-custom-quem-somos .tb4371-cafe-sta-monica-0-x-mini_cart_fixed_container {
   display: none;
 }
 
 @media (max-width:768px) {
-  .vtex-store-components-3-x-searchBarContainer input, 
+  .vtex-store-components-3-x-searchBarContainer input,
   body > div.render-container > div > div.vtex-store__template.bg-base > div > div:nth-child(3) > div > div,
-  .vtex-store-components-3-x-autoCompleteOuterContainer.vtex-store-components-3-x-autoCompleteOuterContainer--search-bar-mobile > div > label > div > span{
+  .vtex-store-components-3-x-autoCompleteOuterContainer.vtex-store-components-3-x-autoCompleteOuterContainer--search-bar-mobile > div > label > div > span {
     background-color: #f3f3f3;
   }
 
-  /*lp quem somos*/
   .vtex-flex-layout-0-x-flexRowContent--section-certification > .vtex-flex-layout-0-x-stretchChildrenWidth:first-child {
     width: 100% !important;
     margin-right: 0%;
   }
 
-  .vtex-flex-layout-0-x-flexRowContent--section-certification > .vtex-flex-layout-0-x-stretchChildrenWidth:last-child{
+  .vtex-flex-layout-0-x-flexRowContent--section-certification > .vtex-flex-layout-0-x-stretchChildrenWidth:last-child {
     width: 100% !important;
     margin-top: 25px;
+  }
+}
+/* Estilo para o botão "COMPRAR" mais fino e alinhado */
+.vtex-button__label.flex.items-center.justify-center.h-100.ph6.w-100.border-box {
+  background-color: #002A4E !important; /* Fundo azul */
+  color: #FFFFFF !important; /* Texto branco */
+  padding: 0.25rem 0.5rem !important; /* Ajuste para deixar o botão mais fino */
+  width: auto !important; /* Define largura automática */
+  min-width: 10px !important; /* Largura mínima reduzida */
+  border: none !important; /* Remove a borda */
+}
+
+/* Remove o efeito de hover */
+.vtex-button__label.flex.items-center.justify-center.h-100.ph6.w-100.border-box:hover {
+  background-color: #002A4E !important;
+  color: #FFFFFF !important;
+  border: 1px solid #002A4E !important;
+}
+
+/* Ajuste para o texto interno do botão */
+.vtex-add-to-cart-button-0-x-buttonText {
+  color: #FFFFFF !important; /* Garante que o texto fique branco */
+  font-size: 14px !important; /* Ajuste do tamanho do texto */
+}
+
+.vtex-product-summary-2-x-element {
+  display: flex;
+  flex-direction: column; /* Organiza os itens verticalmente */
+  align-items: center; /* Centraliza todos os itens horizontalmente */
+  text-align: center; /* Centraliza o texto */
+  justify-content: center; /* Centraliza os elementos verticalmente no contêiner */
+}
+
+/* styles.css */
+
+.vtex-product-summary-2-x-productBrand,
+.vtex-product-summary-2-x-brandName {
+  text-align: center; /* Centraliza o texto */
+  font-weight: normal; /* Remove o negrito */
+  font-size: 1rem; /* Ajusta o tamanho da fonte, se necessário */
+  margin: 0 auto; /* Centraliza dentro do contêiner */
+  display: block; /* Garante que o elemento se comporte como um bloco */
+}
+
+.vtex-product-summary-2-x-imageNormal,
+.vtex-product-summary-2-x-image {
+  width: 100%; /* Ajusta a largura da imagem ao contêiner */
+  max-height: 17.56rem; /* Define uma altura máxima para padronizar */
+  object-fit: contain; /* Mantém a proporção da imagem dentro do contêiner */
+  display: block; /* Remove possíveis espaços extras */
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+  border-radius: 4px; /* (Opcional) Adiciona bordas arredondadas */
+}
+
+
+.vtex-store-components-3-x-installmentsPrice,
+.vtex-product-summary-2-x-installmentContainer,
+.t-small-ns.c-muted-2,
+.vtex-product-summary-2-x-price_installmentContainer {
+  display: none !important; /* Oculta completamente os elementos */
+}
+
+/* Estilo inicial em laranja */
+.subscription-label {
+  color: #002A4E !important; /* Cor laranja com !important */
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Estilo em verde quando selecionado */
+.subscription-label.selected {
+  color: #4caf50 !important; /* Cor verde para o estado selecionado com !important */
+}
+
+/* styles.css */
+.subscription-card {
+  background-color: #002a4e; /* Cor de fundo igual ao botão "COMPRAR" */
+  color: #ffffff; /* Cor do texto branco */
+  font-weight: bold; /* Texto em negrito */
+  font-size: 12px; /* Ajuste do tamanho da fonte */
+  text-transform: uppercase; /* Letras maiúsculas */
+  text-align: center; /* Centraliza o texto */
+  border: none; /* Remove a borda */
+  width: 100%; /* Define a largura igual à do botão "COMPRAR" */
+  height: 40px; /* Mesma altura do botão "COMPRAR" */
+  padding: 0; /* Remove o espaçamento interno extra */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 8px; /* Desce o botão */
+  margin-left: 0; /* Mantém o botão alinhado à esquerda */
+  transition: background-color 0.3s ease; /* Animação suave para hover */
+}
+
+/* Estilo para hover */
+.subscription-card:hover {
+  background-color: #1a2a40; /* Cor do hover igual ao botão "COMPRAR" */
+}
+
+/* Estilo para o rádio dentro do botão */
+.subscription-card input[type='radio'] {
+  display: none; /* Esconde o botão de rádio */
+}
+
+/* Ajusta qualquer deslocamento interno */
+.subscription-card::before {
+  content: ''; /* Ajusta qualquer possível deslocamento interno */
+}
+
+
+.vtex-product-customizer-2-x-optionsInputValueLabel {
+  display: none !important; /* Remove o elemento visualmente */
+}
+
+
+body.render-route-checkout .add-item-attachment.btn.btn-mini {
+  display: none !important; /* Remove o botão do checkout */
+}
+.add-item-attachment.btn.btn-mini {
+  display: none !important; /* Remove o elemento da exibição */
+}
+
+/* Estilo em verde quando o card está selecionado */
+.subscription-card.selected {
+  color: #4caf50; /* Cor verde para o texto selecionado */
+  border: 2px solid #4caf50;
+  background-color: #00264d; /* Fundo azul-escuro sólido ao selecionar */
+}
+
+
+/* Estilo do radio button */
+.radio-button {
+  cursor: pointer;
+  accent-color: #4caf50; /* Cor verde para o botão de rádio */
+  transform: scale(1.2); /* Aumenta ligeiramente o tamanho do botão */
+  margin-right: -2px; /* Ajusta o espaçamento do radio button */
+}
+
+/* Center the content inside the product summary */
+.vtex-product-summary-2-x-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+/* theme.css */
+
+
+
+#Assinatura {
+  opacity: 0; /* Torna o botão invisível */
+  pointer-events: auto; /* Garante que o botão continue funcional */
+  background-color: transparent; /* Remove o fundo */
+  border: none; /* Remove a borda */
+}
+
+
+
+
+
+/* Estilos gerais do slider */
+.sliderLayoutContainer--slider-produtos {
+  max-width: 90%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sliderArrows--slider-produtos {
+  font-size: 30px;
+  color: #000;
+  z-index: 10;
+}
+
+.sliderArrows--slider-produtos.left {
+  left: 10px;
+}
+
+.sliderArrows--slider-produtos.right {
+  right: 10px;
+}
+
+/* Estilos para mobile */
+@media (max-width: 768px) {
+  /* Esconde o slider no mobile */
+  .custom-slider {
+      display: none;
+  }
+
+  /* Exibe os produtos em grid de duas colunas */
+  .product-list-mobile {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      padding: 10px;
+  }
+
+  /* Alinhamento do preço e botão de compra */
+  .product-list-mobile .product-summary {
+      text-align: center;
+  }
+
+  .product-list-mobile .product-summary-price,
+  .product-list-mobile .subscriber-price {
+      font-size: 1rem;
+      margin-top: 5px;
+  }
+
+  .product-list-mobile .quantity-action,
+  .product-list-mobile .add-to-cart-button {
+      justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .product-list-mobile .product-summary {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-list-mobile .product-summary {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+  }
+
+  .product-list-mobile {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
   }
 }

@@ -1,4 +1,4 @@
-.mini_cart_fixed_container{
+.mini_cart_fixed_container {
     width: 100%;
     background-color: #BF6A1E;
     padding: 15px;
@@ -12,36 +12,62 @@
     box-shadow: 0px 0px 15px #00000043;
 }
 
-.mini_cart_fixed_data{
+.mini_cart_fixed_data {
     display: flex;
     align-items: center;
     stroke: #fff;
 }
 
-.mini_cart_fixed_data_info{
+.mini_cart_fixed_data_info {
     display: flex;
-    /* flex-direction: column; */
     margin-left: 10px;
 }
 
-.mini_cart_fixed_quantity{
+.mini_cart_fixed_quantity {
     font-size: 10px;
     font-weight: 400;
     letter-spacing: 0.32px;
     color: #FFFFFF;
 }
 
-.mini_cart_fixed_price{
+.mini_cart_fixed_price {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.38px;
     color: #FCE7C2;
 }
 
-.mini_cart_fixed_text{
+.mini_cart_fixed_text {
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 1.1px;
     color: #FCE7C2;
     text-transform: uppercase;
 }
+
+/* Estilo adicional para o preço de assinante */
+.mini_cart_fixed_subscriber_price {
+    font-size: 11px;
+    font-weight: 600;
+    color: #FFFFFF; /* Cor diferente para destaque */
+    margin-top: 4px;
+}
+
+.item_price {
+    color: #888; /* Cor para o preço original */
+    text-decoration: line-through;
+  }
+  
+  .item_subscriber_price {
+    color: #f00; /* Cor para destacar o preço com desconto */
+    font-weight: bold;
+  }
+
+  .mini_cart_item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .item_name {
+    font-weight: bold;
+  }

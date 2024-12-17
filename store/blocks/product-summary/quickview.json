@@ -92,6 +92,7 @@
     "children": [
       "flex-layout.col#quickview-images",
       "flex-layout.col#quickview-product-details"
+      
     ],
     "props": {
       "blockClass": "quickviewMainRow"

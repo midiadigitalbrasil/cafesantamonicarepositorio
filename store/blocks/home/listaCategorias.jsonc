@@ -1,4 +1,4 @@
-{  
+{
   "flex-layout.row#list-categorias": {
     "title": "Lista de Categorias",
     "children": [
@@ -21,19 +21,19 @@
       "blockClass": ["mainCategories"]
     },
     "children": [
-      "rich-text#title-list-categorias",
+      "rich-text#title-list-categorias-teste",
       "flex-layout.row#list-categorias-content"
     ]
-  },  
-  "rich-text#title-list-categorias": {
+  },
+  "rich-text#title-list-categorias-teste": {
     "title": "Título da Lista de Categorias",
     "props": {
-        "text": "O QUE VOCÊ PROCURA HOJE?",
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER",        
-        "blockClass": [
-            "shelfTitle"
-        ]
+      "text": "O QUE VOCÊ PROCURA HOJE?",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": [
+        "shelfTitle-teste"
+      ]
     }
   },
   "flex-layout.row#list-categorias-content": {
@@ -47,53 +47,59 @@
     ]
   },
   "list-context.list-categorias": {
-      "title": "Items Lista de Categorias",
-      "children": ["list-context-renderer#list-categorias"],
-      "props": {
-          "items": [
-            {
-              "iconId": "custom-categoria-graos",
-              "iconSize": 50,
-              "text": "GRÃOS",
-              "href": "/graos"
-            },
-            {
-              "iconId": "custom-categoria-lattes",
-              "iconSize": 50,
-              "text": "LATTES",
-              "href": "/lattes"
-            },
-            {
-              "iconId": "custom-categoria-bebidas",
-              "iconSize": 50,
-              "text": "BEBIDAS",
-              "href": "/bebidas"
-            },
-            {
-              "iconId": "custom-categoria-capsulas",
-              "iconSize": 50,
-              "text": "CÁPSULAS",
-              "href": "/capsulas"
-            },{
-              "iconId": "custom-categoria-moido",
-              "iconSize": 50,
-              "text": "CAFÉ MOÍDO",
-              "href": "/cafe-moido"
-            },
-            {
-              "iconId": "custom-categoria-acessorios",
-              "iconSize": 50,
-              "text": "ACESSÓRIOS",
-              "href": "/acessorios"
-            }
+    "title": "Items Lista de Categorias",
+    "children": ["list-context-renderer#list-categorias"],
+    "props": {
+      "items": [
+        {
+          "iconId": "custom-categoria-graos",
+          "iconSize": 50,
+          "text": "GRÃOS",
+          "href": "/graos"
+        },
+        {
+          "iconId": "custom-categoria-lattes",
+          "iconSize": 50,
+          "text": "LATTES",
+          "href": "/lattes"
+        },
+        {
+          "iconId": "custom-categoria-bebidas",
+          "iconSize": 50,
+          "text": "BEBIDAS",
+          "href": "/bebidas"
+        },
+        {
+          "iconId": "custom-categoria-capsulas",
+          "iconSize": 50,
+          "text": "CÁPSULAS",
+          "href": "/capsulas"
+        },
+        {
+          "iconId": "custom-categoria-moido",
+          "iconSize": 50,
+          "text": "CAFÉ MOÍDO",
+          "href": "/cafe-moido"
+        },
+        {
+          "iconId": "custom-categoria-acessorios",
+          "iconSize": 50,
+          "text": "ACESSÓRIOS",
+          "href": "/acessorios"
+        },
+        {
+          "text": "PRESENTES",
+          "href": "/presentes",
+          "blockClass": "categoria-presentes"
+        }
       ]
-      }
+    }
   },
   "list-context-renderer#list-categorias": {
-      "props": {
-          "blockClass": "list-categorias",
-          "listElement": "div",
-          "itemElement": "div"
-      }
+    "props": {
+      "blockClass": "list-categorias",
+      "listElement": "div",
+      "itemElement": "div"
+    }
   }
 }

@@ -1,6 +1,6 @@
 {
   "flex-layout.row#video-home": {
-    "title": "Destaque com Vídeo",
+    "title": "Destaque com Imagem",
     "props": {
       "marginTop": 10,
       "blockClass": [
@@ -9,7 +9,7 @@
     },
     "children": [
       "flex-layout.col#video-home-info",
-      "flex-layout.row#video-home-video"
+      "link#image-link-home"
     ]
   },
   "flex-layout.col#video-home-info": {
@@ -25,7 +25,7 @@
     ]
   },
   "rich-text#title-video-home-info": {
-    "title": "Título do destaque com Vídeo",
+    "title": "Título do destaque com Imagem",
     "props": {
       "text": "# SELEÇÃO ESPECIAL",
       "textAlignment": "LEFT",
@@ -36,9 +36,10 @@
     }
   },
   "rich-text#content-video-home-info": {
-    "title": "Texto do destaque com Vídeo",
+    "title": "Texto do destaque com Imagem",
     "props": {
-      "text": "O Café Gourmet Santa Monica preza pela excelência. Para garantir a qualidade de cada grão, todo seu café é cultivado na própria Fazenda Santa Monica, na nobre região do sul de Minas Gerais com altitude de mil metros acima do nível do mar e sem blends.",
+      "text": "1° Café Gourmet do Brasil. O Santa Monica nasceu em 1985 para mudar a lógica do mercado e oferecer café bom de verdade para nós brasileiros.Nossos grãos são cultivados na própria fazenda Santa Monica, na nobre região do sul de Minas Gerais, com o cuidado de quem entende o que faz e preza pela excelência em todos os processos, desde o plantio até torrefação com máquinas e técnicas exclusivas. ",  
+
       "textAlignment": "LEFT",
       "blockClass": [
         "video-home-content"
@@ -55,28 +56,22 @@
       ]
     }
   },
-  "flex-layout.row#video-home-video": {
+  "link#image-link-home": {
+    "props": {
+      "url": "https://cf2teste--tb4371.myvtex.com/quem-somos", 
+      "openNewTab": false, 
+      "blockClass": ["image-link-home"]
+    },
     "children": [
-      "video#video-home-video"
+      "image#image-home"
     ]
   },
-  "video#video-home-video": {
+  "image#image-home": {
     "props": {
-      "src": "https://www.youtube.com/watch?v=gpeF_mgkXtc",
-      "name": "Vídeo Destaque Café Santa Mônica",
-      "poster": "https://tb4371.vteximg.com.br/arquivos/banner-video-home.png",
-      "controlsType": "none",
-      "width": "100%",
-      "height": "380px",
-      "loop": false,
-      "autoPlay": false,
-      "muted": false,
-      "playsInline": false,
-      "PlayIcon": "icon-play",
-      "PauseIcon": "icon-pause",
-      "blockClass": [
-        "video-home"
-      ]
+      "src": "https://tb4371.vteximg.com.br/arquivos/banner-video-home.png",
+      "alt": "Imagem Destaque Café Santa Mônica",
+      "maxWidth": "100%",
+      "blockClass": ["image-home"]
     }
   }
 }

@@ -246,6 +246,8 @@ td.product-name a[id*="product-name"] {
     display: none !important;
 }
 
+
+
 @media (max-width: 690px) {
     .orderform-template .cart-template.mini-cart #go-to-cart-button {
         display:block;

@@ -4,7 +4,7 @@ import { useOrderForm } from 'vtex.order-manager/OrderForm'
 import { Spinner } from 'vtex.styleguide'
 
 import style from './styles.css'
-/* eslint-disable */
+
 interface Props {
   valueMin: valueMinItem[]
 }
@@ -15,37 +15,45 @@ interface valueMinItem {
 
 const ShippingFree: StorefrontFC<Props> = (props: Props) => {
   const {
-    orderForm: { value, totalizers },
+    orderForm: { value, totalizers, shippingData },
   } = useOrderForm()
 
   const [progress, setProgress] = useState(0)
   const [lack, setLack] = useState(0)
   const [shippingValue, setShippingValue] = useState(0)
 
-  const minValue = props ? props.valueMin[0].value : 0
+  const minValue = props.valueMin.length > 0 ? props.valueMin[0].value : 0
+
+  // Calculate subscriber price with a 15% discount
+  const subscriberPrice = value * 0.85
 
   useEffect(() => {
-    if (value > 0) {
-      console.log('minValue::  ', minValue)
-
+    const calculateLack = () => {
       setProgress((value / minValue) * 100)
-      if (minValue - value > 0) {
-        setLack(minValue - value)
-      } else {
-        setLack(0)
+      setLack(Math.max(minValue - value, 0))
+
+      if (totalizers) {
+        const shippingTotalizer = totalizers.find(
+          (item: any) => item.id === 'Shipping'
+        )
+        setShippingValue(shippingTotalizer ? shippingTotalizer.value : 0)
       }
+      
+      console.log(shippingValue) // Para evitar erro de variável não utilizada
+    }
+
+    if (value > 0) {
+      calculateLack()
     } else {
       setLack(minValue)
       setProgress(0)
     }
+  }, [value, totalizers, minValue, shippingValue])
 
-    if (totalizers) {
-      var isShipping = totalizers.filter(
-        (item: any) => item.id == 'Shipping'
-      )[0]?.value
-      setShippingValue(isShipping ? isShipping : 0)
-    }
-  })
+  const isSPFreteGratis = () => {
+    const postalCode = shippingData?.address?.postalCode || ''
+    return postalCode.startsWith('0') // Lógica específica para São Paulo
+  }
 
   if (canUseDOM) {
     return (
@@ -57,32 +65,38 @@ const ShippingFree: StorefrontFC<Props> = (props: Props) => {
                 Subtotal
               </span>
               <span className={`${style.mini_cart_fixed_price}`}>
-                {(value / 100)
-                  .toLocaleString('pt-br', {
-                    style: 'currency',
-                    currency: 'BRL',
-                  })
-                  .replace('.', ',')}
+                {(value / 100).toLocaleString('pt-br', {
+                  style: 'currency',
+                  currency: 'BRL',
+                })}
+              </span>
+              <span className={`${style.mini_cart_fixed_price_subscriber}`}>
+                Assinante: {(subscriberPrice / 100).toLocaleString('pt-br', {
+                  style: 'currency',
+                  currency: 'BRL',
+                })}
               </span>
             </div>
           </div>
           <div className={style.sfc__group}>
-            {lack ? (
+            {lack > 0 ? (
               <p className={style.sfc__text}>
                 Faltam&nbsp;
                 <strong>
-                  {((lack + shippingValue) / 100)
-                    .toLocaleString('pt-br', {
-                      style: 'currency',
-                      currency: 'BRL',
-                    })
-                    .replace('.', ',')}
-                </strong>{' '}
-                &nbsp;para ganhar&nbsp;FRETE GRÁTIS
+                  {(lack / 100).toLocaleString('pt-br', {
+                    style: 'currency',
+                    currency: 'BRL',
+                  })}
+                </strong>
+                &nbsp;para ganhar FRETE GRÁTIS
+              </p>
+            ) : isSPFreteGratis() ? (
+              <p className={style.sfc__text}>
+                Parabéns! Você ganhou FRETE GRÁTIS
               </p>
             ) : (
               <p className={style.sfc__text}>
-                Parabéns você ganhou FRETE GRÁTIS
+                Frete grátis não disponível para sua região
               </p>
             )}
             <div className={style.sfc__bar__content}>
@@ -117,7 +131,7 @@ ShippingFree.defaultProps = {
 }
 
 ShippingFree.schema = {
-  title: 'valor minímo',
+  title: 'Valor Mínimo para Frete Grátis',
   type: 'object',
   properties: {
     valueMin: {
@@ -127,13 +141,13 @@ ShippingFree.schema = {
         type: 'object',
         properties: {
           __editorItemTitle: {
-            title: 'admin/editor.menu.item.editorItemTitle.title',
-            description: 'admin/editor.menu.item.editorItemTitle.description',
+            title: 'Título',
+            description: 'Título do valor mínimo',
             type: 'string',
           },
           value: {
             type: 'number',
-            title: 'valor minímo',
+            title: 'Valor mínimo',
           },
         },
       },

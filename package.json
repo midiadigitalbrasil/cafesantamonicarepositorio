@@ -21,16 +21,16 @@
     ]
   },
   "devDependencies": {
-    "@vtex/prettier-config": "^0.1.4",
-    "eslint": "^7.12.1",
-    "eslint-config-vtex": "^12.3.2",
-    "eslint-config-vtex-react": "^6.3.2",
-    "husky": "^4.2.3",
-    "lint-staged": "^10.1.1",
-    "prettier": "^2.0.2",
-    "typescript": "^3.8.3"
+    "@vtex/prettier-config": "^1.0.0",
+    "eslint": "^9.16.0",
+    "eslint-config-vtex": "^15.1.0",
+    "eslint-config-vtex-react": "^9.1.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
   },
-  "dependencies": {
-    "jquery": "^3.6.4"
-  }
+"dependencies": {
+  "jquery": "^3.6.4"
+}
 }

@@ -13,6 +13,7 @@
     "children": [
       "vtex.product-list:product-name",
       "flex-layout.row#minicartItem-bottom"
+      
     ],
     "props": {
       "width": "grow",

@@ -1,0 +1,43 @@
+/* Contêiner do preço original e de assinante */
+.price-row {
+  display: flex;
+  align-items: flex-start; /* Alinha o topo dos preços para mais controle */
+  gap: 8px; /* Espaçamento entre o preço original e o de assinante */
+}
+
+/* Estilo do preço original */
+.price-row .vtex-product-summary-2-x-sellingPrice {
+  color: #BF6A1E;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 0; /* Remove o espaçamento acima para alinhar com o preço de assinante */
+}
+
+/* Estilo do preço de assinante */
+.price-row .subscriber-price {
+  color: #FFFFFF;
+  background-color: #AB3535;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-top: 5px; /* Ajuste este valor para descer o preço do assinante */
+}
+
+
+
+.custom-slider .vtex-product-summary-2-x-buyButton {
+  background-color: #401a23 !important;
+  color: #ffffff !important;
+  border: 1px solid #1a2a40 !important;
+  width: auto !important; /* Define largura automática */
+  min-width: 10px !important; /* Largura mínima reduzida */
+  border: none !important; /* Remove a borda */
+}
+
+.custom-slider .vtex-product-summary-2-x-buyButton:hover {
+  background-color: #1a2a40 !important;
+  color: #ffffff !important;
+  border: 1px solid #1a2a40 !important;
+}

@@ -10,11 +10,7 @@
     font-weight: 600;
 }
 
-.shippingContainer :global(.vtex-button):hover {
-    background-color: #2D5C85 !important;
-    border-color: #2D5C85 !important;
-    transition: .3s;
-}
+
 
 .shippingContainer :global(.vtex-address-form__postalCode) {
     padding-bottom: 1rem;
@@ -40,3 +36,4 @@
 .shippingContainer :global(.vtex-input__suffix) {
     display: none;
 }
+

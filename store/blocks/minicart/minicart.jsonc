@@ -3,7 +3,7 @@
     "props": {
       "addToCartFeedback": "customEvent",
       "customPixelEventId": "add-to-cart-button",
-      "text": "Adicionar à Sacola"
+      "text": "COMPRAR"
     }
   },
   "minicart.v2": {
@@ -19,6 +19,7 @@
       "flex-layout.row#minicart-barra",
       "flex-layout.row#minicart-footer",
       "shipping-free-custom"
+      
     ]
   },
   "minicart-product-list#custom": {
@@ -35,6 +36,7 @@
     "children": [
       "icon-cart#minicart-empty-state",
       "rich-text#minicart-default-empty-state"
+      
     ],
     "props": {
       "horizontalAlign": "center",

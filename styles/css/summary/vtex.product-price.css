@@ -4,7 +4,9 @@
     color: #002A4E;
     letter-spacing: 0.05em; 
     font-weight: 900;
-} 
+
+  margin-top: 0.2rem;    /* Reduz o espaço acima do preço */
+}
 
 .savings--summary {
     background-color: #BF6A1E;
@@ -12,3 +14,7 @@
     padding: 5px 10px;
     font-size: 11px;
 }
+ /* PREÇO */
+
+
+ 

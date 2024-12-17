@@ -1,7 +1,7 @@
 {
   "store.custom#landing-assinatura": {
     "blocks": [
-      "flex-layout.row#main-banner",
+      "flex-layout.row#main-banner-updated",
       /*"flex-layout.row#landing-beneficios",*/
       "media#banner-beneficios",
       "flex-layout.row#landing-planos",

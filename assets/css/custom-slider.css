@@ -1,0 +1,48 @@
+/* Estilo para o contêiner principal do slider */
+.custom-slider .sliderLayoutContainer {
+  justify-content: center;
+  max-width: 90%; /* Ajuste conforme necessário */
+  margin: 0 auto;
+}
+
+/* Estilo para os pontos de paginação */
+.custom-slider .paginationDotsContainer {
+  bottom: -2rem;
+}
+
+/* Contêiner da faixa do slider */
+.custom-slider .sliderTrackContainer {
+  max-width: 100%;
+}
+
+/* Estilo das setas do slider */
+.custom-slider .sliderArrows {
+  color: #002a4e;
+}
+
+.custom-slider .sliderArrows:hover {
+  color: #002a4e;
+}
+
+/* Configuração específica para cada seta */
+.custom-slider .sliderRightArrow {
+  justify-content: flex-start;
+}
+
+.custom-slider .sliderLeftArrow {
+  justify-content: flex-end;
+}
+
+/* Estilo para os pontos de paginação */
+.custom-slider .paginationDot {
+  border-radius: 10px;
+  width: 10px !important;
+  height: 4px !important;
+  background: #002a4e;
+  transition: width 0.25s;
+}
+
+.custom-slider .paginationDot--isActive {
+  width: 40px !important;
+}
+
