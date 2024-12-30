@@ -28,10 +28,12 @@ const SubscriberPrice: React.FC = () => {
   // Usa o preço promocional como base para o desconto do assinante
   const basePrice = promotionalPrice;
 
+  const isSubscriptionAvailable = productContext.product?.productClusters.some((cluster: any) => cluster.name === "Assinatura")
+  
   const discountPercentage = 15;
   const subscriberPrice = basePrice - (basePrice * discountPercentage) / 100;
 
-  return (
+  return isSubscriptionAvailable ? (
     <div style={{ marginTop: '5px' }}>
       <div
         style={{
@@ -56,7 +58,7 @@ const SubscriberPrice: React.FC = () => {
         Para assinantes
       </div>
     </div>
-  );
+  ) : <></>
 };
 
 export default SubscriberPrice;

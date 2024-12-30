@@ -18,6 +18,12 @@ const SubscriptionBox: React.FC = () => {
       setIsSubscriptionAvailable(false); // Oculta o bloco
     }
   }, []);
+  useEffect(() => {
+    const buyButton = document.querySelector(".vtex-button__label span[class*=vtex-add-to-cart-button]");
+    if(buyButton){
+      buyButton.innerHTML = "Compra única"
+    }
+  }, [isSubscriptionAvailable])
 
   if (!productContext) {
     console.log('Product context is not available.');
@@ -140,7 +146,7 @@ const SubscriptionBox: React.FC = () => {
       </div>
       {/* Botão de Assinatura */}
       <div onClick={handleSubscriptionClick}>
-        <ToggleButton labelMonth="Assinatura - (15% de desconto)" />
+        <ToggleButton labelMonth="Assinar no club" />
       </div>
     </div>
   );
