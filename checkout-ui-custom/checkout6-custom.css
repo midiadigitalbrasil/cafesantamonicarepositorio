@@ -765,8 +765,10 @@ body.js-vcustom-hideEmailStep .client-profile-data .accordion-toggle>span:before
 
     #checkoutMainContainer .table.cart-items tbody tr.product-item{
         box-sizing: border-box;
-        max-width: 100%;
-        margin-left: 5%;
+        max-width: 100%;   
+        padding-left: 16px;
+        padding-right: 16px;
+    }
     }
 
     #checkoutMainContainer .full-cart .cart table tbody tr td.quantity{

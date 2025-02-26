@@ -22,16 +22,18 @@ const SubscriberPrice: React.FC = () => {
     return null;
   }
 
+  
   const commertialOffer = seller.commertialOffer;
-  const promotionalPrice = commertialOffer.Price;
+  const promotionalPrice = commertialOffer.ListPrice;
 
   // Usa o preço promocional como base para o desconto do assinante
   const basePrice = promotionalPrice;
 
-  const isSubscriptionAvailable = productContext.product?.productClusters.some((cluster: any) => cluster.name === "Assinatura")
-  
-  const discountPercentage = 15;
-  const subscriberPrice = basePrice - (basePrice * discountPercentage) / 100;
+  const isSubscriptionAvailable = productContext.product?.productClusters.some((cluster: any) => cluster.name.toLowerCase().includes("assinatura"))
+  const subscriptionRef = productContext.product?.productClusters.find((cluster: any) => cluster.name.toLowerCase().includes("assinatura-"));
+  const subscriptionDiscount = subscriptionRef?.name.includes('-') ? parseInt(subscriptionRef.name.split('-')[1]) : 15
+
+  const subscriberPrice = basePrice - (basePrice * subscriptionDiscount) / 100;
 
   return isSubscriptionAvailable ? (
     <div style={{ marginTop: '5px' }}>

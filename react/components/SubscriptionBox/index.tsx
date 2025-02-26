@@ -43,10 +43,14 @@ const SubscriptionBox: React.FC = () => {
   }
 
   const commertialOffer = seller.commertialOffer;
-  const promotionalPrice = commertialOffer.Price;
+  
+  const promotionalPrice = commertialOffer.ListPrice;
+
+  const subscriptionRef = productContext.product?.productClusters.find((cluster: any) => cluster.name.toLowerCase().includes("assinatura-"));
+  const subscriptionDiscount = subscriptionRef?.name.includes('-') ? parseInt(subscriptionRef.name.split('-')[1]) : 15
 
   // Calcula o preço com desconto
-  const discountPercentage = 15;
+  const discountPercentage = subscriptionDiscount;
   const subscriberPrice = promotionalPrice - (promotionalPrice * discountPercentage) / 100;
 
   const handleSubscriptionClick = async () => {
