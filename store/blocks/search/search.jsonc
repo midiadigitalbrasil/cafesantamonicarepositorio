@@ -20,8 +20,10 @@
     "children": [
       "flex-layout.row#search-breadcrumb",
       "flex-layout.row#search-title",
+      "flex-layout.row#search-category-description-top",
       "flex-layout.row#search-categorias",
-      "flex-layout.row#search-result"
+      "flex-layout.row#search-result",
+      "flex-layout.row#search-category-description-bottom"
     ],
     "props": {
       "pagination": "show-more",
@@ -36,6 +38,20 @@
       "marginBottom": 4,
       "horizontalAlign": "center",
       "blockClass": ["search-title"]
+    }
+  },
+  "flex-layout.row#search-category-description-top": {
+    "children": ["category-description"],
+    "props": {
+      "marginBottom": 7,
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.row#search-category-description-bottom": {
+    "children": ["category-description"],
+    "props": {
+      "marginBottom": 0,
+      "horizontalAlign": "center"
     }
   },
   "flex-layout.row#search-categorias": {

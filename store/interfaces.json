@@ -57,21 +57,24 @@
   "shipping-free-custom": {
     "component": "ShippingFree"
   },
-  
-    "subscriber-price": {
-      "component": "SubscriberPrice"
-    },
+  "subscriber-price": {
+    "component": "SubscriberPrice"
+  },
 
-    "selos-pdp": {
-      "component": "SelosPdp"
-    },
+  "selos-pdp": {
+    "component": "SelosPdp"
+  },
 
-    "toogle-button": {
+  "toogle-button": {
   "component": "ToggleButton"
-},
-"subscription-box": {
-  "component": "SubscriptionBox"
-}
+  },
+  "subscription-box": {
+    "component": "SubscriptionBox"
+  },
+
+  "category-description": {
+    "component": "CategoryDescription"
+  }
 }
 
   

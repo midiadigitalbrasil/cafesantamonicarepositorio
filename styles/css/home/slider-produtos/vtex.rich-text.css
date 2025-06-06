@@ -1,8 +1,8 @@
 .paragraph--shelfTitle {
-  font-size: 2em; /* Ajuste para o tamanho visual de um H1 */
+  font-size: 3rem; /* Ajuste para o tamanho visual de um H1 */
   font-weight: 700; /* Normalmente, H1 é mais negrito */
   color: #373837;
-  font-family: 'Gotham', sans-serif;
+  font-family: 'AvenirLTStd', sans-serif;
   letter-spacing: 1.5px;
   line-height: 1.2; /* Ajuste para espaçamento semelhante a H1 */
   margin-top: 0;
@@ -10,12 +10,17 @@
 }
 
 .paragraph--shelfTitle-teste {
-  font-size: 1.5em; /* Ajuste para o tamanho visual de um H1 */
+  font-size: 3rem; /* Ajuste para o tamanho visual de um H1 */
   font-weight: 700; /* Normalmente, H1 é mais negrito */
   color: #373837;
-  font-family: 'Gotham', sans-serif;
+  font-family: 'AvenirLTStd', sans-serif;
   letter-spacing: 1.5px;
   line-height: 1.2; /* Ajuste para espaçamento semelhante a H1 */
   margin-top: 0;
   margin-bottom: 0.5em;
+}
+@media (max-width: 1024px) {
+  .paragraph--shelfTitle, .paragraph--shelfTitle-teste {
+    font-size: 2rem;
+  }
 }

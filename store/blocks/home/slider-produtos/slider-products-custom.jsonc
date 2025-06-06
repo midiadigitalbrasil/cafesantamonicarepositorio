@@ -1,0 +1,121 @@
+{
+  "flex-layout.row#slider-products-custom": {
+    "title": "Segundo Slider Produtos",
+    "props": {
+      "blockClass": "slider-products-custom",
+      "fullWidth": {
+        "desktop": false,
+        "mobile": true
+      },
+      "visibility": {
+        "desktop": true,
+        "mobile": false
+      },
+      "marginTop": {
+        "desktop": 9,
+        "mobile": 8
+      }
+    },
+    "children": [
+      "flex-layout.col#slider-products-custom"
+    ]
+  },
+
+  "flex-layout.col#slider-products-custom": {
+    "props": {
+      "rowGap": 0
+    },
+    "children": [
+      "rich-text#title-slider-products-custom",
+      "flex-layout.row#products-desktop-slider"
+    ]
+  },
+  "rich-text#title-slider-products-custom": {
+    "title": "Título do Slider",
+    "props": {
+      "text": "Favoritos Santa Monica",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": [
+        "shelfTitle"
+      ]
+    }
+  },
+  "flex-layout.row#products-desktop-slider": {
+    "children": [
+      "list-context.product-list#slider-products-custom"
+    ],
+    "props": {
+      "blockClass": "custom-slider",
+      "visibility": {
+        "desktop": true,
+        "mobile": false
+      }
+    }
+  },
+  "list-context.product-list#slider-products-custom": {
+    "blocks": [
+      "product-summary.shelf#custom"
+    ],
+    "children": [
+      "slider-layout#slider-products-custom"
+    ],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC"
+    }
+  },
+  "slider-layout#slider-products-custom": {
+    "props": {
+      "blockClass": "custom-slider",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 2,
+        "phone": 2
+      },
+      "showPaginationDots": "mobileOnly",
+      "showNavigationArrows": "always",
+      "infinite": false,
+      "fullWidth": false,
+      "arrowSize": 30
+    }
+  },
+  "product-summary.shelf#custom": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "flex-layout.col#price-column",
+      "flex-layout.row#quantity-action"
+    ],
+    "props": {
+      "blockClass": "product-summary",
+      "layout": {
+        "mobile": "vertical"
+      }
+    }
+  },
+  "flex-layout.col#price-column": {
+    "children": [
+      "product-summary-price",
+      "subscriber-price"
+    ],
+    "props": {
+      "blockClass": "price-column",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.row#quantity-action": {
+    "children": [
+      "add-to-cart-button"
+    ],
+    "props": {
+      "blockClass": "quantity-action",
+      "horizontalAlign": "center"
+    }
+  },
+  "subscriber-price": {
+    "props": {
+      "blockClass": "subscriber-price",
+      "horizontalAlign": "center"
+    }
+  }
+}

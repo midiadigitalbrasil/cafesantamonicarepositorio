@@ -22,7 +22,7 @@
 }
 .tileListSeeMore::before {
   content: 'MAIS RESULTADOS';
-  font-size: 12px;
+  font-size: 0.875rem;;
   color: #182D4B;
   width: fit-content;
   margin: 40px auto;

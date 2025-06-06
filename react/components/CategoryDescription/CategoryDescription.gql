@@ -1,0 +1,14 @@
+query {
+  categories {
+    id
+    metaTagDescription
+    children {
+      id
+      metaTagDescription
+      children {
+        id
+        metaTagDescription
+      }
+    }
+  }
+}

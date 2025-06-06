@@ -11,7 +11,7 @@
 
 /* Optionally, define a specific style for the Assinante price if needed */
 .mini_cart_fixed_price_subscriber {
-    font-size: 12px;
+    font-size: 0.875rem;;
     font-weight: 700;
     color: #fce7c2;
     margin-top: 5px;
@@ -20,7 +20,7 @@
 
 
 .mini_cart_fixed_subscriber_price {
-    font-size: 12px;
+    font-size: 0.875rem;;
     font-weight: 700;
     color: #fce7c2;
     margin-top: 5px;

@@ -13,7 +13,6 @@
   "store.login": {
     "blocks": ["login-content#default"]
   },
-  
 
   "login-content#default": {
     "props": {

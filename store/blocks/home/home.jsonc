@@ -2,14 +2,15 @@
   "store.home": {
       "blocks": [
           "flex-layout.row#main-banner-updated",
-          "flex-layout.row#beneficios",
+          // "flex-layout.row#beneficios",
           "flex-layout.row#slider-produtos-first-test",
+          "flex-layout.row#list-products-mobile",
           "flex-layout.row#list-categorias",
+          "flex-layout.row#slider-products-custom",
         //  "flex-layout.row#slider-produtos-first",
           "flex-layout.row#video-home"
          //  "flex-layout.row#destaques-home"
      //     "flex-layout.row#slider-produtos-second",
-
       ]
   }
 }

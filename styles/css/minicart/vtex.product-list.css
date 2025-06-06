@@ -6,5 +6,5 @@
 .quantityInputContainer :global(.vtex-styleguide-9-x-input),
 .quantityInputContainer :global(.vtex-input-prefix__group) {
   height: 32px;
-  font-size: 12px;
+  font-size: 0.875rem;;
 }

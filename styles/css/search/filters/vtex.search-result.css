@@ -31,7 +31,7 @@
 }
 .filterTitle  {
   color: #002A4E;
-  font-size: 12px;
+  font-size: 0.875rem;;
   font-weight: bold;
   text-transform: uppercase;
   padding-bottom: 18px;
@@ -40,7 +40,7 @@
   color: #002A4E;
 }
 .filterItem {
-  font-size: 12px;
+  font-size: 0.875rem;;
   color: #373837;
   font-family: "lato";
   padding-top: 7px;

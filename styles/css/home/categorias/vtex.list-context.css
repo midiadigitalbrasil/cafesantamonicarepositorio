@@ -46,3 +46,14 @@
   line-height: 1.2 !important;
   margin-top: 0 !important;
 }
+
+.list--list-products-mobile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.item--list-products-mobile {
+  width: 100%;
+  max-width: 50%;
+  padding:0 8px;
+}

@@ -72,7 +72,7 @@ const CustomMenu: StorefrontFC<Props> = ({ staticItems, evidencedDepartamentItem
                 className={style.menuIcon}
               />
               <h1
-                className={`f7 fw5 ml3 ttu ${style.menuTitle} ${style.hideMobile}`}>
+                className={`f5 fw5 ml3 ttu ${style.menuTitle} ${style.hideMobile}`}>
                 Departamentos
               </h1>
             </div>
@@ -170,7 +170,7 @@ const CustomMenu: StorefrontFC<Props> = ({ staticItems, evidencedDepartamentItem
                                 <div key={`departamentSubItem-${departamentSubItem.id}-${departamentSubItemIndex}`}>
                                   <div className={`flex ${style.hideMobile}`}>
                                     <Link to={departamentSubItem.href}>
-                                      <h5 className={`f7 fw4 mb3 underline-hover ${style['textColor--gray']}`}>{departamentSubItem.name}</h5>
+                                      <h5 className={`f5 fw4 mb3 underline-hover ${style['textColor--gray']}`}>{departamentSubItem.name}</h5>
                                     </Link>
                                   </div>
                                   <div
@@ -226,7 +226,7 @@ const CustomMenu: StorefrontFC<Props> = ({ staticItems, evidencedDepartamentItem
                     onMouseLeave={() => {!isMobile ? setEvidencedDepartamentOpen(null) : ''}}
                   >
                     <div
-                      className={`relative f7 mh4 fw5 ttu tc ${style.evidencedDepartamentTitle}`}
+                      className={`relative f5 mh4 fw5 ttu tc ${style.evidencedDepartamentTitle}`}
                       onClick={() => {
                         if (!evidencedDepartamentOpen) {
                           setEvidencedDepartamentOpen(evidencedDepartamentIndex)
@@ -281,7 +281,7 @@ const CustomMenu: StorefrontFC<Props> = ({ staticItems, evidencedDepartamentItem
           {staticItems.length > 0 && (
             <div className={`flex ${style.hideMobile}`}>
               {staticItems.map((item: MenuItemStatic, index: number) => (
-                <div className={`f7 mh4 fw5 ttu tc ${style.staticItemsTitle}`} key={`staticItem-${index}`}>
+                <div className={`f5 mh4 fw5 ttu tc ${style.staticItemsTitle}`} key={`staticItem-${index}`}>
                   <Link to={item.href} target={item.newTab ? '_blank' : '_self'}>
                     {item.name}
                   </Link>

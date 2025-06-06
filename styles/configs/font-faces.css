@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'Gotham';
   src: url(assets/fonts/Gotham-Book.woff2);
@@ -15,3 +14,114 @@
   src: url(assets/fonts/Gotham-Medium.woff2);
   font-weight: 500;
 }
+/* Regular */
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('assets/fonts/AvenirLTStd-Roman.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Oblique (Regular Italic) */
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('assets/fonts/AvenirLTStd-Oblique.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('assets/fonts/AvenirLTStd-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light Oblique */
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('assets/fonts/AvenirLTStd-LightOblique.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Book (pode ser usado como Medium-Light) */
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('assets/fonts/AvenirLTStd-Book.otf') format('opentype');
+  font-weight: 350;
+  font-style: normal;
+}
+
+/* Book Oblique */
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('assets/fonts/AvenirLTStd-BookOblique.otf') format('opentype');
+  font-weight: 350;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('assets/fonts/AvenirLTStd-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium Oblique */
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('assets/fonts/AvenirLTStd-MediumOblique.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Heavy */
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('assets/fonts/AvenirLTStd-Heavy.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Heavy Oblique */
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('assets/fonts/AvenirLTStd-HeavyOblique.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Black */
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('assets/fonts/AvenirLTStd-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Black Oblique */
+@font-face {
+  font-family: 'AvenirLTStd';
+  src: url('assets/fonts/AvenirLTStd-BlackOblique.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+}
+/* @font-face {
+  font-family: 'Josefin';
+  src: url(assets/fonts/JosefinSans-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Josefin';
+  src: url(assets/fonts/JosefinSans-Bold.ttf);
+  font-weight: 700;
+} 
+
+@font-face {
+  font-family: 'Josefin';
+  src: url(assets/fonts/JosefinSans-Medium.ttf);
+  font-weight: 500;
+} */

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('./assets/css/base/reset.css');
 @import url('./assets/css/components/CustomMenu.css');
 
@@ -156,7 +157,7 @@ html {
 }
 
 .vtex-search-result-3-x-buttonShowMore button .vtex-button__label {
-  font-size: 12px;
+  font-size: 0.875rem;;
   font-weight: 600;
   letter-spacing: 1.2px;
   text-transform: uppercase;
@@ -301,7 +302,7 @@ html {
 /* Ajuste para o texto interno do botão */
 .vtex-add-to-cart-button-0-x-buttonText {
   color: #FFFFFF !important; /* Garante que o texto fique branco */
-  font-size: 14px !important; /* Ajuste do tamanho do texto */
+  font-size: 1.125rem !important; /* Ajuste do tamanho do texto */
 }
 
 .vtex-product-summary-2-x-element {
@@ -359,7 +360,7 @@ html {
   background-color: #002a4e; /* Cor de fundo igual ao botão "COMPRAR" */
   color: #ffffff; /* Cor do texto branco */
   font-weight: bold; /* Texto em negrito */
-  font-size: 12px; /* Ajuste do tamanho da fonte */
+  font-size: 0.875rem;; /* Ajuste do tamanho da fonte */
   text-transform: uppercase; /* Letras maiúsculas */
   text-align: center; /* Centraliza o texto */
   border: none; /* Remove a borda */
@@ -463,55 +464,18 @@ body.render-route-checkout .add-item-attachment.btn.btn-mini {
   right: 10px;
 }
 
-/* Estilos para mobile */
-@media (max-width: 768px) {
-  /* Esconde o slider no mobile */
-  .custom-slider {
-      display: none;
-  }
-
-  /* Exibe os produtos em grid de duas colunas */
-  .product-list-mobile {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      padding: 10px;
-  }
-
-  /* Alinhamento do preço e botão de compra */
-  .product-list-mobile .product-summary {
-      text-align: center;
-  }
-
-  .product-list-mobile .product-summary-price,
-  .product-list-mobile .subscriber-price {
-      font-size: 1rem;
-      margin-top: 5px;
-  }
-
-  .product-list-mobile .quantity-action,
-  .product-list-mobile .add-to-cart-button {
-      justify-content: center;
+@media screen and (max-width: 1023px) {
+  div.vtex-render__container-id-slider-produtos-first-test {
+    display: none !important;
   }
 }
-@media (max-width: 768px) {
-  .product-list-mobile .product-summary {
-      width: 50%;
-      display: inline-block;
-      vertical-align: top;
+@media screen and (min-width: 1024px) {
+  div.vtex-render__container-id-list-products-mobile {
+    display: none !important;
   }
 }
-
-@media (max-width: 768px) {
-  .product-list-mobile .product-summary {
-      width: 50%;
-      display: inline-block;
-      vertical-align: top;
-  }
-
-  .product-list-mobile {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+@media screen and (max-width: 768px) {
+  div.vtex-list-context-0-x-list--list-products-mobile .vtex-product-summary-2-x-imageWrapper, div.vtex-flex-layout-0-x-flexRowContent--custom-slider .vtex-product-summary-2-x-imageWrapper {
+    min-height: auto;
   }
 }

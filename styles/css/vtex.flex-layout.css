@@ -59,3 +59,8 @@
 .flexRow--list-clientes {
   margin-bottom: 40px;
 }
+@media screen and (max-width: 639px) {
+  .flexRow--quantity-action {
+    width: 100%;
+  }
+}

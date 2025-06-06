@@ -1,5 +1,5 @@
 .galleryTitle--layout {
-  font-size: 34px;
+  font-size: 2rem;
   color: #2D5C85;
   font-weight: bold;
   text-transform: uppercase;
@@ -24,4 +24,9 @@
 
 .galleryLayoutOptionButton--grid-icon--selected {
   opacity: 1;
+}
+@media (max-width: 1024px) {
+  .galleryTitle--layout {
+    font-size: 1.5rem;
+  }
 }

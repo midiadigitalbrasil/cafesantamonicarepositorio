@@ -28,7 +28,7 @@
   "rich-text#title-list-categorias-teste": {
     "title": "Título da Lista de Categorias",
     "props": {
-      "text": "O QUE VOCÊ PROCURA HOJE?",
+      "text": "O que você procura hoje?",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": [

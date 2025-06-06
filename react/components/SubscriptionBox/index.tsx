@@ -146,6 +146,8 @@ const SubscriptionBox: React.FC = () => {
         <p>15% de desconto na compra desse produto.</p>
         <p>Descontos e produtos exclusivos para assinantes.</p>
         <p>Sem custo ou mensalidade.</p>
+        <p>Receba seu café a cada 15 ou 30 dias.</p>
+        <p>Fidelidade mínima de 2 meses após assinatura.</p>
         <p>Assine e aproveite o desconto.</p>
       </div>
       {/* Botão de Assinatura */}

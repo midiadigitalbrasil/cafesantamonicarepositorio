@@ -1,0 +1,133 @@
+{
+  "flex-layout.row#list-products-mobile": {
+    "title": "Lista de Produtos Mobile",
+    "props": {
+        "style": {
+        "display": {
+          "desktop": "none",
+          "mobile": "flex"
+        }
+      },
+      "blockClass": "list-products-mobile",
+      "fullWidth": {
+        "desktop": false,
+        "mobile": true
+      },
+      
+      "visibility": {
+        "desktop": false,
+        "mobile": true
+      },
+      "marginTop": {
+        "desktop": 0,
+        "mobile": 8
+      }
+    },
+    "children": [
+      "flex-layout.col#list-products-mobile"
+    ]
+  },
+
+  "flex-layout.col#list-products-mobile": {
+    "props": {
+      "rowGap": 6,
+      "width": "100%"
+    },
+    "children": [
+      "rich-text#title-list-products-mobile",
+      "list-context.product-list#list-products-mobile"
+    ]
+  },
+
+  "rich-text#title-list-products-mobile": {
+    "title": "Título da Lista de Produtos",
+    "props": {
+      "text": "Favoritos Santa Monica",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": [
+        "shelfTitle"
+      ]
+    }
+  },
+
+  "list-context.product-list#list-products-mobile": {
+    "blocks": [
+      "product-summary.shelf#custom"
+    ],
+    "children": [
+      "list-context-renderer#list-products-mobile"
+    ],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "maxItems": 6,
+      "itemsPerRow": {
+        "desktop": 1,
+        "mobile": 2
+      },
+      "hideUnavailableItems": false,
+      "showPaginationDots": false,
+      "showNavigationArrows": false,
+      "paginationDotsVisibility": "never",
+      "navigationArrowsVisibility": "never",
+      "minItemsPerPage": 6,
+      "itemsPerPage": 6,
+      "blockClass": "list-products-mobile"
+    }
+  },
+
+  "list-context-renderer#list-products-mobile": {
+    "props": {
+      "listElement": "div",
+      "itemElement": "div",
+      "blockClass": "list-products-mobile",
+      "grid": {
+        "desktop": 1,
+        "mobile": 2
+      }
+    }
+  },
+
+  "product-summary.shelf#custom": {
+    "children": [
+      "product-summary-image",
+      "product-summary-name",
+      "flex-layout.col#price-column",
+      "flex-layout.row#quantity-action"
+    ],
+    "props": {
+      "blockClass": "product-summary",
+      "layout": {
+        "mobile": "vertical"
+      }
+    }
+  },
+
+  "flex-layout.col#price-column": {
+    "children": [
+      "product-summary-price",
+      "subscriber-price"
+    ],
+    "props": {
+      "blockClass": "price-column",
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.row#quantity-action": {
+    "children": [
+      "add-to-cart-button"
+    ],
+    "props": {
+      "blockClass": "quantity-action",
+      "horizontalAlign": "center"
+    }
+  },
+
+  "subscriber-price": {
+    "props": {
+      "blockClass": "subscriber-price",
+      "horizontalAlign": "center"
+    }
+  }
+}

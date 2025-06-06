@@ -5,3 +5,6 @@
 .slideChildrenContainer--destaques-home:hover {
   filter: brightness(0.85);
 }
+.slideChildrenContainer--custom-slider {
+  padding: 0px 8px;
+}
